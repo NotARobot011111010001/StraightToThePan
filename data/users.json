@@ -1,0 +1,20 @@
+{"users":
+    [
+        {
+            "userId":0,
+            "uploadedRecipes":[
+                0,
+                1
+            ],
+            "recipeLists":[
+                {
+                    "listName":"List Name",
+                    "savedRecipes":[
+                        0,
+                        1
+                    ]
+                }
+            ]
+        }
+    ]
+}

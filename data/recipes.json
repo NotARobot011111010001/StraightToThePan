@@ -1,3 +1,23 @@
-{"recipes":[
-  
-]}
+{"recipes":
+    [
+        {
+            "recipeId":0,
+            "userId":0,
+            "title":"Title",
+            "ingredients":[
+                {
+                    "name":"Name",
+                    "measurement":"Measurement"
+                }
+            ],
+            "method":[
+                "1",
+                "2"
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+        }
+    ]
+}
