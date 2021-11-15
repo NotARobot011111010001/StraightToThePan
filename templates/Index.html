@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatimble" content="ie=edge">
+    <title>Straight To The Pan</title>
+    <link rel="stylesheet" href="/static/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Scripts/Scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<!-- Navbar -->
+    <script>
+        $(function() {
+            $(".nav-hidden").on("click", function() {
+                if ($(".link").hasClass("active")) {
+                    $(".link").removeClass("active");
+                } else {
+                    $(".link").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="logo"><a href="#">Straight To The Pan</a> </li>
+            <li class="link"><a href="#">My Recipes</a> </li>
+            <li class="link"><a href="#">My Bookmark</a> </li>
+            <li class="link"><a href="#">Discover Recipes</a> </li>
+            <li class="link button"><a href="#">Login</a> </li>
+            <li class="link button secondary"><a href="#">Sign Up</a> </li>
+            <li class="nav-hidden"><span class="mini-menu"></span></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Popular -->
+        <div class="header">
+            <div id="header">
+                <h1>Welcome to <br> Straight To The Pan</h1>
+                <h2>Straight To The Pan allows you to browse for new recipes, <br>
+                    add new recipes and share them with the world.
+                    <br>We hope you enjoy your visit and get creative with your meals!</h2>
+            </div>
+        </div>
+        <h1 id="popular-txt">Popular</h1>
+        <div class="popular-grid">
+            <div class="popular">
+                <div id="popular-img1"></div>
+                <h1 class="popular-name"> Lorem Ipsum</h1>
+                <p class="popular-description">
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                </p>
+                <div class="tags">
+                    <a>Fast</a>
+                    <a>High Fiber</a>
+                    <a>Easy</a>
+                </div>
+            </div>
+
+            <div class="popular">
+                <div id="popular-img2"></div>
+                <h1 class="popular-name"> Lorem Ipsum</h1>
+                <p class="popular-description">
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                </p>
+                <div class="tags">
+                    <a>Fast</a>
+                    <a>High Fiber</a>
+                    <a>Easy</a>
+                </div>
+            </div>
+            <div class="popular">
+                <div id="popular-img3"></div>
+                <h1 class="popular-name"> Lorem Ipsum</h1>
+                <p class="popular-description">
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                </p>
+                <div class="tags">
+                    <a>Fast</a>
+                    <a>High Fiber</a>
+                    <a>Easy</a>
+                </div>
+            </div>
+            <div class="popular">
+                <div id="popular-img4"></div>
+                <h1 class="popular-name"> Lorem Ipsum</h1>
+                <p class="popular-description">
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                </p>
+                <div class="tags">
+                    <a>Fast</a>
+                    <a>High Fiber</a>
+                    <a>Easy</a>
+                </div>
+            </div>
+
+            <div class="popular-hidden1">
+                <div id="popular-img5"></div>
+                <h1 class="popular-name"> Lorem Ipsum</h1>
+                <p class="popular-description">
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                </p>
+                <div class="tags">
+                    <a>Fast</a>
+                    <a>High Fiber</a>
+                    <a>Easy</a>
+                </div>
+            </div>
+            <div class="popular-hidden2">
+                <div id="popular-img6"></div>
+                <h1 class="popular-name"> Lorem Ipsum</h1>
+                <p class="popular-description">
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry.
+                </p>
+                <div class="tags">
+                    <a>Fast</a>
+                    <a>High Fiber</a>
+                    <a>Easy</a>
+                </div>
+            </div>
+        </div>
+<!--Recipe of the week -->
+        <div class="rotw">
+        <div class="rotw-grid">
+            <div class="rotw-txt">
+                <h1>Recipe of The Week</h1>
+                <h2>PanCakes</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+                    et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                </p>
+
+
+            </div>
+            <div class="rotw-img"></div>
+
+
+        </div>
+        <div class="tags">
+            <a>Fast</a>
+            <a>High Fiber</a>
+            <a>Easy</a>
+            <a>Low Calories</a>
+            <a>Healthy</a>
+        </div>
+        </div>
+ <!--Latest Recipes -->
+            <h1 id="latest-txt">Latest Recipes</h1>
+            <div class="latest-grid">
+                <div class="latest">
+                    <div id="latest-img1"></div>
+                    <h1> Lorem Ipsum</h1>
+                    <p>Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.
+                    </p>
+                    <div class="tags">
+                        <a>Fast</a>
+                        <a>High Fiber</a>
+                        <a>Easy</a>
+                    </div>
+                </div>
+                <div class="latest">
+                    <div id="latest-img2"></div>
+                    <h1 class="latest-name"> Lorem Ipsum</h1>
+                    <p class="latest-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.
+                    </p>
+                    <div class="tags">
+                        <a>Fast</a>
+                        <a>High Fiber</a>
+                        <a>Easy</a>
+                    </div>
+                </div>
+                <div class="latest">
+                    <div id="latest-img3"></div>
+                    <h1 class="latest-name"> Lorem Ipsum</h1>
+                    <p class="latest-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.
+                    </p>
+                    <div class="tags">
+                        <a>Fast</a>
+                        <a>High Fiber</a>
+                        <a>Easy</a>
+                    </div>
+                </div>
+                <div class="latest">
+                    <div id="latest-img4"></div>
+                    <h1 class="latest-name"> Lorem Ipsum</h1>
+                    <p class="latest-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.
+                    </p>
+                    <div class="tags">
+                        <a>Fast</a>
+                        <a>High Fiber</a>
+                        <a>Easy</a>
+                    </div>
+                </div>
+                <div class="latest-hidden1">
+                    <div id="latest-img5"></div>
+                    <h1 class="popular-name"> Lorem Ipsum</h1>
+                    <p class="popular-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.
+                    </p>
+                    <div class="tags">
+                        <a>Fast</a>
+                        <a>High Fiber</a>
+                        <a>Easy</a>
+                    </div>
+                </div>
+                <div class="latest-hidden2">
+                    <div id="latest-img6"></div>
+                    <h1 class="popular-name"> Lorem Ipsum</h1>
+                    <p class="popular-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.
+                    </p>
+                    <div class="tags">
+                        <a>Fast</a>
+                        <a>High Fiber</a>
+                        <a>Easy</a>
+                    </div>
+                </div>
+
+            </div>
+
+    </main>
+</body>
+</html>

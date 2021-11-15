@@ -2,6 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Images/Asset 7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Asset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Food9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/HomeHeader.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/StraightToThePan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StraightToThePan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -32,12 +59,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/OneDrive_2021-11-15/food Applicaton" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Documents\StraightToThePan\static" />
+      <recent name="C:\Users\Public\Documents\StraightToThePan\templates" />
+      <recent name="C:\Users\Public\Documents\StraightToThePan" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.StraightToThePan">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="StraightToThePan" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -45,9 +79,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\FSQDR\PycharmProjects\flaskProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -67,7 +101,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -82,6 +116,19 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="StraightToThePan" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\FSQDR\PycharmProjects\flaskProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -90,10 +137,15 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flask server.StraightToThePan" />
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Python.app" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Flask server.Flask (app.py)" />
       </list>
     </recent_temporary>
   </component>
@@ -107,10 +159,28 @@
       <updated>1636548653376</updated>
       <workItem from="1636548655633" duration="1185000" />
       <workItem from="1636551031784" duration="319000" />
+      <workItem from="1636679529117" duration="236000" />
+      <workItem from="1636995472466" duration="595000" />
+      <workItem from="1636996097300" duration="2411000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1636996115667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
