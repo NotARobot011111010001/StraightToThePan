@@ -5,16 +5,19 @@
     <title>Login Page</title>
 </head>
 <body>
-    <div class="container">
-      <h1>Please login</h1>
-      <br>
-      <form action="" method="post">
-          <label>Email</label><br>
-          <input type="text" placeholder="Enter your email" name="email" value="{{request.form.email }}"><br><br>
-          <label>Password</label><br>
-          <input type="password" placeholder="Enter your password" name="password" value="{{request.form.password }}"><br><br>
-          <button class="grey" id="login">Submit<a href={{url_for('register')}}>Register</a>
-          <p>Click <a href="/">here</a> to go home.</p>
+    <form action="" method="post">
+     <h1>Please login</h1>
+     <br>
+        <div class="container">
+            <label>Email</label><br>
+            <input type="text" placeholder="Enter your email" name="email" value="{{request.form.email }} required"><br><br>
+            
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter your password" name="password" value="{{request.form.password}} required"><br><br>
+            
+            <button class="grey" id="login_submit">Submit</button>
+            <a href={{url_for('register')}}>Register</a>
+            <p>Click <a href="/">here</a> to go home.</p>
       </form>
     </div>
 </body>
