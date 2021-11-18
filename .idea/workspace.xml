@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Images/Asset 7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Asset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/Food9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/HomeHeader.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/StraightToThePan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StraightToThePan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +139,7 @@
       <workItem from="1636679529117" duration="236000" />
       <workItem from="1636995472466" duration="595000" />
       <workItem from="1636996097300" duration="2411000" />
+      <workItem from="1637161036046" duration="6297000" />
     </task>
     <servers />
   </component>
@@ -178,9 +156,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1636996115667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

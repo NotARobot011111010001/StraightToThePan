@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/Style.css">
 </head>
 <body>
-    <form action="" method="post">
-     <h1>Please login</h1>
+    <div class="login">
+        <h1>Login</h1>
+        <div class="links">
+            <a href="login.html" class="active">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    <form action="{{ url_for('login') }}" method="post">
+        <br>
+        <label for="email">Email</label><br>
+        <input type="text" placeholder="Enter your email/username" id="email", required><br>
      <br>
-        <div class="container">
-            <label>Email</label><br>
-            <input type="text" placeholder="Enter your email" id="email"><br><br>
-            
-            <label>Password</label><br>
-            <input type="password" placeholder="Enter your password" id="password"><br><br>
-            
-            <button class="grey" id="login_submit">Submit</button>
-            <a href={{url_for('register')}}>Register</a>
-            <p>Click <a href="/">here</a> to go home.</p>
+        <label for="password">Password</label><br>
+        <input type="password" placeholder="Enter your password" id="password" required><br><br>
+
+        <button class="grey" id="login_submit">Submit</button>
+        <p>Click <a href="index.html">here</a> to go home.</p>
       </form>
     </div>
 </body>
