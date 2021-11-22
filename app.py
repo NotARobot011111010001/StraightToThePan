@@ -14,10 +14,10 @@ def login():
     if_error = "Error: 404 Not Found"  # if something goes wrong,this will show
 
     if request.method == 'POST' and 'email' in request.form and 'password' in request.form:
-        username = request.form['username'] # requesting username and password using the request.form from <form> in HTML
-        passowrd = request.form['password']
+        username = request.form['username']  # requesting username & password using the .form from <form> in HTML
+        password = request.form['password']
 
-    return render_template('login.html')
+    return render_template('login.html', if_error)
 
 
 @app.route('/register', methods=['GET', 'POST'])

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/StraightToThePan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StraightToThePan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +134,7 @@
       <workItem from="1636679529117" duration="236000" />
       <workItem from="1636995472466" duration="595000" />
       <workItem from="1636996097300" duration="2411000" />
-      <workItem from="1637161036046" duration="6297000" />
+      <workItem from="1637161036046" duration="7619000" />
     </task>
     <servers />
   </component>
