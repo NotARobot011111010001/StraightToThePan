@@ -2,6 +2,7 @@
     [
         {
             "userId":0,
+            "username": "User Name",
             "uploadedRecipes":[
                 0,
                 1
