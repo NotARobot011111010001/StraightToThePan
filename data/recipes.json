@@ -7,7 +7,7 @@
             "ingredients":[
                 {
                     "name":"Name",
-                    "measurement":"Measurement"
+                    "amount":"Amount"
                 }
             ],
             "method":[
