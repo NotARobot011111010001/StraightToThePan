@@ -3,21 +3,97 @@
         {
             "recipeId":0,
             "userId":0,
-            "title":"Title",
+            "title":"lotus cheesecake",
             "ingredients":[
                 {
-                    "name":"Name",
-                    "amount":"Amount"
+                    "name":"butter",
+                    "amount":"125g"
+                },
+                {
+                    "name":"lotus biscuits",
+                    "amount":"300g"
                 }
             ],
             "method":[
+                "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
+                "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
+                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race). Alternatively, you can whip the cream separately to stiff peaks and fold through!",
+                "Spread the mixture evenly over the biscuit base and chill in the fridge for at least 5-6 hours, but preferably overnight.",
+                "Remove from the tin and decorate how you like.",
+                "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
+            ],
+            "categories":[
                 "1",
                 "2"
+            ]
+        },
+        {
+            "recipeId":1,
+            "userId":0,
+            "title":"souffle pancakes",
+            "ingredients":[
+                {
+                    "name":"large eggs",
+                    "amount":"2"
+                },
+                {
+                    "name":"golden caster sugar",
+                    "amount":"2tbs"
+                },
+                {
+                    "name":"vanilla extract",
+                    "amount":"1tsp"
+                },
+                {
+                    "name":"milk",
+                    "amount":"2tbs"
+                },
+                {
+                    "name":"self-raising flour",
+                    "amount":"2tbs"
+                },
+                {
+                    "name":"vegetable oil",
+                    "amount":"1tsp"
+                }
+
+                
+            ],
+            "method":[
+                "Whisk the egg whites in a clean bowl with 1 tbsp sugar using an electric whisk or a stand mixer to form stiff peaks.",
+                "Beat the egg yolks, 1 tbsp sugar and vanilla together in a separate bowl until pale and foamy, and a ribbon trail is left on the surface when the beaters are removed. Gently fold in the milk and flour until just incorporated.",
+                "Fold the egg whites into the egg yolk mixture and gently turn the batter over to mix, using the side of a metal spoon or spatula to keep all the air in the mixture.",
+                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper – you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don’t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
+                "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
             ],
             "categories":[
                 "1",
                 "2"
             ]
         }
+                {
+            "recipeId":2,
+            "userId":0,
+            "title":"broccoli and sausage pasta bake ",
+            "ingredients":[
+                {
+                    "name":"large eggs",
+                    "amount":"2"
+                }
+            ],
+            "method":[
+                "Whisk the egg whites in a clean bowl with 1 tbsp sugar using an electric whisk or a stand mixer to form stiff peaks.",
+                "Beat the egg yolks, 1 tbsp sugar and vanilla together in a separate bowl until pale and foamy, and a ribbon trail is left on the surface when the beaters are removed. Gently fold in the milk and flour until just incorporated.",
+                "Fold the egg whites into the egg yolk mixture and gently turn the batter over to mix, using the side of a metal spoon or spatula to keep all the air in the mixture.",
+                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper – you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don’t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
+                "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+        }
+        
     ]
+ 
 }
