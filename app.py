@@ -3,7 +3,6 @@ import sys, json
 
 app = Flask(__name__)
 
-
 """
 HTML page loading things.
 """
@@ -50,20 +49,20 @@ def recipes():
     """
     Functions for the recipes.json file.
     """
-    if (request.method == 'GET'): # GET - loads entire recipes.json file to list
+    if request.method == 'GET':  # GET - loads entire recipes.json file to list
         with open("data/recipes.json", "r") as file:
             data = json.load(file)
             file.close()
-        response = make_response(jsonify({"result": data}),200,)
+        response = make_response(jsonify({"result": data}), 200, )
         response.headers["Content-Type"] = "application/json"
-    elif (request.method == 'PUT'): # PUT - append item to recipes.json
+    elif request.method == 'PUT':  # PUT - append item to recipes.json
         data = request.get_json(force=True)
         with open("data/recipes.json", "w") as file:
             json.dump(data, file, indent=4)
             file.close()
-        response = make_response(jsonify({"result": "Saved"}),200,)
+        response = make_response(jsonify({"result": "Saved"}), 200, )
         response.headers["Content-Type"] = "application/json"
-    else: # DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
+    else:  # DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
         recipeId = int(request.args.get('recipeId'))
         with open("data/recipes.json", "r") as file:
             objs = []
@@ -71,12 +70,12 @@ def recipes():
             for obj in recipes:
                 if not (obj['recipeId'] == recipeId):
                     objs.append(obj)
-            file.close
+            file.close()
             data = {"recipes": objs}
         with open("data/recipes.json", "w") as file:
             json.dump(data, file, indent=4)
             file.close()
-        response = make_response(jsonify({}),200,)
+        response = make_response(jsonify({}), 200, )
         response.headers["Content-Type"] = "application/json"
     return response
 
@@ -97,16 +96,16 @@ def search():
     response.headers["Content-Type"] = "application/json"
     return response
 
+
 # Nested loops for the searching algorithm. Allows for loop breaking to the outermost loop in the above function.
 def search_loop(searchRequest, recipe):
-
-    if (searchRequest in recipe['title']):
+    if searchRequest in recipe['title']:
         return recipe
     for key in recipe['ingredients']:
-        if (searchRequest in key):
+        if searchRequest in key:
             return recipe
     for tag in recipe['categories']:
-        if (searchRequest in tag):
+        if searchRequest in tag:
             return recipe
 
 

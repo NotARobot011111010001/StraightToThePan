@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="cleaned app.py">
+    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="added links to login/register in main HTML">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StraightToThePan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StraightToThePan.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/OneDrive_2021-11-15/food Applicaton" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -43,7 +45,7 @@
       <recent name="C:\Users\Public\Documents\StraightToThePan" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.StraightToThePan">
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="StraightToThePan" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,8 +118,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
         <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +136,9 @@
       <workItem from="1636679529117" duration="236000" />
       <workItem from="1636995472466" duration="595000" />
       <workItem from="1636996097300" duration="2411000" />
-      <workItem from="1637161036046" duration="8573000" />
+      <workItem from="1637161036046" duration="9244000" />
+      <workItem from="1638362513099" duration="1071000" />
+      <workItem from="1638364425882" duration="1651000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned app.py">
       <created>1637586891987</created>
@@ -143,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637586891987</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added links to login/register in main HTML">
+      <created>1637689354307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637689354307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,10 +174,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cleaned app.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned app.py" />
+    <MESSAGE value="added links to login/register in main HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="added links to login/register in main HTML" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1636996115667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638364502740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1638362811664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
