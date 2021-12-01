@@ -2,14 +2,14 @@
     [
         {
             "userId":0,
-            "username": "User Name",
+            "username": "John Cooker",
             "uploadedRecipes":[
                 0,
                 1
             ],
             "recipeLists":[
                 {
-                    "listName":"List Name",
+                    "listName":"favesieees",
                     "savedRecipes":[
                         0,
                         1

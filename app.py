@@ -4,6 +4,11 @@ import sys, json
 app = Flask(__name__)
 
 
+"""
+HTML page loading things.
+"""
+
+
 @app.route('/')
 def hello_world():  # put application's code here
     return render_template("website.html")
@@ -25,6 +30,21 @@ def register():
     return render_template('register.html')
 
 
+@app.route('/discover', methods=['GET', 'POST'])
+def discover():
+    return render_template('discover.html')
+
+
+@app.route('/recipe', methods=['GET', 'POST'])
+def recipe():
+    return render_template('recipe.html')
+
+
+"""
+Individual functions.
+"""
+
+
 @app.route('/recipes', methods=['GET', 'PUT', 'DELETE'])
 def recipes():
     """
@@ -36,7 +56,7 @@ def recipes():
             file.close()
         response = make_response(jsonify({"result": data}),200,)
         response.headers["Content-Type"] = "application/json"
-    elif request.method == 'PUT': # PUT - append item to recipes.json
+    elif (request.method == 'PUT'): # PUT - append item to recipes.json
         data = request.get_json(force=True)
         with open("data/recipes.json", "w") as file:
             json.dump(data, file, indent=4)
