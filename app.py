@@ -10,7 +10,7 @@ HTML page loading things.
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return render_template("website.html")
+    return render_template("index.html")
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -21,7 +21,7 @@ def login():
         username = request.form['username']  # requesting username & password using the .form from <form> in HTML
         password = request.form['password']
 
-    return render_template('login.html', if_error)
+    return render_template('login.html')
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -34,7 +34,7 @@ def discover():
     return render_template('discover.html')
 
 
-@app.route('/recipe', methods=['GET', 'POST'])
+@app.route('/recipes', methods=['GET', 'POST'])
 def recipe():
     return render_template('recipe.html')
 

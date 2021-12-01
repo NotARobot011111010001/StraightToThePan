@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="added links to login/register in main HTML">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StraightToThePan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StraightToThePan.iml" afterDir="false" />
+    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="reformatted file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scripts/recipe_functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/scripts/recipe_functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +36,6 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/OneDrive_2021-11-15/food Applicaton" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -139,6 +143,7 @@
       <workItem from="1637161036046" duration="9244000" />
       <workItem from="1638362513099" duration="1071000" />
       <workItem from="1638364425882" duration="1651000" />
+      <workItem from="1638368236004" duration="2571000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned app.py">
       <created>1637586891987</created>
@@ -154,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637689354307</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="reformatted file">
+      <created>1638368446635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638368446635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,10 +187,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cleaned app.py" />
     <MESSAGE value="added links to login/register in main HTML" />
-    <option name="LAST_COMMIT_MESSAGE" value="added links to login/register in main HTML" />
+    <MESSAGE value="reformatted file" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformatted file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638364502740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638370695449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1638362811664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
