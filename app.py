@@ -91,33 +91,23 @@ def search():
         searchResults = []
         recipes = json.load(file).get("recipes")
         for recipe in recipes:
-            search_loop(searchRequest, searchResults, recipe)
+            searchResults.append(search_loop(searchRequest, recipe))
         file.close()
     response = make_response(jsonify({"result", searchResults}))
     response.headers["Content-Type"] = "application/json"
     return response
 
 # Nested loops for the searching algorithm. Allows for loop breaking to the outermost loop in the above function.
-def search_loop(searchRequest, searchResults, recipe):
+def search_loop(searchRequest, recipe):
+
     if (searchRequest in recipe['title']):
-        searchResults.append(recipe)
-        return
+        return recipe
     for key in recipe['ingredients']:
         if (searchRequest in key):
-            searchResults.append(recipe)
-            return
+            return recipe
     for tag in recipe['categories']:
         if (searchRequest in tag):
-            searchResults.append(recipe)
-            return
-
-
-@app.route('/suggestions', methods=['GET'])
-def suggestions():
-    """
-    Get recipes for the 'suggested' section on the homepage.
-    """
-    count = 4
+            return recipe
 
 
 if __name__ == '__main__':

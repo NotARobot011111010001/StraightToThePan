@@ -48,7 +48,7 @@ function PopulateDiscover(count) // count is the number of recipes to get
     }
   }
   
-  var discoverField = document.GetElementByID("discover");
+  var discoverField = document.getElementById("discover");
   var list;
   discoverField.innerHTML = "";
   for (recipe in discoverList)
@@ -58,3 +58,45 @@ function PopulateDiscover(count) // count is the number of recipes to get
   discoverField = list;
 }
 PopulateDiscover();
+
+
+function Search()
+{
+  let search = String(document.getElementById("searchBar").value);
+
+  let url = "/search?searchRequest=" + search;
+  let response = "Error while retriving.";
+  let xhttp = new XMLHttpRequest();
+  var recipesData;
+  var recipes;
+  
+  xhttp.onreadystatechange = function() 
+  {
+    if (xhttp.readyState == 4 && xhttp.status == 200)
+    {
+      response = JSON.parse(xhttp.responseText);
+      recipesData = JSON.parse(response.result).recipes;
+      recipes = formatJson(recipesData);
+    }
+  }
+  xhttp.open("GET", url, true);
+  xhttp.send();
+  
+  return recipes;
+}
+
+function PopulateResults()
+{
+  let results = Search();
+  var resultsField = document.getElementById("results");
+
+  resultsField.innerHTML = "";
+  if (results)
+  {
+    for (recipe in results)
+    {
+      resultsField.innerHTML += '<li><a href="/recipe.html?id=' + String(recipe.recipeId) + '">' + String(recipe.title) + '</a></li>';
+    }
+  }
+}
+PopulateResults();
