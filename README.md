@@ -1,2 +1,2 @@
 # StraightToThePan
-This is an assignment project for software engineering course. In this project we build a website using Python (Flask), JavaScript, JSON.
+This is an assignment project for software engineering course. In this project we build a website using HTML, CSS, Python (Flask), JavaScript and JSON as our database.
