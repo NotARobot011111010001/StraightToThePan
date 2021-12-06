@@ -3,7 +3,7 @@
     --purple--: #7F76A5;
     --yellow--: #F2BC1B;
     --pink--: #DA667B;
-    -brown--: #BF7B54;
+    --brown--: #BF7B54;
 
 
 }
@@ -11,12 +11,10 @@
     box-sizing:border-box;
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
 }
 
 body{
-    margin: 0;
+    font-family: Lato;
 }
 
 .login, .register {
@@ -48,6 +46,20 @@ body{
   	font-weight: bold;
 }
 
+.login, .register {
+  	width: 400px;
+  	background-color: #ffffff;
+  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	margin: 100px auto;
+}
+
+.login h1, .register h1 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
 nav{
     background: #1E3859;
     padding: 0px 20px;
@@ -91,10 +103,6 @@ a:hover{
     right: 2.5%;
     width: 95%;
     height: 190px;
-    background-image: url("/Images/HomeHeader.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom 50% left;
     margin-bottom: 30px;
 }
 #header{
@@ -130,8 +138,9 @@ a:hover{
 
 .popular-grid{
    display: grid;
-   grid-template-columns: repeat(auto-fit,20rem);
+   grid-template-columns: repeat(auto-fill,22rem);
    justify-content: center;
+
 }
 .popular{
     position: relative;
@@ -141,21 +150,23 @@ a:hover{
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
-.popular h1, .latest h1{
+.popular a, .latest a, .popular-hidden1 a, .popular-hidden2 a, .latest-hidden1 a, .latest-hidden2 a{
     font-size: 1.5rem;
     font-weight: 900;
     margin-bottom: 0.2rem;
+    color: black;
 }
-.popular p, .latest p{
+.popular a:hover, .latest a:hover, .popular-hidden1 a:hover, .popular-hidden2 a:hover, .latest-hidden1 a:hover, .latest-hidden2 a:hover{
+    color: var(--pink--);
+}
+.popular p, .latest p, .popular-hidden1 p, .popular-hidden2 p, .latest-hidden1 p, .latest-hidden2 p{
     font-size: 1rem;
     font-weight: 400;
+    color: black;
 }
 [id*="popular-img"]{
     height: 15rem;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 0.5rem;
 }
 .popular-hidden1, .popular-hidden2{
@@ -165,27 +176,8 @@ a:hover{
     background: #7F76A5;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    display: none;
 }
 
-#popular-img1{
-    background-image: url("/Images/Food1.jpg");
-}
-#popular-img2{
-    background-image: url("/Images/Food2.jpg");
-}
-#popular-img3{
-    background-image: url("/Images/Food3.jpg");
-}
-#popular-img4{
-    background-image: url("/Images/Food4.jpg");
-}
-#popular-img5{
-    background-image: url("/Images/Food5.jpg");
-}
-#popular-img6{
-    background-image: url("/Images/Food6.jpg");
-}
 .tags{
     padding: 0.5rem;
     display: flex;
@@ -205,26 +197,23 @@ a:hover{
 }
 .rotw{
     position: relative;
-    margin-top: 3vh;
+    margin-top: 5vh;
     left: 5%;
     right: 5%;
     width: 90%;
 }
 .rotw-grid{
-
     display: grid;
-    grid-template-columns: 58% 35%;
-    gap: 7%;
+    grid-template-columns: 55% 40%;
+    gap: 2%;
     justify-content: center;
     width: 100%;
+    height: 40vh;
 
 }
 .rotw-img{
-    background-image: url("/Images/Food7.jpg");
-    background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 30vmax;
+    height: 100%;
     border-radius: 0.5rem;
     margin-bottom: 3rem;
 }
@@ -233,9 +222,13 @@ a:hover{
     font-weight: 700;
     color: #7F76A5;
 }
-.rotw-txt h2{
+.rotw-txt a{
     font-size: 4ch;
-    font-weight: 900
+    font-weight: 900;
+    color: black;
+}
+.rotw-txt a:hover{
+    color: var(--pink--);
 }
 .rotw-txt p{
     font-size: 2ch;
@@ -245,7 +238,7 @@ a:hover{
 }
 .latest-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,20rem);
+    grid-template-columns: repeat(auto-fit,22rem);
     justify-content: center;
 }
 .latest{
@@ -263,7 +256,6 @@ a:hover{
     background: #F2BC1B;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    display: none;
 }
 #latest-txt{
     margin-top: 2rem;
@@ -272,31 +264,100 @@ a:hover{
 [id*="latest-img"]{
     height: 15rem;
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 0.5rem;
 }
-#latest-img1{
-    background-image: url("/Images/Food8.jpg");
-}
-#latest-img2{
-    background-image: url("/Images/Food9.jpg");
-}
-#latest-img3{
-    background-image: url("/Images/Food10.jpg");
-}
-#latest-img4{
-    background-image: url("/Images/Food11.jpg");
-}
-#latest-img5{
-    background-image: url("/Images/Food12.jpg");
-}
-#latest-img6{
-    background-image: url("/Images/Food13.jpg");
-}
-/* Mobile Navigation */
+/* RecipeTemplate */
+.recipeHeaderGrid{
+    position: relative;
+    left: 2.5%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 0%;
+    width: 95%;
+    border-radius: 0.5rem;
+    background-color: var(--purple--);
 
+}
+.recipeImg{
+    border-radius: 0.5rem 0 0 0.5rem;
+    width: 100%;
+    height: 20rem;
+}
+.recipeTxt{
+    width: 60%;
+}
+.recipeTxt h1, .recipeTxt p{
+    padding-left: 2vw;
+    padding-top: 1vw;
+    color: white;
+}
+.recipeTxt h1{
+    font-size: 3rem;
+}
+.recipeNutrition{
+    display: inline-block;
+    background-color: white;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 20rem;
+    overflow: hidden;
+}
+.NutritionBanner{
+    position: relative;
+    background: rgb(30,56,89);
+    background: linear-gradient(45deg, rgba(30,56,89,1) 0%, rgba(127,118,165,1) 100%);
+    width: 100%;
+    height: 20%;
+    border-radius: 0 0.5rem 0 0;
+
+}
+.NutritionHeader{
+    position: relative;
+    top: -10%;
+    left: 15%;
+    background-color: var(--yellow--);
+    border-radius: 0.5rem;
+    width: 70%;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+
+}
+.NutritionList li{
+    font-size: 1.3rem;
+    padding:  0px 0px 5px 3vw;
+}
+.Description{
+    display: none;
+}
+.Description, .Ingredients, .Directions {
+    padding: 0 2.5%;
+    margin-top: 4vh;
+    width: 60%;
+}
+.Description h1, .Ingredients h1,.Directions h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.Description p{
+    color: black;
+    font-size: 1.5rem;
+}
+.Ingredients li{
+    padding: 1rem 0 1rem 3vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.Directions li{
+    padding: 2rem 0 2rem 3vw;
+    font-size: 1.5rem;
+}
+/* RecipeTemplate */
+
+
+
+/* Mobile Navigation */
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -320,11 +381,9 @@ a:hover{
 .link.active{
     display: block;
 }
-
 .nav-hidden{
     cursor:pointer;
 }
-
 .mini-menu{
     position: relative;
     background: #999;
@@ -332,7 +391,6 @@ a:hover{
     height: 2px;
     width: 18px;
 }
-
 .mini-menu::before,.mini-menu::after{
     position: absolute;
     content: "";
@@ -349,9 +407,10 @@ a:hover{
 .mini-menu::after{
     top: -5px;
 }
+/* Mobile Navigation */
+
 
 /* Tablet view */
-
 @media all and (min-width: 468px) {
     .navbar {
         justify-content: center;
@@ -392,12 +451,27 @@ a:hover{
         transition: all .20s;
     }
 
+
+
 }
+/* Tablet View */
+
 @media (max-width: 642px){
     .rotw-grid{
         grid-template-columns: repeat(1, 1fr);
 
     }
+    .recipeHeaderGrid{
+        display: none;
+    }
+    .Description{
+        display: revert;
+    }
+    .Description, .Ingredients, .Directions {
+
+    width: 90%;
+}
+
 
 }
 /* DESKTOP VIEW */
@@ -425,10 +499,31 @@ a:hover{
     .navbar li.button{
         padding-right: 0;
     }
+    .recipeHeaderGrid{
+        grid-template-columns: 30% 45% 25%;
+
+    }
 }
-@media  (max-width: 1279px){
-    .popular-hidden1, .popular-hidden2, .latest-hidden1, .latest-hidden2{
-        display: revert;
+@media  (min-width: 1408px){
+    main{
+        padding: 0 10%;
     }
 
 }
+@media (min-width: 1760px) {
+    main{
+        padding: 0 15%;
+    }
+}
+
+    @media (min-width: 2400px) {
+        main{
+            padding: 0 15%;
+        }
+        .latest-grid, .popular-grid{
+            grid-template-columns: repeat(auto-fill, 20rem);
+        }
+            .popular-hidden1, .latest-hidden1 {
+        display: none;
+    }
+    }

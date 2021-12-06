@@ -11,8 +11,8 @@ HTML page loading things.
 
 
 @app.route('/')
-def hello_world():  # put application's code here
-    return render_template("index.html")
+def home():  # put application's code here
+    return render_template("Index.html")
 
 
 @app.route('/login', methods=['GET', 'POST'])
