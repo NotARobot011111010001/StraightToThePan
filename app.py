@@ -1,6 +1,8 @@
 from flask import Flask, render_template, jsonify, request, make_response
 import sys, json
 
+from werkzeug.wrappers import response
+
 app = Flask(__name__)
 
 """
@@ -34,7 +36,7 @@ def discover():
     return render_template('discover.html')
 
 
-@app.route('/recipes', methods=['GET', 'POST'])
+@app.route('/recipe', methods=['GET', 'POST'])
 def recipe():
     return render_template('recipe.html')
 
@@ -51,7 +53,7 @@ def recipes():
     """
     if request.method == 'GET':  # GET - loads entire recipes.json file to list
         with open("data/recipes.json", "r") as file:
-            data = json.load(file)
+            data = json.load(file)["recipes"]
             file.close()
         response = make_response(jsonify({"result": data}), 200, )
         response.headers["Content-Type"] = "application/json"
@@ -62,7 +64,7 @@ def recipes():
             file.close()
         response = make_response(jsonify({"result": "Saved"}), 200, )
         response.headers["Content-Type"] = "application/json"
-    else:  # DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
+    elif request.method == 'DELETE':  # DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
         recipeId = int(request.args.get('recipeId'))
         with open("data/recipes.json", "r") as file:
             objs = []
@@ -78,35 +80,6 @@ def recipes():
         response = make_response(jsonify({}), 200, )
         response.headers["Content-Type"] = "application/json"
     return response
-
-
-@app.route('/search', methods=['GET'])
-def search():
-    """
-    Search the recipes.json file based on user input.
-    """
-    searchRequest = str(request.args.get('searchRequest'))
-    with open("data/recipes.json", "r") as file:
-        searchResults = []
-        recipes = json.load(file).get("recipes")
-        for recipe in recipes:
-            searchResults.append(search_loop(searchRequest, recipe))
-        file.close()
-    response = make_response(jsonify({"result", searchResults}))
-    response.headers["Content-Type"] = "application/json"
-    return response
-
-
-# Nested loops for the searching algorithm. Allows for loop breaking to the outermost loop in the above function.
-def search_loop(searchRequest, recipe):
-    if searchRequest in recipe['title']:
-        return recipe
-    for key in recipe['ingredients']:
-        if searchRequest in key:
-            return recipe
-    for tag in recipe['categories']:
-        if searchRequest in tag:
-            return recipe
 
 
 if __name__ == '__main__':

@@ -1,13 +1,13 @@
 /**
  * This file contains the functionality for the discover.html page.
- */
+*/
 
 
 /**
-  * GetRecipes()
-  * Returns all recipes from the recipes.JSON file as an array of objects.
-**/
-function GetRecipes()
+* PopulateDiscover()
+* Gets four random recipes and inserts them as links to the discover section on the discover page.
+*/
+function PopulateDiscover()
 {
   let url = "/recipes";
   let response = "Error while retriving.";
@@ -19,52 +19,35 @@ function GetRecipes()
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
     {
-    response = JSON.parse(xhttp.responseText);
-    recipesData = JSON.parse(response.result).recipes;
-    recipes = formatJson(recipesData);
+      response = JSON.parse(xhttp.responseText);
+      recipes = response.result;
+
+      let discoverList = "";
+
+      for (let i = 0; i < 4; i++)
+      {
+        let rng = Math.floor(Math.random() * (recipes.length + 1));
+        if (recipes[rng])
+        {
+          discoverList += '<li><a href="/recipe?id=' + String(recipes[rng].recipeId) + '">' + String(recipes[rng].title) + '</a></li>';
+          recipes.splice(rng, 1);
+        }
+      }
+      document.getElementById("discoverUl").innerHTML = discoverList;
     }
   }
   xhttp.open("GET", url, true);
   xhttp.send();
-  
-  return recipes;
 }
+
 
 /**
-  * PopulateDiscover()
-  * Gets a specified number of recipes for the discover page/area
-**/
-function PopulateDiscover(count) // count is the number of recipes to get
-{
-  let recipeList = GetRecipes();
-  var discoverList;
-  
-  for (let i = 0; i < count; i++)
-  {
-    let rng = Math.floor(Math.random() * (recipeList.length + 1));
-    if (recipeList[rng])
-    {
-        discoverList.push(recipeList[rng]);
-    }
-  }
-  
-  var discoverField = document.getElementById("discover");
-  var list;
-  discoverField.innerHTML = "";
-  for (recipe in discoverList)
-  {
-    list += '<li><a href="/recipe.html?id=' + String(recipe.recipeId) + '">' + String(recipe.title) + '</a></li>';
-  }
-  discoverField = list;
-}
-PopulateDiscover();
-
-
+ * Search()
+ * Takes the user input in the search bar on the discover page and searches the recipes.json file for any objects that contain it in either the title, the ingredients list, or the category tags list.
+ */
 function Search()
 {
-  let search = String(document.getElementById("searchBar").value);
-
-  let url = "/search?searchRequest=" + search;
+  let url = "/recipes";
   let response = "Error while retriving.";
   let xhttp = new XMLHttpRequest();
   var recipesData;
@@ -75,19 +58,54 @@ function Search()
     if (xhttp.readyState == 4 && xhttp.status == 200)
     {
       response = JSON.parse(xhttp.responseText);
-      recipesData = JSON.parse(response.result).recipes;
-      recipes = formatJson(recipesData);
+      recipes = response.result;
+
+      let searchRequest = document.getElementById("searchBar").value;
+      let resultsList = ""
+
+      if (searchRequest != "")
+      {
+        search_outer: for (let i = 0; i < recipes.length; i++)
+        {
+          // Check the title.
+          if (recipes[i].title.includes(searchRequest))
+          {
+            resultsList += '<li><a href="/recipe?id=' + String(recipes[i].recipeId) + '">' + String(recipes[i].title) + '</a></li>';
+            continue search_outer;
+          }
+
+          // Check the ingredients list.
+          for (let j = 0; j < recipes[i].ingredients.length; j++)
+          {
+            if (recipes[i].ingredients[j].name.includes(searchRequest))
+            {
+              resultsList += '<li><a href="/recipe?id=' + String(recipes[i].recipeId) + '">' + String(recipes[i].title) + '</a></li>';
+              continue search_outer;
+            }
+          }
+
+          // Check the tags.
+          for (let j = 0; j < recipes[i].categories.length; j++) // this is done with iterator loops instead of for-each style loops because js doesn't like assigning object properties to temporary variables i guess.
+          {
+            if (recipes[i].categories[j].includes(searchRequest))
+            {
+              resultsList += '<li><a href="/recipe?id=' + String(recipes[i].recipeId) + '">' + String(recipes[i].title) + '</a></li>';
+              continue search_outer;
+            }
+          }
+        }
+        document.getElementById("results").innerHTML = resultsList;
+      }
     }
   }
   xhttp.open("GET", url, true);
   xhttp.send();
-  
-  return recipes;
 }
 
 function PopulateResults()
 {
-  let results = Search();
+  //let results = GetRecipes();
+  /*let results = Search();
   var resultsField = document.getElementById("results");
 
   resultsField.innerHTML = "";
@@ -97,6 +115,8 @@ function PopulateResults()
     {
       resultsField.innerHTML += '<li><a href="/recipe.html?id=' + String(recipe.recipeId) + '">' + String(recipe.title) + '</a></li>';
     }
-  }
+  }*/
 }
-PopulateResults();
+
+
+PopulateDiscover();

@@ -6,31 +6,34 @@
     <script src = "/static/scripts/recipe_functions.js"></script>
 </head>
 <body>
-    <h1>Welcome To Straight To The Pan</h1>
-    <div id="allRecipes"> </div>  <!-- appends all recipes in one place -->
+    <nav>
+        <ul class="navbar">
+            <li class="logo"><a href="/">Straight To The Pan</a> </li>
+            <li class="link"><a href="recipe">My Recipes</a> </li>
+            <li class="link"><a href="#">My Bookmark</a> </li>
+            <li class="link"><a href="discover">Discover Recipes</a> </li>
+            <li class="link button"><a href="login">Login</a> </li>
+            <li class="link button secondary"><a href="register">Sign Up</a> </li>
+            <li class="nav-hidden"><span class="mini-menu"></span></li>
+        </ul>
+    </nav>
 
+    <h1>Welcome To Straight To The Pan</h1>
     <div class="container" id="recipeCard">
         <h2 id="recipeTitle">Recipe Title</h2>
 
         <p id="recipeCreator">by Username</p>
 
+        <h3>Ingredients</h3>
         <table id="recipeIngredients">
-            <tr>
-                <th>Ingredient</th>
-                <th>Amount</th>
-            </tr>
-            <tr>
-                <td>ingredientName</td>
-                <td>ingredientAmount</td>
-            </tr>
         </table>
 
+        <h3>Method</h3>
         <ol id="recipeMethod" type="1">
-            <li>Instruction</li>
         </ol>
 
+        <h3>Categories</h3>
         <ul id="recipeCategories">
-            <li>Category</li>
         </ul>
     </div>
 </body>

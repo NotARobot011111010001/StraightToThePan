@@ -6,23 +6,34 @@
     <script src = "/static/scripts/discover_functions.js"></script>
 </head>
 <body>
+    <nav>
+        <ul class="navbar">
+            <li class="logo"><a href="/">Straight To The Pan</a> </li>
+            <li class="link"><a href="recipe">My Recipes</a> </li>
+            <li class="link"><a href="#">My Bookmark</a> </li>
+            <li class="link"><a href="discover">Discover Recipes</a> </li>
+            <li class="link button"><a href="login">Login</a> </li>
+            <li class="link button secondary"><a href="register">Sign Up</a> </li>
+            <li class="nav-hidden"><span class="mini-menu"></span></li>
+        </ul>
+    </nav>
+
     <h1>Welcome To Straight To The Pan</h1>
     <div class="container">
         <input id="searchBar" type="text" placeholder="Search">
-        <button onclick="PopulateResults()" id="searchButton" type="submit">Search</button>
+        <button onclick="Search()" id="searchButton" type="submit">Search</button>
     </div>
 
     <div class="container">
-        <h2>Discover Recipes</h2>
-        <ul id="discover">
-            <li><a href="">Recipe</a></li>
+        <h2>Discover</h2>
+        <p>Can't decide?<br>Here are a few picks just for you.</p>
+        <ul id="discoverUl">
         </ul>
     </div>
 
     <div class="container" id="resultsDisplay">
         <h2>Results</h2>
         <ul id="results">
-            <li><a href="">Recipe</a></li>
         </ul>
     </div>
 </body>
