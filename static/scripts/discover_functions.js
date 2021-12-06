@@ -21,6 +21,8 @@ function PopulateDiscover()
     {
       response = JSON.parse(xhttp.responseText);
       recipes = response.result;
+      console.log(response)
+      console.log(recipes)
 
       let discoverList = "";
 
@@ -59,6 +61,8 @@ function Search()
     {
       response = JSON.parse(xhttp.responseText);
       recipes = response.result;
+      console.log(response)
+      console.log(recipes)
 
       let searchRequest = document.getElementById("searchBar").value;
       let resultsList = ""
