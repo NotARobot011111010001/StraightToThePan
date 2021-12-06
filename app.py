@@ -17,7 +17,7 @@ def hello_world():  # put application's code here
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if_error = "Error: 404 Not Found"  # if something goes wrong, this will show
+    if_error = "Error: 404 Not Found"  # if something goes wrong,this will show
 
     if request.method == 'POST' and 'email' in request.form and 'password' in request.form:
         username = request.form['username']  # requesting username & password using the .form from <form> in HTML
@@ -79,7 +79,7 @@ def recipes():
             file.close()
         response = make_response(jsonify({}), 200, )
         response.headers["Content-Type"] = "application/json"
-    return response, render_template('recipe.html')
+    return response
 
 
 if __name__ == '__main__':
