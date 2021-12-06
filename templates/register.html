@@ -9,8 +9,9 @@
     <div class="register">
         <h1>Register</h1>
         <div class="links">
-            <a href="login.html">Login</a>
-            <a href="register.html" class="active">Register</a>
+            <!-- *** Make sure to re-run Flask server if changing url_for  -->
+            <a href={{ url_for('login') }}>Login</a>
+            <a href={{ url_for('register') }} class="active">Register</a>
         </div>
       <br>
     <form action="{{ url_for('register') }}" method="post">
@@ -28,7 +29,7 @@
         <input type="password" placeholder="Password" id="password" required><br><br>
 
         <button class="grey" id="login_submit">Submit</button>
-        <p>Click <a href="index.html">here</a> to go home.</p>
+        <p>Click <a href={{ url_for('hello_world') }}>here</a> to go home.</p>
       </form>
     </div>
 </body>
