@@ -11,28 +11,43 @@
     box-sizing:border-box;
     padding: 0;
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 body{
-    font-family: Lato;
-
-
+    margin: 0;
 }
 
 .login, .register {
   	width: 400px;
-  	background-color: #ffffff;
-  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	background-color: #fff4e6;
+  	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
   	margin: 100px auto;
 }
 
-.login h1, .register h1 {
+.login h1, .register h1{
   	text-align: center;
   	color: #5b6574;
   	font-size: 24px;
-  	padding: 20px 0 20px 0;
-  	border-bottom: 1px solid #dee0e4;
+  	padding: 20px 10px 20px 0;
+  	border-bottom: 2px solid #be9b7b;
 }
+
+.login .links, .register .links {
+  	display: flex;
+  	padding: 0 15px;
+    margin-top: 5px;
+}
+
+.login .links a, .register .links a {
+  	color: #4b3832;
+  	text-decoration: none;
+  	display: inline-flex;
+  	padding: 0 10px 10px 10px;
+  	font-weight: bold;
+}
+
 nav{
     background: #1E3859;
     padding: 0px 20px;

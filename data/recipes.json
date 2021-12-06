@@ -102,6 +102,142 @@
                 "2",
                 "4"
             ]
-        }
+        },
+            {
+            "recipeId":3,
+            "userId":0,
+            "title":"rocky road",
+            "ingredients":[
+                {
+                    "name":"digestive biscuits",
+                    "amount":"200g"
+                },
+                {
+                    "name":"butter",
+                    "amount":"135g"
+                },
+                {
+                    "name":"dark chocolate",
+                    "amount":"200g"
+                },
+                {
+                    "name":"syrup",
+                    "amount":"2.5tbs"
+                },
+                {
+                    "name":"mini marshmallows",
+                    "amount":"100g"
+                }
+            ],
+            "method":[
+                "Grease and line an 18cm square brownie tin with baking paper.",
+                "Place 200g digestive biscuits in a freezer bag and bash with a rolling pin or just the side of your fist until they're broken into a mixture of everything between dust and 50p-sized lumps. Set aside.",
+                "In a large saucepan melt 135g butter or margarine, 200g dark chocolate and 2-3 tbsp golden syrup over a gentle heat stirring constantly until there are no or almost no more lumps of chocolate visible, then remove from the heat. Leave to cool.",
+                "Take the biscuits, 100g mini marshmallows and up to 100g of additional ingredients (dried fruit, nuts, popcorn, honeycomb), if you like, and stir into the chocolate mixture until everything is completely covered.",
+                "Tip the mixture into the lined baking tin, and spread it out to the corners. Chill for at least 2 hrs then dust with icing sugar and cut into 12 fingers."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+		{
+            "recipeId":4,
+            "userId":0,
+            "title":"chocolate molten cakes",
+            "ingredients":[
+                {
+                    "name":"large eggs",
+                    "amount":"3"
+                },
+                {
+                    "name":"butter",
+                    "amount":"100g"
+                },
+                {
+                    "name":"dark chocolate",
+                    "amount":"100g"
+                },
+                {
+                    "name":"light brown soft sugar",
+                    "amount":"150g"
+                },
+                {
+                    "name":"vanilla extract",
+                    "amount":"1.5tsp"
+                },
+		        {
+                    "name":"plain flour",
+                    "amount":"50g"
+                }
+            ],
+            "method":[
+                "Heat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and place on a baking tray.",
+                "Put 100g butter and 100g chopped dark chocolate in a heatproof bowl and set over a pan of hot water (or alternatively put in the microwave and melt in 30 second bursts on a low setting) and stir until smooth. Set aside to cool slightly for 15 mins.",
+		"Using an electric hand whisk, mix in 150g light brown soft sugar, then 3 large eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide the mixture among the darioles or basins.",
+		"You can now either put the mixture in the fridge, or freezer until you're ready to bake them. Can be cooked straight from frozen for 16 mins, or bake now for 10-12 mins until the tops are firm to the touch but the middles still feel squidgy.",
+		"Carefully run a knife around the edge of each pudding, then turn out onto serving plates"
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+		{
+            "recipeId":5,
+            "userId":0,
+            "title":"spaghetti with nduja, fennel & olives",
+            "ingredients":[
+                {
+                    "name":"spaghetti",
+                    "amount":"400g"
+                },
+                {
+                    "name":"garlic cloves",
+                    "amount":"3"
+                },
+                {
+                    "name":"fennel",
+                    "amount":"0.5"
+                },
+                {
+                    "name":"nduja or sobrasada paste",
+                    "amount":"75g"
+                },
+                {
+                    "name":"tomatoes",
+                    "amount":"200g"
+                },
+		        {
+                    "name":"black olives",
+                    "amount":"75g"
+                },
+		        {
+                    "name":"olive oil",
+                    "amount":"3tbs"
+                },
+		        {
+                    "name":"tomato purée",
+                    "amount":"2tbs"
+                },
+		        {
+                    "name":"red wine vinegar",
+                    "amount":"2tbs"
+                },
+		        {
+                    "name":"pecorino",
+                    "amount":"40g"
+                }
+            ],
+            "method":[
+                "Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well. Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften.",
+		"Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    }
+        
     ]
 }
