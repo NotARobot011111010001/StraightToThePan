@@ -15,30 +15,36 @@
 <body>
     <nav>
         <ul class="navbar">
-            <li class="logo"><a href="/">Straight To The Pan</a> </li>
-            <li class="link"><a href="recipe">My Recipes</a> </li>
+            <li class="logo"><a href="{{ url_for('index') }}">Straight To The Pan</a> </li>
+            <li class="link"><a href="{{ url_for('recipe') }}">My Recipes</a> </li>
             <li class="link"><a href="#">My Bookmark</a> </li>
-            <li class="link"><a href="discover">Discover Recipes</a> </li>
-            <li class="link button"><a href="login">Login</a> </li>
-            <li class="link button secondary"><a href="register">Sign Up</a> </li>
+            <li class="link"><a href="{{ url_for('discover') }}">Discover Recipes</a> </li>
+            <li class="link button"><a href="{{ url_for('login') }}">Login</a> </li>
+            <li class="link button secondary"><a href="{{ url_for('register') }}">Sign Up</a> </li>
             <li class="nav-hidden"><span class="mini-menu"></span></li>
         </ul>
     </nav>
-
-    <h1>Welcome To Straight To The Pan</h1>
-    <div class="container">
+<div class="searchHeader" style="background:url(/static/Images/Food23.jpg) bottom 87% left / cover no-repeat;">
+    <div class="mask">
+        <h1>Discover recipes</h1>
+        <p>Here you can search and discover brand new recipes</p>
+        <div class="search-flex" >
+            <div class="searchBox">
         <input id="searchBar" type="text" placeholder="Search">
         <button onclick="Search()" id="searchButton" type="submit">Search</button>
+                </div>
+    </div>
+        </div>
     </div>
 
-    <div class="container">
+    <div class="discover">
         <h2>Discover</h2>
         <p>Can't decide?<br>Here are a few picks just for you.</p>
         <ul id="discoverUl">
         </ul>
     </div>
 
-    <div class="container" id="resultsDisplay">
+    <div class="discoverResults" id="resultsDisplay">
         <h2>Results</h2>
         <ul id="results">
         </ul>

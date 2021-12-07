@@ -1,0 +1,145 @@
+#selection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--pink--);
+}
+#loginMain {
+    position: relative;
+    width: 900px;
+    height: 700px;
+    background-color: var(--purple--);
+    overflow: hidden;
+
+
+}
+.login-container{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.login-img{
+    position: relative;
+    width: 100%;
+}
+
+.img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(20, 19, 22, 0.55);
+    object-fit: cover;
+    }
+
+.img-box h1{
+    font-weight: 600;
+    font-size: 2.55em;
+    color: white;
+}
+.img-box p{
+    font-size: 2.55em;
+    font-weight: 700;
+    color: var(--yellow--);
+}
+.login-form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue--);
+}
+
+section form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-controls:first-child h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+}
+.form-controls:first-child p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--yellow--);
+}
+
+.form-controls:first-child {
+    text-align: center;
+}
+
+.form-controls:first-child input {
+    width: 100%;
+    border-radius: 2.5px;
+    border: 1px solid #ddd;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+    outline: none;
+}
+.login-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 100%;
+}
+.login-btns input[type="submit"] {
+    text-align: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--purple--);
+    color: white;
+    transition: 0.5s;
+}
+
+.login-btns input[type="submit"]:hover {
+    background-color: var(--pink--);
+}
+
+.register-btn{
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 2.5px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--yellow--);
+    color: white;
+    transition: 0.5s;
+}
+/*Login and Register*/
+@media (max-width: 996px) {
+    #loginMain {
+        max-width: 400px;
+    }
+
+    #loginMain .login-img {
+        display: none;
+    }
+
+    #loginMain .login-form {
+        width: 100%;
+    }
+
+    #loginMain.active .login .form-box {
+        top: -100%;
+    }
+}
+

@@ -11,8 +11,8 @@ HTML page loading things.
 
 
 @app.route('/')
-def home():  # put application's code here
-    return render_template("Index.html")
+def index():  # put application's code here
+    return render_template('index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -39,6 +39,10 @@ def discover():
 @app.route('/recipe', methods=['GET', 'POST'])
 def recipe():
     return render_template('recipe.html')
+
+@app.route('/RecipeTemplate.html')
+def recipeTemplate():
+    return render_template('RecipeTemplate.html')
 
 
 """
