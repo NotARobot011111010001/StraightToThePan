@@ -174,9 +174,9 @@
             "method":[
                 "Heat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and place on a baking tray.",
                 "Put 100g butter and 100g chopped dark chocolate in a heatproof bowl and set over a pan of hot water (or alternatively put in the microwave and melt in 30 second bursts on a low setting) and stir until smooth. Set aside to cool slightly for 15 mins.",
-		"Using an electric hand whisk, mix in 150g light brown soft sugar, then 3 large eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide the mixture among the darioles or basins.",
-		"You can now either put the mixture in the fridge, or freezer until you're ready to bake them. Can be cooked straight from frozen for 16 mins, or bake now for 10-12 mins until the tops are firm to the touch but the middles still feel squidgy.",
-		"Carefully run a knife around the edge of each pudding, then turn out onto serving plates"
+		        "Using an electric hand whisk, mix in 150g light brown soft sugar, then 3 large eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide the mixture among the darioles or basins.",
+		        "You can now either put the mixture in the fridge, or freezer until you're ready to bake them. Can be cooked straight from frozen for 16 mins, or bake now for 10-12 mins until the tops are firm to the touch but the middles still feel squidgy.",
+		        "Carefully run a knife around the edge of each pudding, then turn out onto serving plates"
             ],
             "categories":[
                 "1",
@@ -231,13 +231,198 @@
             ],
             "method":[
                 "Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well. Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften.",
-		"Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
+		        "Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":6,
+            "userId":0,
+            "title":"peanut butter & jam flapjack",
+            "ingredients":[
+                {
+                    "name":"salted butter",
+                    "amount":"5tbs"
+                },
+                {
+                    "name":"peanut butter",
+                    "amount":"250g"
+                },
+                {
+                    "name":"jam",
+                    "amount":"8tbs"
+                },
+                {
+                    "name":"light brown soft sugar",
+                    "amount":"80g"
+                },
+                {
+                    "name":"rolled oats",
+                    "amount":"200g"
+                }
+            ],
+            "method":[
+                "Heat the oven to 180C/160C fan/gas 4. Butter and line the base and sides of a 20cm square cake tin with baking parchment.",
+                "Put 3 tbsp each of the peanut butter and jam in separate small bowls and set aside. Tip the remaining peanut butter, the rest of the jam and the butter and sugar into a pan set over a medium heat and stir until everything has melted together. Quickly stir in the oats, then leave to cool for 5 mins.",
+                "Spoon the mixture into the prepared cake tin and gently press down with your hands. Dot over the reserved peanut butter and jam, then bake for 20-25 mins or until golden brown. Leave to cool completely in the tin, then turn out onto a board and cut into squares."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":7,
+            "userId":0,
+            "title":"smoked salmon & spinach gratin",
+            "ingredients":[
+                {
+                    "name":"butter",
+                    "amount":"15g"
+                },
+                {
+                    "name":"smoked raw salmon fillets",
+                    "amount":"6"
+                },
+                {
+                    "name":"spinach",
+                    "amount":"1200g"
+                },
+                {
+                    "name":"double cream",
+                    "amount":"300ml"
+                }
+            ],
+            "method":[
+                "Put the spinach in a really big saucepan (or two saucepans) and add a few tablespoons of water. Cover, set over a medium heat and cook for about 5-8 mins, turning the spinach over every so often, until wilted. Tip it into a colander to drain and allow it to cool (spread it out on a plate to cool it quicker). Take big handfuls of it in your fists and squeeze out the excess water. It’s really important that you do this, otherwise the water will leach out and make the cream watery and green.",
+                "Chop the spinach. Melt the butter in a saucepan and gently toss the spinach in it. Season with pepper and a tiny bit of salt (there’s so much salt in the salmon). Heat the oven to 160C/140C fan/gas 3. Lay the spinach in the bottom of a gratin dish (about 30cm x 20cm), then arrange the salmon fillets on top.",
+                "Heat the double cream in a small pan, then pour it all over the salmon and spinach. Bake for 35 mins, or until the top is golden and the cream is bubbling."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":8,
+            "userId":0,
+            "title":"Chorizo & pea risotto",
+            "ingredients":[
+                {
+                    "name":"oil",
+                    "amount":"1tbs"
+                },
+                {
+                    "name":"chorizo",
+                    "amount":"200g"
+                },
+                {
+                    "name":"risotto rice",
+                    "amount":"300g"
+                },
+                {
+                    "name":"vinegar",
+                    "amount":"2tbs"
+                },
+                {
+                    "name":"chicken stock",
+                    "amount":"1200ml"
+                },
+                {
+                    "name":"pea",
+                    "amount":"200g"
+                },
+                {
+                    "name":"parmesan",
+                    "amount":"60g"
+                }
+            ],
+            "method":[
+                "Heat the oil in a large frying pan, tip in the chorizo and fry until it is crisp and all the oil has been released. Remove a quarter of the chorizo with a slotted spoon and set aside.",
+                "Tip the rice into the pan, stir to coat it in the oil and toast for a min or so, then pour in the vinegar. Once the vinegar has evaporated, add a ladleful of the stock, stir then, once absorbed, add a bit more. Continue doing this for about 20 mins until most of the stock has been absorbed and the rice has swollen but still has a slight bite.",
+                "Tip in the peas, parmesan and the remaining stock. Give everything a good stir. Once the cheese has melted, season with black pepper, then divide between bowls, topping each portion with the remaining crisp chorizo and extra grated parmesan."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":9,
+            "userId":0,
+            "title":"Red pepper linguine",
+            "ingredients":[
+                {
+                    "name":"red pepper",
+                    "amount":"1"
+                },
+                {
+                    "name":"garlic cloves",
+                    "amount":"1"
+                },
+                {
+                    "name":"olive oil",
+                    "amount":"30ml"
+                },
+                {
+                    "name":"walnuts",
+                    "amount":"50g"
+                },
+                {
+                    "name":"linguine",
+                    "amount":"100g"
+                },
+                {
+                    "name":"parmesan",
+                    "amount":"10g"
+                }
+            ],
+            "method":[
+                "Blitz the roasted red pepper with the olive oil, walnuts and garlic in a food processor, season well and set aside.",
+                "Bring a pan of salted water to the boil, add the pasta and cook for 1 min less than the pack instructions and drain, reserving a ladleful of cooking water. Tip the pasta back into the pan, along with the reserved cooking water and red pepper sauce, and return to the heat to warm through. Tip the pasta into a bowl and top with the parmesan and some chopped toasted walnuts. Season and serve."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":9,
+            "userId":0,
+            "title":"Red pepper linguine",
+            "ingredients":[
+                {
+                    "name":"potatoes",
+                    "amount":"3"
+                },
+                {
+                    "name":"olive oil",
+                    "amount":"5ml"
+                },
+                {
+                    "name":"pork sausages",
+                    "amount":"4"
+                },
+                {
+                    "name":"cherry tomatoes",
+                    "amount":"200g"
+                },
+                {
+                    "name":"fresh pesto",
+                    "amount":"65g"
+                }
+            ],
+            "method":[
+                "Peel and quarter the potatoes, then cook in a large pan of salted, boiling water for 15 mins. Drain and set aside.",
+                "Pour a glug of olive oil into a large frying pan over a medium heat and cook the sausages for 15 mins. Add the tomatoes to the pan for the final 5 mins. Mash the potatoes well and mix in the pesto. Season and serve with the sausages and tomatoes."
             ],
             "categories":[
                 "1",
                 "2"
             ]
 	    }
-        
     ]
 }
