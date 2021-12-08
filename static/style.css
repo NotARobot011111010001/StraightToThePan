@@ -66,16 +66,17 @@ nav{
     margin-bottom: 20px;
 }
 
-ul{
+nav ul{
     list-style: none;
 }
-a{
+ a{
     text-decoration: none;
-    color: white;
-
 }
+ nav a{
+     color: white;
+ }
 
-a:hover{
+nav a:hover{
     color: #7F76A5;
 }
 .navbar li{
@@ -469,17 +470,7 @@ a:hover{
     .Description, .Ingredients, .Directions {
         width: 90%;
     }
-        .mask h1{
-        font-size: 2rem;
-    }
-    .mask p{
-        font-size: 1rem;
-        width: 50%;
-    }
-    .searchBox button {
-        height: 15%;
-        width: 35%;
-    }
+
 }
 
 /* DESKTOP VIEW */
@@ -510,9 +501,6 @@ a:hover{
     .recipeHeaderGrid{
         grid-template-columns: 30% 45% 25%;
 
-    }
-    .mask p{
-        width: 50%;
     }
 }
 @media  (min-width: 1408px){

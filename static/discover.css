@@ -3,7 +3,7 @@
     position: relative;
     width: 95%;
     height: 30vmin;
-    min-height: 250px;
+    min-height: 190px;
     margin: 0 auto;
     border-radius: 20px;
 
@@ -26,7 +26,6 @@
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 0 0 20px;
-    width: 20%;
 }
 .search-flex{
     display: flex;
@@ -68,12 +67,84 @@
 .searchBox button:hover{
     color: var(--pink--);
 }
-.discover, .discoverResults{
-    position: relative;
-    /*display: flex;*/
+.discover-flex{
+    display: flex;
+    justify-content: space-between;
     width: 95%;
-    margin: 2% 0 0 2.5%;
+    margin: 2% auto;
+    flex-wrap: wrap;
+}
+.discover, .discoverResults{
+    width: 49.7%;
     border: #4b3832 2px solid;
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
+}
+.discoverHeader{
+    height: 140px;
+}
+.discover h1, .discoverResults h1{
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: var(--yellow--);
+}
+.discover p, .discoverResults p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    width: 100%;
+}
+.discoveries, .resultsList{
+    margin: 1% 0 0 0;
+    font-size: 1.5rem;
+    padding: 0 0 0 2.5%;
+    font-weight: 800;
+    list-style-image:url("/static/Images/icon.png");
+    list-style-position: inside;
+}
+.discoveries li, .resultsList li{
+    margin: 1% 0 0 0;
+}
+.discoveries a, .resultsList a{
+    color: var(--purple--);
+    margin: 100PX 0 0 0;
+}
+
+@media (max-width: 642px) {
+    .mask h1{
+        font-size: 2rem;
+    }
+    .mask p{
+        font-size: 1rem;
+    }
+    .discover p, .discoverResults p{
+        width: 100%;
+    }
+    .searchBox button {
+        height: 15%;
+        width: 35%;
+    }
+    .discover, .discoverResults {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .discoverHeader{
+        height: 110px;
+    }
+    .discoveries, .resultsList {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px)  {
+    .discover p, .discoverResults p{
+        font-size: 1rem;
+    }
+    .discover h1, .discoverResults h1{
+        font-size: 2rem;
+    }
+    .discoverHeader{
+        height: 110px;
+    }
+    .discoveries, .resultsList {
+        font-size: 1.2rem;
+    }
+
 }
