@@ -43,11 +43,14 @@
     font-weight: 600;
     font-size: 2.55em;
     color: white;
+    margin: 5px 5px 0px 5px;
 }
 .img-box p{
     font-size: 2.55em;
     font-weight: 700;
     color: var(--yellow--);
+    margin: 5px 5px 0px 5px;
+
 }
 .login-form{
     position: relative;
@@ -83,7 +86,7 @@ section form {
 
 .form-controls:first-child input {
     width: 100%;
-    border-radius: 2.5px;
+    border-radius: 20px;
     border: 1px solid #ddd;
     padding: 10px 0;
     margin-bottom: 15px;
@@ -117,7 +120,7 @@ section form {
     margin-bottom: 15px;
     width: 100%;
     border: none;
-    border-radius: 2.5px;
+    border-radius: 20px;
     outline: none;
     cursor: pointer;
     background-color: var(--yellow--);
