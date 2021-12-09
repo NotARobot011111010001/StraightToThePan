@@ -7,14 +7,10 @@ function LoadContent()
     var urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('id'))
     {
-        document.getElementById("recipeCard").style.display = 'block';
-        document.getElementById("allRecipes").style.display = 'none';
         PopulateRecipe(parseInt(urlParams.get('id')));
     }
     else
     {
-        document.getElementById("recipeCard").style.display = 'none';
-        document.getElementById("allRecipes").style.display = 'block';
         GetRecipes();
     }
 }
@@ -46,8 +42,7 @@ function PopulateRecipe(recipeId)
             {
                 if (parseInt(recipes[i].recipeId) == recipeId)
                 {
-                    document.getElementById("recipeTitle").innerHTML = String(recipes[i].title);
-                    document.getElementById("recipeCreator").innerHTML = "by " + String(recipes[i].userId);
+                    document.getElementById("inputTitle").value = String(recipes[i].title);
     
                     var tableData = "";
                     for (let j = 0; j < recipes[i].ingredients.length; j++)
@@ -131,28 +126,25 @@ function PopulateRecipe(recipeId)
         //extracting method
         methodData = recipesData[i].method;
         let method = ExtractMethod(methodData)
-        //extracting categories
-        categoryData = recipesData[i].categories;
-        let categories = ExtractCategories(categoryData);
         // situating recipe the rest of the data in a div for each recipe
-        allRecipes += 
-            '<button type="button" class="collapsible" onclick="ToggleRecipeContent(recipe' + String(recipesData[i].recipeId) + ')">' + String(recipesData[i].title) + '</button>' +
-            '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '">' +
-                '<table id="recipeIngredients">' +
-                    '<tr>' +
-                        '<th>Ingredient</th>' +
-                        '<th>Amount</th>' +
-                    '</tr>' +
-                    ingredients +
-                '</table>' +
-                '<ol id="recipeMethod" type="1">' + 
-                    method +
-                '</ol>' +
-                '<ul id="recipeCategories">' +
-                    categories +
-                '</ul>' +
-                '<button type="button" id="editRecipe" onclick="EditRecipe()">Edit Recipe</button>' +
-                '<button type="button" id="deleteRecipe" onclick="DeleteRecipe()">Delete Recipe</button>' +
+        allRecipes = String(allRecipes) +
+            '<div id="recipe' + recipesData[i].recipeId + '">' +
+            '<button id="recipeName" onclick="showContent(this.parentElement)">' + String(recipesData[i].title) + '</button>' +
+            '<table id="ingredientsList" width="100%" class="hidden">' +
+            '<tr>' +
+            '<th> Ingredient</th>' +
+            '<th> Quantity</th>' +
+            '</tr>' +
+            ingredients +
+            '</table>' +
+            '<ol id= "recipeMethod" class="hidden">' +
+            method +
+            '</ol>' +
+            '<div id="selectedRecipeButtons" class="hidden">' +
+            '<button id="editRecipe">edit recipe</button>'+
+            '<button id="deleteRecipe" onClick="deleteRecipe(this.parentElement.parentElement)">delete recipe </button>'+
+            '</div>'+
+            '</div>' +
             '</div>';
         ingredients = [];
         method = [];
@@ -175,7 +167,7 @@ function ExtractIngredients(ingredientsData)
     let ingredientsList = "";
     for (let i = 0; i < ingredientsData.length; i++) 
     {
-        ingredientsList +=
+        ingredientsList = ingredientsList +
             '<tr>' +
             '<td id="ingredient' + i + '">' + ingredientsData[i].name + '</td>' +
             '<td id="quantity' + i + '">' + ingredientsData[i].amount + '</td>' +
@@ -197,37 +189,33 @@ function ExtractMethod(methodData)
     let methodList = "";
     for (let i = 0; i < methodData.length; i++) 
     {
-        methodList += '<li id="step' + String(i) + '">' + methodData[i] + '</li>';
+        methodList = methodList + '<li id="step' + String(i) + '">' + methodData[i] + '</li>';
     }
     return (methodList)
 } 
 
 
-function ExtractCategories(categoryData)
-{
-    let categoryList = "";
-    for (let i = 0; i < categoryData.length; i++)
-    {
-        categoryList += '<li id="tag' + String(i) + '">' + categoryData[i] + '</li>';
-    }
-    return (categoryList);
-}
-
-
 /**
- * ToggleRecipeContent()
  * this function displays the contents of a selected recipe
- * @param elementId
  */
-function ToggleRecipeContent(recipeContent) 
-{
-    if (recipeContent.style.display == "block")
-    {
-        recipeContent.style.display = "none";
-    }
-    else
-    {
-        recipeContent.style.display = "block";
+function showContent(recipe) {
+    let parent = recipe;
+    let ingredientChild = parent.children[1]
+    let methodChild = parent.children[2]
+    let buttonChild= parent.children[3]
+    let tagChild = parent.children[4]
+
+    if (methodChild.getAttribute("class") !== "hidden") {
+        methodChild.setAttribute("class", "hidden")
+        ingredientChild.setAttribute("class", "hidden")
+        buttonChild.setAttribute("class", "hidden")
+        tagChild.setAttribute("class", "hidden")
+
+    } else {
+        methodChild.setAttribute("class", "none")
+        ingredientChild.setAttribute("class", "none")
+        buttonChild.setAttribute("class", "none")
+        tagChild.setAttribute("class", "none")
     }
 }
 

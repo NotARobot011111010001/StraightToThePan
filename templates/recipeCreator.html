@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src = "/static/scripts/recipe_functions.js" defer></script>
+    <script src = "/static/scripts/recipeCreator_functions.js" defer></script>
 </head>
 <body>
     <nav>
@@ -25,24 +25,88 @@
         </ul>
     </nav>
 
-    <!-- Used to display a single recipe. -->
+    <!-- Container for all input fields. -->
     <div class="container" id="recipeCard"> 
-        <la
-        <h2 id="recipeTitle">Recipe Title</h2>
+        <!-- Input for the title. -->
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" name="titleInput">
 
-        <p id="recipeCreator">by Username</p>
-
-        <h3>Ingredients</h3>
-        <table id="recipeIngredients" contenteditable="true">
+        <!-- Inputs for the ingredients table. -->
+        <label for="ingredientInput">Ingredients:</label>
+        <table id="ingredientInput">
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Amount</th>
+                    <th>
+                        <span>
+                            <button type="button" id="addIngredient">Add Row</button>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">A</td>
+                    <td contenteditable="true">B</td>
+                    <td>
+                        <span>
+                            <button type="button" id="deleteIngredient">Delete</button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
         </table>
 
-        <h3>Method</h3>
-        <ol id="recipeMethod" type="1">
-        </ol>
+        <!-- Inputs for the methods list. -->
+        <label for="methodInput">Method:</label>
+        <table id="methodInput">
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>
+                        <span>
+                            <button type="button" id="addStep">Add Step</button>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">A</td>
+                    <td>
+                        <span>
+                            <button type="button" id="deleteStep">Delete</button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-        <h3>Categories</h3>
-        <ul id="recipeCategories">
-        </ul>
+        <!-- Inputs for the categories list -->
+        <label for="categoryInput">Categories:</label>
+        <table id="categoryInput">
+            <thead>
+                <tr>
+                    <th>Tag:</th>
+                    <th>
+                        <span>
+                            <button type="button" id="addStep">Add Tag</button>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">A</td>
+                    <td>
+                        <span>
+                            <button type="button" id="deleteStep">Delete</button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
         <button type="button" id="saveButton">Save Recipe</button>
         <button type="button" id="discardButton">Discard</button>
