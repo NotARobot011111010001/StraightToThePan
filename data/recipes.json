@@ -4,15 +4,15 @@
         {
             "recipeId":0,
             "userId":0,
-            "title":"lotus Cheesecake",
+            "title":"lotus cheesecake",
             "ingredients":
             [
                 {
-                    "name":"Butter",
+                    "name":"butter",
                     "amount":"125g"
                 },
                 {
-                    "name":"Lotus biscuits",
+                    "name":"lotus biscuits",
                     "amount":"300g"
                 }
             ],
@@ -34,31 +34,31 @@
         {
             "recipeId":1,
             "userId":0,
-            "title":"Souffle Pancakes",
+            "title":"souffle pancakes",
             "ingredients":
             [
                 {
-                    "name":"Large eggs",
+                    "name":"large eggs",
                     "amount":"2"
                 },
                 {
-                    "name":"Golden caster sugar",
+                    "name":"golden caster sugar",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"Vanilla extract",
+                    "name":"vanilla extract",
                     "amount":"1tsp"
                 },
                 {
-                    "name":"Milk",
+                    "name":"milk",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"Self-raising flour",
+                    "name":"self-raising flour",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"Vegetable oil",
+                    "name":"vegetable oil",
                     "amount":"1tsp"
                 }
 
@@ -81,11 +81,11 @@
         {
             "recipeId":2,
             "userId":0,
-            "title":"Broccoli and sausage pasta bake",
+            "title":"broccoli and sausage pasta bake ",
             "ingredients":
             [
                 {
-                    "name":"Large eggs",
+                    "name":"large eggs",
                     "amount":"2"
                 }
             ],
@@ -106,26 +106,26 @@
             {
             "recipeId":3,
             "userId":0,
-            "title":"Rocky Road",
+            "title":"rocky road",
             "ingredients":[
                 {
-                    "name":"Digestive biscuits",
+                    "name":"digestive biscuits",
                     "amount":"200g"
                 },
                 {
-                    "name":"Butter",
+                    "name":"butter",
                     "amount":"135g"
                 },
                 {
-                    "name":"Dark chocolate",
+                    "name":"dark chocolate",
                     "amount":"200g"
                 },
                 {
-                    "name":"Syrup",
+                    "name":"syrup",
                     "amount":"2.5tbs"
                 },
                 {
-                    "name":"Mini marshmallows",
+                    "name":"mini marshmallows",
                     "amount":"100g"
                 }
             ],
@@ -144,30 +144,30 @@
 		{
             "recipeId":4,
             "userId":0,
-            "title":"Chocolate Molten Cakes",
+            "title":"chocolate molten cakes",
             "ingredients":[
                 {
-                    "name":"Large eggs",
+                    "name":"large eggs",
                     "amount":"3"
                 },
                 {
-                    "name":"Butter",
+                    "name":"butter",
                     "amount":"100g"
                 },
                 {
-                    "name":"Dark chocolate",
+                    "name":"dark chocolate",
                     "amount":"100g"
                 },
                 {
-                    "name":"Light brown soft sugar",
+                    "name":"light brown soft sugar",
                     "amount":"150g"
                 },
                 {
-                    "name":"Vanilla extract",
+                    "name":"vanilla extract",
                     "amount":"1.5tsp"
                 },
 		        {
-                    "name":"Plain flour",
+                    "name":"plain flour",
                     "amount":"50g"
                 }
             ],
@@ -186,46 +186,46 @@
 		{
             "recipeId":5,
             "userId":0,
-            "title":"Spaghetti with Nduja, fennel & olives",
+            "title":"spaghetti with nduja, fennel & olives",
             "ingredients":[
                 {
-                    "name":"Spaghetti",
+                    "name":"spaghetti",
                     "amount":"400g"
                 },
                 {
-                    "name":"Garlic cloves",
+                    "name":"garlic cloves",
                     "amount":"3"
                 },
                 {
-                    "name":"Fennel",
+                    "name":"fennel",
                     "amount":"0.5"
                 },
                 {
-                    "name":"Nduja or Sobrasada paste",
+                    "name":"nduja or sobrasada paste",
                     "amount":"75g"
                 },
                 {
-                    "name":"Tomatoes",
+                    "name":"tomatoes",
                     "amount":"200g"
                 },
 		        {
-                    "name":"Black olives",
+                    "name":"black olives",
                     "amount":"75g"
                 },
 		        {
-                    "name":"Olive oil",
+                    "name":"olive oil",
                     "amount":"3tbs"
                 },
 		        {
-                    "name":"Tomato purée",
+                    "name":"tomato purée",
                     "amount":"2tbs"
                 },
 		        {
-                    "name":"Red wine vinegar",
+                    "name":"red wine vinegar",
                     "amount":"2tbs"
                 },
 		        {
-                    "name":"Pecorino",
+                    "name":"pecorino",
                     "amount":"40g"
                 }
             ],
@@ -241,26 +241,26 @@
         {
             "recipeId":6,
             "userId":0,
-            "title":"Peanut butter & Jam flapjack",
+            "title":"peanut butter & jam flapjack",
             "ingredients":[
                 {
-                    "name":"Salted butter",
+                    "name":"salted butter",
                     "amount":"5tbs"
                 },
                 {
-                    "name":"Peanut butter",
+                    "name":"peanut butter",
                     "amount":"250g"
                 },
                 {
-                    "name":"Jam",
+                    "name":"jam",
                     "amount":"8tbs"
                 },
                 {
-                    "name":"Light brown soft sugar",
+                    "name":"light brown soft sugar",
                     "amount":"80g"
                 },
                 {
-                    "name":"Rolled oats",
+                    "name":"rolled oats",
                     "amount":"200g"
                 }
             ],
@@ -277,22 +277,22 @@
         {
             "recipeId":7,
             "userId":0,
-            "title":"Smoked salmon & Spinach gratin",
+            "title":"smoked salmon & spinach gratin",
             "ingredients":[
                 {
-                    "name":"Butter",
+                    "name":"butter",
                     "amount":"15g"
                 },
                 {
-                    "name":"Smoked raw salmon fillets",
+                    "name":"smoked raw salmon fillets",
                     "amount":"6"
                 },
                 {
-                    "name":"Spinach",
+                    "name":"spinach",
                     "amount":"1200g"
                 },
                 {
-                    "name":"Double cream",
+                    "name":"double cream",
                     "amount":"300ml"
                 }
             ],
@@ -312,31 +312,31 @@
             "title":"Chorizo & pea risotto",
             "ingredients":[
                 {
-                    "name":"Oil",
+                    "name":"oil",
                     "amount":"1tbs"
                 },
                 {
-                    "name":"Chorizo",
+                    "name":"chorizo",
                     "amount":"200g"
                 },
                 {
-                    "name":"Risotto rice",
+                    "name":"risotto rice",
                     "amount":"300g"
                 },
                 {
-                    "name":"Vinegar",
+                    "name":"vinegar",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"Chicken stock",
+                    "name":"chicken stock",
                     "amount":"1200ml"
                 },
                 {
-                    "name":"Pea",
+                    "name":"pea",
                     "amount":"200g"
                 },
                 {
-                    "name":"Parmesan",
+                    "name":"parmesan",
                     "amount":"60g"
                 }
             ],
@@ -353,30 +353,30 @@
         {
             "recipeId":9,
             "userId":0,
-            "title":"Red Pepper linguine",
+            "title":"Red pepper linguine",
             "ingredients":[
                 {
-                    "name":"Red pepper",
+                    "name":"red pepper",
                     "amount":"1"
                 },
                 {
-                    "name":"Garlic cloves",
+                    "name":"garlic cloves",
                     "amount":"1"
                 },
                 {
-                    "name":"Olive oil",
+                    "name":"olive oil",
                     "amount":"30ml"
                 },
                 {
-                    "name":"Walnuts",
+                    "name":"walnuts",
                     "amount":"50g"
                 },
                 {
-                    "name":"Linguine",
+                    "name":"linguine",
                     "amount":"100g"
                 },
                 {
-                    "name":"Parmesan",
+                    "name":"parmesan",
                     "amount":"10g"
                 }
             ],
@@ -390,34 +390,217 @@
             ]
 	    },
         {
-            "recipeId":10,
+            "recipeId":9,
             "userId":0,
             "title":"Red pepper linguine",
             "ingredients":[
                 {
-                    "name":"Potatoes",
+                    "name":"potatoes",
                     "amount":"3"
                 },
                 {
-                    "name":"Olive oil",
+                    "name":"olive oil",
                     "amount":"5ml"
                 },
                 {
-                    "name":"Pork sausages",
+                    "name":"pork sausages",
                     "amount":"4"
                 },
                 {
-                    "name":"Cherry tomatoes",
+                    "name":"cherry tomatoes",
                     "amount":"200g"
                 },
                 {
-                    "name":"Fresh pesto",
+                    "name":"fresh pesto",
                     "amount":"65g"
                 }
             ],
             "method":[
                 "Peel and quarter the potatoes, then cook in a large pan of salted, boiling water for 15 mins. Drain and set aside.",
                 "Pour a glug of olive oil into a large frying pan over a medium heat and cook the sausages for 15 mins. Add the tomatoes to the pan for the final 5 mins. Mash the potatoes well and mix in the pesto. Season and serve with the sausages and tomatoes."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":10,
+            "userId":0,
+            "title":"Beetroot, hummus & crispy chickpea sub sandwich",
+            "ingredients":[
+                {
+                    "name":"ciabatta rolls",
+                    "amount":"2"
+                },
+                {
+                    "name":"olive oil",
+                    "amount":"5ml"
+                },
+                {
+                    "name":"chickpeas",
+                    "amount":"400g"
+                },
+                {
+                    "name":"cooked beetroot",
+                    "amount":"300g"
+                },
+                {
+                    "name":"vinegar",
+                    "amount":"5ml"
+                },
+                {
+                    "name":"salad",
+                    "amount":"115g"
+                }
+            ],
+            "method":[
+                "Blitz the whole beetroot, ¾ of the chickpeas, 2 tbsp pesto and 1 tbsp oil in a food processor with some seasoning until you have a thick, smooth hummus. Heat the ciabatta following the pack instructions.",
+                "Fry the remaining chickpeas in a little oil until crisp, then set aside. Toss the salad leaves with the remaining pesto and a splash of vinegar. Slice the rolls, then assemble the sandwiches with the hummus, beetroot slices, salad leaves and fried chickpeas."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":11,
+            "userId":0,
+            "title":"Saucy bean baked eggs",
+            "ingredients":[
+                {
+                    "name":"cherry tomatoes",
+                    "amount":"800g"
+                },
+                {
+                    "name":"mixed bean salad",
+                    "amount":"400g"
+                },
+                {
+                    "name":"baby spinach",
+                    "amount":"200g"
+                },
+                {
+                    "name":"egg",
+                    "amount":"4"
+                },
+                {
+                    "name":"smoked ham",
+                    "amount":"50g"
+                }
+            ],
+            "method":[
+                "Tip the tomatoes and bean salad into an ovenproof frying pan or shallow flameproof casserole dish. Simmer for 10 mins, or until reduced. Stir in the spinach and cook for 5 mins more until wilted.",
+                "Heat the grill to medium. Make four indentations in the mixture using the back of a spoon, then crack one egg in each. Nestle the ham in the mixture, then grill for 4-5 mins, or until the whites are set and the yolks runny. Serve with rye bread, if you like."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":12,
+            "userId":0,
+            "title":"kedgeree",
+            "ingredients":[
+                {
+                    "name":"basmati rice",
+                    "amount":"300g"
+                },
+                {
+                    "name":"curry powder",
+                    "amount":"2tbs"
+                },
+                {
+                    "name":"chicken stock",
+                    "amount":"600ml"
+                },
+                {
+                    "name":"smoked haddock",
+                    "amount":"400g"
+                },
+                {
+                    "name":"peas",
+                    "amount":"100g"
+                }
+            ],
+            "method":[
+                "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
+                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
+            ],
+            "categories":[
+                "1",
+                "2"
+            ]
+	    },
+        {
+            "recipeId":13,
+            "userId":0,
+            "title":"miso mushroom & tofu noodle soup",
+            "ingredients":[
+                {
+                    "name":"mixed mushrooms",
+                    "amount":"70g"
+                },
+                {
+                    "name":"rapeseed oil",
+                    "amount":"1tbs"
+                },
+                {
+                    "name":"smoked tofu",
+                    "amount":"50g"
+                },
+                {
+                    "name":"brown rice miso paste",
+                    "amount":"0.5tbs"
+                },
+                {
+                    "name":"egg noodles",
+                    "amount":"50g"
+                },
+                {
+                    "name":"spring onions",
+                    "amount":"2"
+                }
+    ],
+        "method":[
+            "Heat half the oil in a frying pan over a medium heat. Add the mushrooms and fry for 5-6 mins, or until golden. Transfer to a bowl using a slotted spoon and set aside. Add the remaining oil to the pan and fry the tofu for 3-4 mins, or until evenly golden.",
+            "Mix the miso paste with 325ml boiling water in a jug. Cook the noodles following pack instructions, then drain and transfer to a bowl. Top with the mushrooms and tofu, then pour over the miso broth. Scatter over the spring onions just before serving."
+        ],
+            "categories":[
+                "1",
+                "2"
+            ]
+        },
+        {
+            "recipeId":14,
+            "userId":0,
+            "title":"kedgeree",
+            "ingredients":[
+                {
+                    "name":"basmati rice",
+                    "amount":"300g"
+                },
+                {
+                    "name":"curry powder",
+                    "amount":"2tbs"
+                },
+                {
+                    "name":"chicken stock",
+                    "amount":"600ml"
+                },
+                {
+                    "name":"smoked haddock",
+                    "amount":"400g"
+                },
+                {
+                    "name":"peas",
+                    "amount":"100g"
+                }
+            ],
+            "method":[
+                "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
+                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
             ],
             "categories":[
                 "1",
