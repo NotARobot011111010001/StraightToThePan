@@ -6,7 +6,7 @@ function register(){
     let url = "/register";
     let xhttp = new XMLHttpRequest();
     let response = "Error Registering";
-    newUser = {
+    var newUser = {
                 username: document.getElementById("username"),
                 email: document.getElementById("email"),
                 password: document.getElementById("password"),
@@ -18,8 +18,10 @@ function register(){
 
         }
     }
+    console.log(newUser)
     xhttp.open("POST", url, true);
     xhttp.send(newUser);
     alert("Successfully Register!")
+    return(newUser)
 
 }
