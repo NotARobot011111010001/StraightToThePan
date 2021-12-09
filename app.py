@@ -40,6 +40,10 @@ def discover():
 def recipe():
     return render_template('recipe.html')
 
+@app.route('/myRecipes', methods=['GET', 'POST'])
+def myRecipes():
+    return render_template('myRecipes.html')
+
 @app.route('/RecipeTemplate.html')
 def recipeTemplate():
     return render_template('RecipeTemplate.html')

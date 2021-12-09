@@ -61,7 +61,7 @@ function Search()
       recipes = response.result;
 
       let searchRequest = document.getElementById("searchBar").value;
-      let resultsList = ""
+      let resultsList = "";
 
       if (searchRequest != "")
       {
@@ -102,21 +102,6 @@ function Search()
   xhttp.send();
 }
 
-function PopulateResults()
-{
-  //let results = GetRecipes();
-  /*let results = Search();
-  var resultsField = document.getElementById("results");
-
-  resultsField.innerHTML = "";
-  if (results)
-  {
-    for (recipe in results)
-    {
-      resultsField.innerHTML += '<li><a href="/recipe.html?id=' + String(recipe.recipeId) + '">' + String(recipe.title) + '</a></li>';
-    }
-  }*/
-}
 
 
 PopulateDiscover();

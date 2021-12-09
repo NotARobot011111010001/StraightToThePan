@@ -27,6 +27,7 @@
 
     <!-- Used to display a single recipe. -->
     <div class="container" id="recipeCard"> 
+        <la
         <h2 id="recipeTitle">Recipe Title</h2>
 
         <p id="recipeCreator">by Username</p>
@@ -42,24 +43,9 @@
         <h3>Categories</h3>
         <ul id="recipeCategories">
         </ul>
-    </div>
 
-    <!-- Used to display all recipes. -->
-    <div class="container" id="allRecipes"> 
-        <button type="button" class="collapsible">Recipe</button>
-        <div class="recipeContent">
-            <table id="recipeIngredients">
-            </table>
-
-            <ol id="recipeMethod" type="1">
-            </ol>
-
-            <ul id="recipeCategories">
-            </ul>
-
-            <button type="button" id="editRecipe">Edit</button>
-            <button type="button" id="deleteRecipe" onclick="DeleteRecipe()">Delete</button>
-        </div>
+        <button type="button" id="saveButton">Save Recipe</button>
+        <button type="button" id="discardButton">Discard</button>
     </div>
 
 </body>
