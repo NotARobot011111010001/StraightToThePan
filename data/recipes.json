@@ -4,15 +4,15 @@
         {
             "recipeId":0,
             "userId":0,
-            "title":"lotus cheesecake",
+            "title":"lotus Cheesecake",
             "ingredients":
             [
                 {
-                    "name":"butter",
+                    "name":"Butter",
                     "amount":"125g"
                 },
                 {
-                    "name":"lotus biscuits",
+                    "name":"Lotus biscuits",
                     "amount":"300g"
                 }
             ],
@@ -34,31 +34,31 @@
         {
             "recipeId":1,
             "userId":0,
-            "title":"souffle pancakes",
+            "title":"Souffle Pancakes",
             "ingredients":
             [
                 {
-                    "name":"large eggs",
+                    "name":"Large eggs",
                     "amount":"2"
                 },
                 {
-                    "name":"golden caster sugar",
+                    "name":"Golden caster sugar",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"vanilla extract",
+                    "name":"Vanilla extract",
                     "amount":"1tsp"
                 },
                 {
-                    "name":"milk",
+                    "name":"Milk",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"self-raising flour",
+                    "name":"Self-raising flour",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"vegetable oil",
+                    "name":"Vegetable oil",
                     "amount":"1tsp"
                 }
 
@@ -81,11 +81,11 @@
         {
             "recipeId":2,
             "userId":0,
-            "title":"broccoli and sausage pasta bake ",
+            "title":"Broccoli and sausage pasta bake",
             "ingredients":
             [
                 {
-                    "name":"large eggs",
+                    "name":"Large eggs",
                     "amount":"2"
                 }
             ],
@@ -106,26 +106,26 @@
             {
             "recipeId":3,
             "userId":0,
-            "title":"rocky road",
+            "title":"Rocky Road",
             "ingredients":[
                 {
-                    "name":"digestive biscuits",
+                    "name":"Digestive biscuits",
                     "amount":"200g"
                 },
                 {
-                    "name":"butter",
+                    "name":"Butter",
                     "amount":"135g"
                 },
                 {
-                    "name":"dark chocolate",
+                    "name":"Dark chocolate",
                     "amount":"200g"
                 },
                 {
-                    "name":"syrup",
+                    "name":"Syrup",
                     "amount":"2.5tbs"
                 },
                 {
-                    "name":"mini marshmallows",
+                    "name":"Mini marshmallows",
                     "amount":"100g"
                 }
             ],
@@ -144,30 +144,30 @@
 		{
             "recipeId":4,
             "userId":0,
-            "title":"chocolate molten cakes",
+            "title":"Chocolate Molten Cakes",
             "ingredients":[
                 {
-                    "name":"large eggs",
+                    "name":"Large eggs",
                     "amount":"3"
                 },
                 {
-                    "name":"butter",
+                    "name":"Butter",
                     "amount":"100g"
                 },
                 {
-                    "name":"dark chocolate",
+                    "name":"Dark chocolate",
                     "amount":"100g"
                 },
                 {
-                    "name":"light brown soft sugar",
+                    "name":"Light brown soft sugar",
                     "amount":"150g"
                 },
                 {
-                    "name":"vanilla extract",
+                    "name":"Vanilla extract",
                     "amount":"1.5tsp"
                 },
 		        {
-                    "name":"plain flour",
+                    "name":"Plain flour",
                     "amount":"50g"
                 }
             ],
@@ -186,46 +186,46 @@
 		{
             "recipeId":5,
             "userId":0,
-            "title":"spaghetti with nduja, fennel & olives",
+            "title":"Spaghetti with Nduja, fennel & olives",
             "ingredients":[
                 {
-                    "name":"spaghetti",
+                    "name":"Spaghetti",
                     "amount":"400g"
                 },
                 {
-                    "name":"garlic cloves",
+                    "name":"Garlic cloves",
                     "amount":"3"
                 },
                 {
-                    "name":"fennel",
+                    "name":"Fennel",
                     "amount":"0.5"
                 },
                 {
-                    "name":"nduja or sobrasada paste",
+                    "name":"Nduja or Sobrasada paste",
                     "amount":"75g"
                 },
                 {
-                    "name":"tomatoes",
+                    "name":"Tomatoes",
                     "amount":"200g"
                 },
 		        {
-                    "name":"black olives",
+                    "name":"Black olives",
                     "amount":"75g"
                 },
 		        {
-                    "name":"olive oil",
+                    "name":"Olive oil",
                     "amount":"3tbs"
                 },
 		        {
-                    "name":"tomato purée",
+                    "name":"Tomato purée",
                     "amount":"2tbs"
                 },
 		        {
-                    "name":"red wine vinegar",
+                    "name":"Red wine vinegar",
                     "amount":"2tbs"
                 },
 		        {
-                    "name":"pecorino",
+                    "name":"Pecorino",
                     "amount":"40g"
                 }
             ],
@@ -241,26 +241,26 @@
         {
             "recipeId":6,
             "userId":0,
-            "title":"peanut butter & jam flapjack",
+            "title":"Peanut butter & Jam flapjack",
             "ingredients":[
                 {
-                    "name":"salted butter",
+                    "name":"Salted butter",
                     "amount":"5tbs"
                 },
                 {
-                    "name":"peanut butter",
+                    "name":"Peanut butter",
                     "amount":"250g"
                 },
                 {
-                    "name":"jam",
+                    "name":"Jam",
                     "amount":"8tbs"
                 },
                 {
-                    "name":"light brown soft sugar",
+                    "name":"Light brown soft sugar",
                     "amount":"80g"
                 },
                 {
-                    "name":"rolled oats",
+                    "name":"Rolled oats",
                     "amount":"200g"
                 }
             ],
@@ -277,22 +277,22 @@
         {
             "recipeId":7,
             "userId":0,
-            "title":"smoked salmon & spinach gratin",
+            "title":"Smoked salmon & Spinach gratin",
             "ingredients":[
                 {
-                    "name":"butter",
+                    "name":"Butter",
                     "amount":"15g"
                 },
                 {
-                    "name":"smoked raw salmon fillets",
+                    "name":"Smoked raw salmon fillets",
                     "amount":"6"
                 },
                 {
-                    "name":"spinach",
+                    "name":"Spinach",
                     "amount":"1200g"
                 },
                 {
-                    "name":"double cream",
+                    "name":"Double cream",
                     "amount":"300ml"
                 }
             ],
@@ -312,31 +312,31 @@
             "title":"Chorizo & pea risotto",
             "ingredients":[
                 {
-                    "name":"oil",
+                    "name":"Oil",
                     "amount":"1tbs"
                 },
                 {
-                    "name":"chorizo",
+                    "name":"Chorizo",
                     "amount":"200g"
                 },
                 {
-                    "name":"risotto rice",
+                    "name":"Risotto rice",
                     "amount":"300g"
                 },
                 {
-                    "name":"vinegar",
+                    "name":"Vinegar",
                     "amount":"2tbs"
                 },
                 {
-                    "name":"chicken stock",
+                    "name":"Chicken stock",
                     "amount":"1200ml"
                 },
                 {
-                    "name":"pea",
+                    "name":"Pea",
                     "amount":"200g"
                 },
                 {
-                    "name":"parmesan",
+                    "name":"Parmesan",
                     "amount":"60g"
                 }
             ],
@@ -353,30 +353,30 @@
         {
             "recipeId":9,
             "userId":0,
-            "title":"Red pepper linguine",
+            "title":"Red Pepper linguine",
             "ingredients":[
                 {
-                    "name":"red pepper",
+                    "name":"Red pepper",
                     "amount":"1"
                 },
                 {
-                    "name":"garlic cloves",
+                    "name":"Garlic cloves",
                     "amount":"1"
                 },
                 {
-                    "name":"olive oil",
+                    "name":"Olive oil",
                     "amount":"30ml"
                 },
                 {
-                    "name":"walnuts",
+                    "name":"Walnuts",
                     "amount":"50g"
                 },
                 {
-                    "name":"linguine",
+                    "name":"Linguine",
                     "amount":"100g"
                 },
                 {
-                    "name":"parmesan",
+                    "name":"Parmesan",
                     "amount":"10g"
                 }
             ],
@@ -390,28 +390,28 @@
             ]
 	    },
         {
-            "recipeId":9,
+            "recipeId":10,
             "userId":0,
             "title":"Red pepper linguine",
             "ingredients":[
                 {
-                    "name":"potatoes",
+                    "name":"Potatoes",
                     "amount":"3"
                 },
                 {
-                    "name":"olive oil",
+                    "name":"Olive oil",
                     "amount":"5ml"
                 },
                 {
-                    "name":"pork sausages",
+                    "name":"Pork sausages",
                     "amount":"4"
                 },
                 {
-                    "name":"cherry tomatoes",
+                    "name":"Cherry tomatoes",
                     "amount":"200g"
                 },
                 {
-                    "name":"fresh pesto",
+                    "name":"Fresh pesto",
                     "amount":"65g"
                 }
             ],

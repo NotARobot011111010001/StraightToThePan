@@ -48,7 +48,7 @@ function PopulateDiscover()
 function Search()
 {
   let url = "/recipes";
-  let response = "Error while retriving.";
+  let response = "Error while retrieving.";
   let xhttp = new XMLHttpRequest();
   var recipesData;
   var recipes;
