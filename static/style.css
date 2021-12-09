@@ -150,7 +150,6 @@ nav a:hover{
     background: #7F76A5;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    border-radius: 20px;
 }
 .popular a, .latest a, .popular-hidden1 a, .popular-hidden2 a, .latest-hidden1 a, .latest-hidden2 a{
     font-size: 1.5rem;
@@ -170,7 +169,6 @@ nav a:hover{
     height: 15rem;
     width: 100%;
     border-radius: 0.5rem;
-    border-radius: 20px;
 }
 .popular-hidden1, .popular-hidden2{
     position: relative;
@@ -196,7 +194,7 @@ nav a:hover{
     font-weight: 700;
     border: 1px solid rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 1px 0px;
-    border-radius: 20px;
+    border-radius: .5rem;
     cursor: pointer;
 }
 .rotw{
@@ -440,7 +438,7 @@ nav a:hover{
     .button a {
         padding: 7px 15px;
         background: #DA667B;
-        border: 1px solid #DA667B;
+        border: none;
         border-radius: 20px;
 
     }
