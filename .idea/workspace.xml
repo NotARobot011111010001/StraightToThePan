@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="fixed some styling elements to fit theme">
+    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="Discover page css improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/recipes.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recipes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scripts/discover_functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/scripts/discover_functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -52,6 +52,9 @@
     <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="20jCY5seiXKXiXkg8OiYmBZoxl5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -122,9 +125,9 @@
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\FSQDR\PycharmProjects\flaskProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -179,7 +182,6 @@
       <workItem from="1638810942006" duration="274000" />
       <workItem from="1638811336107" duration="1228000" />
       <workItem from="1638812895953" duration="21626000" />
-      <workItem from="1639060812674" duration="1590000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned app.py">
       <created>1637586891987</created>
@@ -244,14 +246,7 @@
       <option name="project" value="LOCAL" />
       <updated>1638926969027</updated>
     </task>
-    <task id="LOCAL-00010" summary="fixed some styling elements to fit theme">
-      <created>1638990439735</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1638990439735</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +262,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cleaned app.py" />
@@ -277,12 +273,11 @@
     <MESSAGE value="Some tweaks not final changes" />
     <MESSAGE value="improved index.html&#10;Added styles to discover.html, login.html, register.html&#10;added RecipeTemplate.html" />
     <MESSAGE value="Discover page css improvements" />
-    <MESSAGE value="fixed some styling elements to fit theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some styling elements to fit theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Discover page css improvements" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638810213404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1639061777340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1639062914515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638810213404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
