@@ -14,7 +14,7 @@ function PopulateDiscover()
   let xhttp = new XMLHttpRequest();
   var recipesData;
   var recipes;
-  /**SHOULD WE NAME THIS FUNCTION?**/
+  /**SHOULD WE NAME THIS FUNCTION? OR LEAVE IT IN TO SHOW DIVERSITY?**/
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -26,7 +26,10 @@ function PopulateDiscover()
       
       for (let i = 0; i < 4; i++)
       {
+        //rng creates a random id number- MAYBE CHANGE VAR NAME TO "RANDOMID"
         let rng = Math.floor(Math.random() * (recipes.length + 1));
+        
+        //IF STATEMENT IS UNESSESARY- CHECKS NOTHING
         if (recipes[rng])
         {
           discoverList += '<li><a href="/recipe?id=' + String(recipes[rng].recipeId) + '">' + String(recipes[rng].title) + '</a></li>';
@@ -53,6 +56,7 @@ function Search()
   var recipesData;
   var recipes;
   
+  /**SHOULD WE NAME THIS FUNCTION? OR LEAVE IT IN TO SHOW DIVERSITY?**/
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
