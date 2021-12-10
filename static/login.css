@@ -58,7 +58,7 @@
     height: 100%;
     background-color: var(--blue--);
 }
-
+/** WHAT IS THE DIFFERENCE BETWEEN LOG IN FORM AND SELCTION FORM? CHNAGE NAME TO SPECIFY?**/
 section form {
     position: absolute;
     display: flex;
@@ -68,12 +68,14 @@ section form {
     transform: translate(-50%, -50%);
 }
 
+/**this is the "hello visitor" text**/
 .form-controls:first-child h2 {
     width: 100%;
     font-weight: 700;
     font-size: 3rem;
     color: white;
 }
+/**this is the "You must log in to access your recipes" text**/
 .form-controls:first-child p {
     margin-bottom: 20px;
     font-weight: 700;
@@ -127,6 +129,7 @@ section form {
     color: white;
     transition: 0.5s;
 }
+/**this is the styling of a smaller screen**/
 /*Login and Register*/
 @media (max-width: 996px) {
     #loginMain {

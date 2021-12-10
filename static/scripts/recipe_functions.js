@@ -34,7 +34,8 @@ function PopulateRecipe(recipeId)
     var recipesData;
     var recipes;
     var recipe;
-  
+    
+  /**SHOULD WE NAME THIS FUNCTION?**/
     xhttp.onreadystatechange = function() 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -48,21 +49,24 @@ function PopulateRecipe(recipeId)
                 {
                     document.getElementById("recipeTitle").innerHTML = String(recipes[i].title);
                     document.getElementById("recipeCreator").innerHTML = "by " + String(recipes[i].userId);
-    
+                    
+                    //this formats the ingredients into a table
                     var tableData = "";
                     for (let j = 0; j < recipes[i].ingredients.length; j++)
                     {
                         tableData += "<tr><td>" + String(recipes[i].ingredients[j].name) + "</td><td>" + String(recipes[i].ingredients[j].amount) + "</td></tr>";
                     }
                     document.getElementById("recipeIngredients").innerHTML = "<tr><th>Ingredient</th><th>Amount</th></tr>" + tableData;
-
+                    
+                    //this formats the method steps into a a list
                     var methodList = "";
                     for (let j = 0; j < recipes[i].method.length; j++)
                     {
                         methodList += "<li>" + String(recipes[i].method[j]) + "</li>";
                     }
                     document.getElementById("recipeMethod").innerHTML = methodList;
-
+                    
+                    //this formats the catagories into a list 
                     var categories = "";
                     for (let j = 0; j < recipes[i].categories.length; j++)
                     {
@@ -94,6 +98,8 @@ function PopulateRecipe(recipeId)
     let recipesData = "";
     let allRecipes = "";
     let xhttp = new XMLHttpRequest();
+     
+     /**SHOULD WE NAME THIS FUNCTION?**/
     xhttp.onreadystatechange = function () 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200) 
