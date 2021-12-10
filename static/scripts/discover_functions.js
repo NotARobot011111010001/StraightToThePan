@@ -14,7 +14,7 @@ function PopulateDiscover()
   let xhttp = new XMLHttpRequest();
   var recipesData;
   var recipes;
-  
+  /**SHOULD WE NAME THIS FUNCTION?**/
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -23,7 +23,7 @@ function PopulateDiscover()
       recipes = response.result;
 
       let discoverList = "";
-
+      
       for (let i = 0; i < 4; i++)
       {
         let rng = Math.floor(Math.random() * (recipes.length + 1));
