@@ -1,7 +1,10 @@
-{"users":
+{
+    "users":
     [
         {
-            "userId":0,
+            "userId": 0,
+            "email": "j.the.cooker@yahoo.com",
+            "password": "password1234",
             "username": "John Cooker",
             "uploadedRecipes":[
                 0,
@@ -10,6 +13,25 @@
             "recipeLists":[
                 {
                     "listName":"favesieees",
+                    "savedRecipes":[
+                        0,
+                        1
+                    ]
+                }
+            ]
+        },
+        {
+            "userId": 1,
+            "email": "janedough93@aol.com",
+            "password": "Petsname1993",
+            "username": "Jane Dough",
+            "uploadedRecipes":[
+                0,
+                1
+            ],
+            "recipeLists":[
+                {
+                    "listName": "",
                     "savedRecipes":[
                         0,
                         1

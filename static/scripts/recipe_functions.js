@@ -125,37 +125,40 @@ function PopulateRecipe(recipeId)
 
     for (let i = 0; i < recipesData.length; i++) 
     {
-        //extracting ingredients
-        ingredientsData = recipesData[i].ingredients;
-        let ingredients = ExtractIngredients(ingredientsData)
-        //extracting method
-        methodData = recipesData[i].method;
-        let method = ExtractMethod(methodData)
-        //extracting categories
-        categoryData = recipesData[i].categories;
-        let categories = ExtractCategories(categoryData);
-        // situating recipe the rest of the data in a div for each recipe
-        allRecipes += 
-            '<button type="button" class="collapsible" onclick="ToggleRecipeContent(recipe' + String(recipesData[i].recipeId) + ')">' + String(recipesData[i].title) + '</button>' +
-            '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '">' +
-                '<table id="recipeIngredients">' +
-                    '<tr>' +
-                        '<th>Ingredient</th>' +
-                        '<th>Amount</th>' +
-                    '</tr>' +
-                    ingredients +
-                '</table>' +
-                '<ol id="recipeMethod" type="1">' + 
-                    method +
-                '</ol>' +
-                '<ul id="recipeCategories">' +
-                    categories +
-                '</ul>' +
-                '<button type="button" id="editRecipe" onclick="EditRecipe()">Edit Recipe</button>' +
-                '<button type="button" id="deleteRecipe" onclick="DeleteRecipe()">Delete Recipe</button>' +
-            '</div>';
-        ingredients = [];
-        method = [];
+        //if (recipesData[i].userId == parseInt(GetUserIdFromCookie()))
+        //{
+            //extracting ingredients
+            ingredientsData = recipesData[i].ingredients;
+            let ingredients = ExtractIngredients(ingredientsData)
+            //extracting method
+            methodData = recipesData[i].method;
+            let method = ExtractMethod(methodData)
+            //extracting categories
+            categoryData = recipesData[i].categories;
+            let categories = ExtractCategories(categoryData);
+            // situating recipe the rest of the data in a div for each recipe
+            allRecipes += 
+                '<button type="button" class="collapsible" onclick="ToggleRecipeContent(recipe' + String(recipesData[i].recipeId) + ')">' + String(recipesData[i].title) + '</button>' +
+                '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '" style="display:none">' +
+                    '<table id="recipeIngredients">' +
+                        '<tr>' +
+                            '<th>Ingredient</th>' +
+                            '<th>Amount</th>' +
+                        '</tr>' +
+                        ingredients +
+                    '</table>' +
+                    '<ol id="recipeMethod" type="1">' + 
+                        method +
+                    '</ol>' +
+                    '<ul id="recipeCategories">' +
+                        categories +
+                    '</ul>' +
+                    '<a href="/recipeCreator?id=' + String(recipesData[i].recipeId) + '" class="editButton">Edit Recipe</a>' +
+                    '<button type="button" class="deleteButton" onclick="DeleteRecipe(' + String(recipesData[i].recipeId) + ')">Delete Recipe</button>' +
+                '</div>';
+            ingredients = [];
+            method = [];
+        //}
     }
     return (allRecipes)
 }
@@ -232,5 +235,77 @@ function ToggleRecipeContent(recipeContent)
 }
 
 
+//-----------------------------------------
 
+/**
+ * CheckCookies()
+ * Checks the cookies to see if a user is logged in.
+ */
+/*function CheckCookies()
+{
+    let userId = GetUserIdFromCookie();
+    if (userId != "")
+    {
+        let loginButton = document.getElementById("loginButton");
+        let registerButton = document.getElementById("registerButton");
+        if (loginButton)
+        {
+            loginButton.innerHTML = "Log out";
+            loginButton.removeAttribute("href");
+            loginButton.setAttribute("onclick", "DeleteCookies()");
+        }
+
+        if (registerButton)
+        {
+            registerButton.style.display = "none";
+        }
+    }
+    else
+    {
+        alert("You must be logged in to view this page!");
+    }
+}*/
+
+
+/**
+ * GetUserIdFromCookie()
+ * Gets the currently logged in user's userId.
+ * @returns userId stored in cookie OR empty string if not found.
+ */
+/*function GetUserIdFromCookie()
+{
+    let name = "userId=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let cookieParams = decodedCookie.split(';')
+    for (let i = 0; i < cookieParams.length; i++)
+    {
+        let c = cookieParams[i];
+        while (c.charAt(0) == ' ')
+        {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0)
+        {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}*/
+
+/**
+ * DeleteCookies()
+ * Deletes the cookies.
+ */
+/*function DeleteCookies()
+{
+    document.cookie = "userId=;";
+    CheckCookies();
+}*/
+
+
+//-----------------------------------------
+
+
+
+//CheckCookies();
 LoadContent();

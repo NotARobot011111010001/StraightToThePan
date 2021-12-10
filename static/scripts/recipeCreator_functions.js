@@ -9,10 +9,6 @@ function LoadContent()
     {
         PopulateRecipe(parseInt(urlParams.get('id')));
     }
-    else
-    {
-        GetRecipes();
-    }
 }
 
 
@@ -42,28 +38,47 @@ function PopulateRecipe(recipeId)
             {
                 if (parseInt(recipes[i].recipeId) == recipeId)
                 {
-                    document.getElementById("inputTitle").value = String(recipes[i].title);
+                    document.getElementById("titleInput").value = String(recipes[i].title);
     
-                    var tableData = "";
+                    var ingredientsTable = "";
                     for (let j = 0; j < recipes[i].ingredients.length; j++)
                     {
-                        tableData += "<tr><td>" + String(recipes[i].ingredients[j].name) + "</td><td>" + String(recipes[i].ingredients[j].amount) + "</td></tr>";
+                        ingredientsTable += 
+                        '<tr>' + 
+                            '<td contenteditable="true">' + String(recipes[i].ingredients[j].name) + '</td>' +
+                            '<td contenteditable="true">' + String(recipes[i].ingredients[j].amount) + '</td>' +
+                            '<td>' +
+                                '<button type="button" onclick=DeleteTableRow(this)>Delete Ingredient</button>' +
+                            '</td>'  
+                        '</tr>';
                     }
-                    document.getElementById("recipeIngredients").innerHTML = "<tr><th>Ingredient</th><th>Amount</th></tr>" + tableData;
+                    document.getElementById("ingredientInput").innerHTML = '<tr><th>Ingredient</th><th>Amount</th><th><button type="button" onclick="AddIngredientRow()">Add Ingredient</button><th></tr>' + ingredientsTable;
 
-                    var methodList = "";
+                    var methodTable = "";
                     for (let j = 0; j < recipes[i].method.length; j++)
                     {
-                        methodList += "<li>" + String(recipes[i].method[j]) + "</li>";
+                        methodTable += 
+                        '<tr>' + 
+                            '<td contenteditable="true">' + String(recipes[i].method[j]) + '</td>' +
+                            '<td>' +
+                                '<button type="button" onclick=DeleteTableRow(this)>Delete Step</button>' +
+                            '</td>'  
+                        '</tr>';
                     }
-                    document.getElementById("recipeMethod").innerHTML = methodList;
+                    document.getElementById("methodInput").innerHTML = '<tr><th>Step</th><th><button type="button" onclick="AddMethodRow()">Add Step</button><th></tr>' + methodTable;
 
-                    var categories = "";
+                    var categoryTable = "";
                     for (let j = 0; j < recipes[i].categories.length; j++)
                     {
-                        categories += "<li>" + String(recipes[i].categories[j]) + "</li>";
+                        categoryTable += 
+                        '<tr>' + 
+                            '<td contenteditable="true">' + String(recipes[i].categories[j]) + '</td>' +
+                            '<td>' +
+                                '<button type="button" onclick=DeleteTableRow(this)>Delete Tag</button>' +
+                            '</td>'  
+                        '</tr>';
                     }
-                    document.getElementById("recipeCategories").innerHTML = categories;
+                    document.getElementById("categoryInput").innerHTML = '<tr><th>Step</th><th><button type="button" onclick="AddCategoryRow()">Add Tag</button><th></tr>' + categoryTable;
 
                     break;
                 }
@@ -78,147 +93,245 @@ function PopulateRecipe(recipeId)
 //-----------------------------------------
 
 
-/**
- * GetRecipes()
- * This function retrives all recipes from json file and places it in the recipes section
- */
- function GetRecipes() 
- {
-    let recipeUrl = "/recipes";
-    let response = "error while retriving";
-    let recipesData = "";
-    let allRecipes = "";
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () 
+function DeleteTableRow(btn)
+{
+    let row = btn.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+}
+
+
+function AddIngredientRow()
+{
+    document.getElementById("ingredientInput").innerHTML +=
+    '<tr>' + 
+        '<td contenteditable="true">New Ingredient</td>' +
+        '<td contenteditable="true">New Amount</td>' +
+        '<td>' +
+            '<button type="button" onclick=DeleteTableRow(this)>Delete Ingredient</button>' +
+        '</td>'  
+    '</tr>';
+}
+
+
+function AddMethodRow()
+{
+    document.getElementById("methodInput").innerHTML +=
+    '<tr>' + 
+        '<td contenteditable="true">New Step</td>' +
+        '<td>' +
+            '<button type="button" onclick=DeleteTableRow(this)>Delete Step</button>' +
+        '</td>'  
+    '</tr>';
+}
+
+
+function AddCategoryRow()
+{
+    document.getElementById("categoryInput").innerHTML +=
+    '<tr>' + 
+        '<td contenteditable="true">New Tag</td>' +
+        '<td>' +
+            '<button type="button" onclick=DeleteTableRow(this)>Delete Tag</button>' +
+        '</td>'  
+    '</tr>';
+}
+
+
+function IngredientsTableToJSON()
+{
+    var ingredients = [];
+    let table = document.getElementById("ingredientInput");
+
+    for (let i = 1; i < table.rows.length; i++)
     {
-        if (xhttp.readyState == 4 && xhttp.status == 200) 
+        let row = table.rows[i];
+        let ingredient = {
+            "name": String(row.cells[0].textContent),
+            "amount": String(row.cells[1].textContent)
+        };
+        ingredients.push(ingredient);
+    }
+    return ingredients;
+}
+
+
+function MethodTableToJSON()
+{
+    var method = [];
+    let table = document.getElementById("methodInput");
+
+    for (let i = 1; i < table.rows.length; i++)
+    {
+        let row = table.rows[i];
+        method.push(String(row.cells[0].textContent));
+    }
+    return method;
+}
+
+
+function CategoryTableToJSON()
+{
+    var categories = [];
+    let table = document.getElementById("categoryInput");
+
+    for (let i = 1; i < table.rows.length; i++)
+    {
+        let row = table.rows[i];
+        categories.push(String(row.cells[0].textContent));
+    }
+    return categories;
+}
+
+
+function SaveRecipe()
+{
+    let recipeId = -1;
+    //let userId = GetUserIdFromCookie();
+    let userId = 0; // Ignore login system for now. Assume the userId is 0.
+    let title = document.getElementById("titleInput").value;
+    let ingredients = IngredientsTableToJSON();
+    let method = MethodTableToJSON();
+    let categories = CategoryTableToJSON();
+
+    let url = "/recipes";
+    let response = "Error while retrieving.";
+    let xhttp = new XMLHttpRequest();
+
+    var recipes;
+  
+    // Gets the recipe list.
+    xhttp.onreadystatechange = function() 
+    {
+        if (xhttp.readyState == 4 && xhttp.status == 200)
         {
-            //extracting json data object
             response = JSON.parse(xhttp.responseText);
-            recipesData = response.result;
-            allRecipes = FormatJson(recipesData);
-            document.getElementById("allRecipes").innerHTML = allRecipes;
+            recipes = response.result;
+
+            let recipeFound = false;
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('id'))
+            {
+                for (let i = 0; i < recipes.length; i++)
+                {
+                    if (recipes[i].recipeId == parseInt(urlParams.get('id')))
+                    {
+                        console.log("editing recipe");
+                        recipes[i].title = title;
+                        recipes[i].ingredients = ingredients;
+                        recipes[i].method = method;
+                        recipes[i].categories = categories;
+
+                        break;
+                    }
+                }
+            }
+
+            if (!(urlParams.has('id')) || !recipeFound)
+            {
+                for (let i = 0; i < recipes.length; i++)
+                {
+                    if (recipes[i].recipeId > recipeId)
+                    {
+                        recipeId = recipes[i].recipeId;
+                    }
+                    recipeId++;
+                }
+
+                let newRecipe = {
+                    "recipeId": recipeId,
+                    "userId": userId,
+                    "title": title,
+                    "ingredients": ingredients,
+                    "method": method,
+                    "categories": categories
+                };
+                recipes.push(newRecipe);
+            }
+
+
+
+            let xhttp2 = new XMLHttpRequest();
+            xhttp2.open("PUT", url, true);
+            xhttp2.send(JSON.stringify({ "recipes": recipes }));
+            alert("Successfully saved!");
         }
     }
-    xhttp.open("GET", recipeUrl, true);
+    xhttp.open("GET", url, true);
     xhttp.send();
 }
 
 
+//-----------------------------------------
+
 /**
- * FormatJSON()
- * this function re-formats the json object
- * @param recipesData- the data from all recipes in the json file
- * @returns {reformatted data to suit html layout}
- * to be used in getRecipes method
+ * CheckCookies()
+ * Checks the cookies to see if a user is logged in.
  */
- function FormatJson(recipesData) 
- {
-    let methodData = "";
-    let ingredientsData = "";
-    let allRecipes = "";
-
-    for (let i = 0; i < recipesData.length; i++) 
-    {
-        //extracting ingredients
-        ingredientsData = recipesData[i].ingredients;
-        let ingredients = ExtractIngredients(ingredientsData)
-        //extracting method
-        methodData = recipesData[i].method;
-        let method = ExtractMethod(methodData)
-        // situating recipe the rest of the data in a div for each recipe
-        allRecipes = String(allRecipes) +
-            '<div id="recipe' + recipesData[i].recipeId + '">' +
-            '<button id="recipeName" onclick="showContent(this.parentElement)">' + String(recipesData[i].title) + '</button>' +
-            '<table id="ingredientsList" width="100%" class="hidden">' +
-            '<tr>' +
-            '<th> Ingredient</th>' +
-            '<th> Quantity</th>' +
-            '</tr>' +
-            ingredients +
-            '</table>' +
-            '<ol id= "recipeMethod" class="hidden">' +
-            method +
-            '</ol>' +
-            '<div id="selectedRecipeButtons" class="hidden">' +
-            '<button id="editRecipe">edit recipe</button>'+
-            '<button id="deleteRecipe" onClick="deleteRecipe(this.parentElement.parentElement)">delete recipe </button>'+
-            '</div>'+
-            '</div>' +
-            '</div>';
-        ingredients = [];
-        method = [];
-    }
-    return (allRecipes)
-}
-
-
-/** 
- * ExtractIngredients()
- * this method extracts individual ingredients and their quantity's,
- * and places the data inside a table
- *
- * @param ingredientsData
- * @returns {a list of ingredients formatted for html}
- * to be used in formatJson method
- */
-function ExtractIngredients(ingredientsData) 
+/*function CheckCookies()
 {
-    let ingredientsList = "";
-    for (let i = 0; i < ingredientsData.length; i++) 
+    let userId = GetUserIdFromCookie();
+    if (userId != "")
     {
-        ingredientsList = ingredientsList +
-            '<tr>' +
-            '<td id="ingredient' + i + '">' + ingredientsData[i].name + '</td>' +
-            '<td id="quantity' + i + '">' + ingredientsData[i].amount + '</td>' +
-            '</tr>';
+        let loginButton = document.getElementById("loginButton");
+        let registerButton = document.getElementById("registerButton");
+        if (loginButton)
+        {
+            loginButton.innerHTML = "Log out";
+            loginButton.removeAttribute("href");
+            loginButton.setAttribute("onclick", "DeleteCookies()");
+        }
+
+        if (registerButton)
+        {
+            registerButton.style.display = "none";
+        }
     }
-    return (ingredientsList)
-}
-
-
-/** 
- * ExtractMethod()
- * this function formats the method
- * @param methodData
- * @returns {each step of a method in its own pararaph element}
- * to be used in formatJson method
- */
-function ExtractMethod(methodData) 
-{
-    let methodList = "";
-    for (let i = 0; i < methodData.length; i++) 
+    else
     {
-        methodList = methodList + '<li id="step' + String(i) + '">' + methodData[i] + '</li>';
+        alert("You must be logged in to view this page!");
     }
-    return (methodList)
-} 
+}*/
 
 
 /**
- * this function displays the contents of a selected recipe
+ * GetUserIdFromCookie()
+ * Gets the currently logged in user's userId.
+ * @returns userId stored in cookie OR empty string if not found.
  */
-function showContent(recipe) {
-    let parent = recipe;
-    let ingredientChild = parent.children[1]
-    let methodChild = parent.children[2]
-    let buttonChild= parent.children[3]
-    let tagChild = parent.children[4]
-
-    if (methodChild.getAttribute("class") !== "hidden") {
-        methodChild.setAttribute("class", "hidden")
-        ingredientChild.setAttribute("class", "hidden")
-        buttonChild.setAttribute("class", "hidden")
-        tagChild.setAttribute("class", "hidden")
-
-    } else {
-        methodChild.setAttribute("class", "none")
-        ingredientChild.setAttribute("class", "none")
-        buttonChild.setAttribute("class", "none")
-        tagChild.setAttribute("class", "none")
+/*function GetUserIdFromCookie()
+{
+    let name = "userId=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let cookieParams = decodedCookie.split(';')
+    for (let i = 0; i < cookieParams.length; i++)
+    {
+        let c = cookieParams[i];
+        while (c.charAt(0) == ' ')
+        {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0)
+        {
+            return c.substring(name.length, c.length);
+        }
     }
-}
+    return "";
+}*/
+
+/**
+ * DeleteCookies()
+ * Deletes the cookies.
+ */
+/*function DeleteCookies()
+{
+    document.cookie = "userId=;";
+    CheckCookies();
+}*/
+
+
+//-----------------------------------------
 
 
 
+//CheckCookies();
 LoadContent();

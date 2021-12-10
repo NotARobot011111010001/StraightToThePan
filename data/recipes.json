@@ -1,23 +1,21 @@
 {
-    "recipes":
-    [
+    "recipes": [
         {
-            "recipeId":0,
-            "userId":0,
-            "title":"Lotus cheesecake",
-            "ingredients":
-            [
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
                 {
-                    "name":"butter",
-                    "amount":"125g"
+                    "name": "butter",
+                    "amount": "125g"
                 },
                 {
-                    "name":"lotus biscuits",
-                    "amount":"300g"
+                    "name": "lotus biscuits",
+                    "amount": "300g"
                 }
             ],
-            "method":
-            [
+            "method": [
                 "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
                 "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
                 "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race). Alternatively, you can whip the cream separately to stiff peaks and fold through!",
@@ -25,724 +23,714 @@
                 "Remove from the tin and decorate how you like.",
                 "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
             ],
-            "categories":
-            [
-                "1",
-                "2"
-            ]
+            "recipeId": 0,
+            "title": "Lotus cheesecake",
+            "userId": 0
         },
         {
-            "recipeId":1,
-            "userId":0,
-            "title":"Souffle pancakes",
-            "ingredients":
-            [
-                {
-                    "name":"large eggs",
-                    "amount":"2"
-                },
-                {
-                    "name":"golden caster sugar",
-                    "amount":"2tbs"
-                },
-                {
-                    "name":"vanilla extract",
-                    "amount":"1tsp"
-                },
-                {
-                    "name":"milk",
-                    "amount":"2tbs"
-                },
-                {
-                    "name":"self-raising flour",
-                    "amount":"2tbs"
-                },
-                {
-                    "name":"vegetable oil",
-                    "amount":"1tsp"
-                }
-
-                
-            ],
-            "method":
-            [
-                "Whisk the egg whites in a clean bowl with 1 tbsp sugar using an electric whisk or a stand mixer to form stiff peaks.",
-                "Beat the egg yolks, 1 tbsp sugar and vanilla together in a separate bowl until pale and foamy, and a ribbon trail is left on the surface when the beaters are removed. Gently fold in the milk and flour until just incorporated.",
-                "Fold the egg whites into the egg yolk mixture and gently turn the batter over to mix, using the side of a metal spoon or spatula to keep all the air in the mixture.",
-                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper – you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don’t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
-                "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
-            ],
-            "categories":
-            [
+            "categories": [
                 "7",
                 "2"
-            ]
-        },
-        {
-            "recipeId":2,
-            "userId":0,
-            "title":"broccoli and sausage pasta bake ",
-            "ingredients":
-            [
+            ],
+            "ingredients": [
                 {
-                    "name":"large eggs",
-                    "amount":"2"
+                    "amount": "2",
+                    "name": "large eggs"
+                },
+                {
+                    "amount": "2tbs",
+                    "name": "golden caster sugar"
+                },
+                {
+                    "amount": "1tsp",
+                    "name": "vanilla extract"
+                },
+                {
+                    "amount": "2tbs",
+                    "name": "milk"
+                },
+                {
+                    "amount": "2tbs",
+                    "name": "self-raising flour"
+                },
+                {
+                    "amount": "1tsp",
+                    "name": "vegetable oil"
                 }
             ],
-            "method":
-            [
+            "method": [
                 "Whisk the egg whites in a clean bowl with 1 tbsp sugar using an electric whisk or a stand mixer to form stiff peaks.",
                 "Beat the egg yolks, 1 tbsp sugar and vanilla together in a separate bowl until pale and foamy, and a ribbon trail is left on the surface when the beaters are removed. Gently fold in the milk and flour until just incorporated.",
                 "Fold the egg whites into the egg yolk mixture and gently turn the batter over to mix, using the side of a metal spoon or spatula to keep all the air in the mixture.",
-                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper – you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don’t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
+                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper \u00e2\u20ac\u201c you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don\u00e2\u20ac\u2122t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
                 "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
             ],
-            "categories":
-            [
+            "recipeId": 1,
+            "title": "Souffle pancakes",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "2",
                 "4"
-            ]
-        },
-            {
-            "recipeId":3,
-            "userId":0,
-            "title":"Rocky road",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"digestive biscuits",
-                    "amount":"200g"
-                },
-                {
-                    "name":"butter",
-                    "amount":"135g"
-                },
-                {
-                    "name":"dark chocolate",
-                    "amount":"200g"
-                },
-                {
-                    "name":"syrup",
-                    "amount":"2.5tbs"
-                },
-                {
-                    "name":"mini marshmallows",
-                    "amount":"100g"
+                    "amount": "2",
+                    "name": "large eggs"
                 }
             ],
-            "method":[
+            "method": [
+                "Whisk the egg whites in a clean bowl with 1 tbsp sugar using an electric whisk or a stand mixer to form stiff peaks.",
+                "Beat the egg yolks, 1 tbsp sugar and vanilla together in a separate bowl until pale and foamy, and a ribbon trail is left on the surface when the beaters are removed. Gently fold in the milk and flour until just incorporated.",
+                "Fold the egg whites into the egg yolk mixture and gently turn the batter over to mix, using the side of a metal spoon or spatula to keep all the air in the mixture.",
+                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper \u00e2\u20ac\u201c you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don\u00e2\u20ac\u2122t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
+                "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
+            ],
+            "recipeId": 2,
+            "title": "broccoli and sausage pasta bake ",
+            "userId": 0
+        },
+        {
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
+                {
+                    "amount": "200g",
+                    "name": "digestive biscuits"
+                },
+                {
+                    "amount": "135g",
+                    "name": "butter"
+                },
+                {
+                    "amount": "200g",
+                    "name": "dark chocolate"
+                },
+                {
+                    "amount": "2.5tbs",
+                    "name": "syrup"
+                },
+                {
+                    "amount": "100g",
+                    "name": "mini marshmallows"
+                }
+            ],
+            "method": [
                 "Grease and line an 18cm square brownie tin with baking paper.",
                 "Place 200g digestive biscuits in a freezer bag and bash with a rolling pin or just the side of your fist until they're broken into a mixture of everything between dust and 50p-sized lumps. Set aside.",
                 "In a large saucepan melt 135g butter or margarine, 200g dark chocolate and 2-3 tbsp golden syrup over a gentle heat stirring constantly until there are no or almost no more lumps of chocolate visible, then remove from the heat. Leave to cool.",
                 "Take the biscuits, 100g mini marshmallows and up to 100g of additional ingredients (dried fruit, nuts, popcorn, honeycomb), if you like, and stir into the chocolate mixture until everything is completely covered.",
                 "Tip the mixture into the lined baking tin, and spread it out to the corners. Chill for at least 2 hrs then dust with icing sugar and cut into 12 fingers."
             ],
-            "categories":[
+            "recipeId": 3,
+            "title": "Rocky road",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-		{
-            "recipeId":4,
-            "userId":0,
-            "title":"Chocolate molten cakes",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"large eggs",
-                    "amount":"3"
+                    "amount": "3",
+                    "name": "large eggs"
                 },
                 {
-                    "name":"butter",
-                    "amount":"100g"
+                    "amount": "100g",
+                    "name": "butter"
                 },
                 {
-                    "name":"dark chocolate",
-                    "amount":"100g"
+                    "amount": "100g",
+                    "name": "dark chocolate"
                 },
                 {
-                    "name":"light brown soft sugar",
-                    "amount":"150g"
+                    "amount": "150g",
+                    "name": "light brown soft sugar"
                 },
                 {
-                    "name":"vanilla extract",
-                    "amount":"1.5tsp"
+                    "amount": "1.5tsp",
+                    "name": "vanilla extract"
                 },
-		        {
-                    "name":"plain flour",
-                    "amount":"50g"
+                {
+                    "amount": "50g",
+                    "name": "plain flour"
                 }
             ],
-            "method":[
+            "method": [
                 "Heat oven to 200C/180C fan/gas 6. Butter 6 dariole moulds or basins well and place on a baking tray.",
                 "Put 100g butter and 100g chopped dark chocolate in a heatproof bowl and set over a pan of hot water (or alternatively put in the microwave and melt in 30 second bursts on a low setting) and stir until smooth. Set aside to cool slightly for 15 mins.",
-		        "Using an electric hand whisk, mix in 150g light brown soft sugar, then 3 large eggs, one at a time, followed by ½ tsp vanilla extract and finally 50g plain flour. Divide the mixture among the darioles or basins.",
-		        "You can now either put the mixture in the fridge, or freezer until you're ready to bake them. Can be cooked straight from frozen for 16 mins, or bake now for 10-12 mins until the tops are firm to the touch but the middles still feel squidgy.",
-		        "Carefully run a knife around the edge of each pudding, then turn out onto serving plates"
+                "Using an electric hand whisk, mix in 150g light brown soft sugar, then 3 large eggs, one at a time, followed by \u00c2\u00bd tsp vanilla extract and finally 50g plain flour. Divide the mixture among the darioles or basins.",
+                "You can now either put the mixture in the fridge, or freezer until you're ready to bake them. Can be cooked straight from frozen for 16 mins, or bake now for 10-12 mins until the tops are firm to the touch but the middles still feel squidgy.",
+                "Carefully run a knife around the edge of each pudding, then turn out onto serving plates"
             ],
-            "categories":[
-                "1",
-                "2"
-            ]
-	    },
-		{
-            "recipeId":5,
-            "userId":0,
-            "title":"Spaghetti with nduja, fennel & olives",
-            "ingredients":[
-                {
-                    "name":"spaghetti",
-                    "amount":"400g"
-                },
-                {
-                    "name":"garlic cloves",
-                    "amount":"3"
-                },
-                {
-                    "name":"fennel",
-                    "amount":"0.5"
-                },
-                {
-                    "name":"nduja or sobrasada paste",
-                    "amount":"75g"
-                },
-                {
-                    "name":"tomatoes",
-                    "amount":"200g"
-                },
-		        {
-                    "name":"black olives",
-                    "amount":"75g"
-                },
-		        {
-                    "name":"olive oil",
-                    "amount":"3tbs"
-                },
-		        {
-                    "name":"tomato purée",
-                    "amount":"2tbs"
-                },
-		        {
-                    "name":"red wine vinegar",
-                    "amount":"2tbs"
-                },
-		        {
-                    "name":"pecorino",
-                    "amount":"40g"
-                }
-            ],
-            "method":[
-                "Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well. Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften.",
-		        "Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
-            ],
-            "categories":[
-                "1",
-                "2"
-            ]
-	    },
+            "recipeId": 4,
+            "title": "Chocolate molten cakes",
+            "userId": 0
+        },
         {
-            "recipeId":6,
-            "userId":0,
-            "title":"Peanut butter & jam flapjack",
-            "ingredients":[
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
                 {
-                    "name":"salted butter",
-                    "amount":"5tbs"
+                    "amount": "400g",
+                    "name": "spaghetti"
                 },
                 {
-                    "name":"peanut butter",
-                    "amount":"250g"
+                    "amount": "3",
+                    "name": "garlic cloves"
                 },
                 {
-                    "name":"jam",
-                    "amount":"8tbs"
+                    "amount": "0.5",
+                    "name": "fennel"
                 },
                 {
-                    "name":"light brown soft sugar",
-                    "amount":"80g"
+                    "amount": "75g",
+                    "name": "nduja or sobrasada paste"
                 },
                 {
-                    "name":"rolled oats",
-                    "amount":"200g"
+                    "amount": "200g",
+                    "name": "tomatoes"
+                },
+                {
+                    "amount": "75g",
+                    "name": "black olives"
+                },
+                {
+                    "amount": "3tbs",
+                    "name": "olive oil"
+                },
+                {
+                    "amount": "2tbs",
+                    "name": "tomato pur\u00c3\u00a9e"
+                },
+                {
+                    "amount": "2tbs",
+                    "name": "red wine vinegar"
+                },
+                {
+                    "amount": "40g",
+                    "name": "pecorino"
                 }
             ],
-            "method":[
+            "method": [
+                "Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well. Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften.",
+                "Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
+            ],
+            "recipeId": 5,
+            "title": "Spaghetti with nduja, fennel & olives",
+            "userId": 0
+        },
+        {
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
+                {
+                    "amount": "5tbs",
+                    "name": "salted butter"
+                },
+                {
+                    "amount": "250g",
+                    "name": "peanut butter"
+                },
+                {
+                    "amount": "8tbs",
+                    "name": "jam"
+                },
+                {
+                    "amount": "80g",
+                    "name": "light brown soft sugar"
+                },
+                {
+                    "amount": "200g",
+                    "name": "rolled oats"
+                }
+            ],
+            "method": [
                 "Heat the oven to 180C/160C fan/gas 4. Butter and line the base and sides of a 20cm square cake tin with baking parchment.",
                 "Put 3 tbsp each of the peanut butter and jam in separate small bowls and set aside. Tip the remaining peanut butter, the rest of the jam and the butter and sugar into a pan set over a medium heat and stir until everything has melted together. Quickly stir in the oats, then leave to cool for 5 mins.",
                 "Spoon the mixture into the prepared cake tin and gently press down with your hands. Dot over the reserved peanut butter and jam, then bake for 20-25 mins or until golden brown. Leave to cool completely in the tin, then turn out onto a board and cut into squares."
             ],
-            "categories":[
+            "recipeId": 6,
+            "title": "Peanut butter & jam flapjack",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-        {
-            "recipeId":7,
-            "userId":0,
-            "title":"Smoked salmon & spinach gratin",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"butter",
-                    "amount":"15g"
+                    "amount": "15g",
+                    "name": "butter"
                 },
                 {
-                    "name":"smoked raw salmon fillets",
-                    "amount":"6"
+                    "amount": "6",
+                    "name": "smoked raw salmon fillets"
                 },
                 {
-                    "name":"spinach",
-                    "amount":"1200g"
+                    "amount": "1200g",
+                    "name": "spinach"
                 },
                 {
-                    "name":"double cream",
-                    "amount":"300ml"
+                    "amount": "300ml",
+                    "name": "double cream"
                 }
             ],
-            "method":[
-                "Put the spinach in a really big saucepan (or two saucepans) and add a few tablespoons of water. Cover, set over a medium heat and cook for about 5-8 mins, turning the spinach over every so often, until wilted. Tip it into a colander to drain and allow it to cool (spread it out on a plate to cool it quicker). Take big handfuls of it in your fists and squeeze out the excess water. It’s really important that you do this, otherwise the water will leach out and make the cream watery and green.",
-                "Chop the spinach. Melt the butter in a saucepan and gently toss the spinach in it. Season with pepper and a tiny bit of salt (there’s so much salt in the salmon). Heat the oven to 160C/140C fan/gas 3. Lay the spinach in the bottom of a gratin dish (about 30cm x 20cm), then arrange the salmon fillets on top.",
+            "method": [
+                "Put the spinach in a really big saucepan (or two saucepans) and add a few tablespoons of water. Cover, set over a medium heat and cook for about 5-8 mins, turning the spinach over every so often, until wilted. Tip it into a colander to drain and allow it to cool (spread it out on a plate to cool it quicker). Take big handfuls of it in your fists and squeeze out the excess water. It\u00e2\u20ac\u2122s really important that you do this, otherwise the water will leach out and make the cream watery and green.",
+                "Chop the spinach. Melt the butter in a saucepan and gently toss the spinach in it. Season with pepper and a tiny bit of salt (there\u00e2\u20ac\u2122s so much salt in the salmon). Heat the oven to 160C/140C fan/gas 3. Lay the spinach in the bottom of a gratin dish (about 30cm x 20cm), then arrange the salmon fillets on top.",
                 "Heat the double cream in a small pan, then pour it all over the salmon and spinach. Bake for 35 mins, or until the top is golden and the cream is bubbling."
             ],
-            "categories":[
+            "recipeId": 7,
+            "title": "Smoked salmon & spinach gratin",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-        {
-            "recipeId":8,
-            "userId":0,
-            "title":"Chorizo & pea risotto",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"oil",
-                    "amount":"1tbs"
+                    "amount": "1tbs",
+                    "name": "oil"
                 },
                 {
-                    "name":"chorizo",
-                    "amount":"200g"
+                    "amount": "200g",
+                    "name": "chorizo"
                 },
                 {
-                    "name":"risotto rice",
-                    "amount":"300g"
+                    "amount": "300g",
+                    "name": "risotto rice"
                 },
                 {
-                    "name":"vinegar",
-                    "amount":"2tbs"
+                    "amount": "2tbs",
+                    "name": "vinegar"
                 },
                 {
-                    "name":"chicken stock",
-                    "amount":"1200ml"
+                    "amount": "1200ml",
+                    "name": "chicken stock"
                 },
                 {
-                    "name":"pea",
-                    "amount":"200g"
+                    "amount": "200g",
+                    "name": "pea"
                 },
                 {
-                    "name":"parmesan",
-                    "amount":"60g"
+                    "amount": "60g",
+                    "name": "parmesan"
                 }
             ],
-            "method":[
+            "method": [
                 "Heat the oil in a large frying pan, tip in the chorizo and fry until it is crisp and all the oil has been released. Remove a quarter of the chorizo with a slotted spoon and set aside.",
                 "Tip the rice into the pan, stir to coat it in the oil and toast for a min or so, then pour in the vinegar. Once the vinegar has evaporated, add a ladleful of the stock, stir then, once absorbed, add a bit more. Continue doing this for about 20 mins until most of the stock has been absorbed and the rice has swollen but still has a slight bite.",
                 "Tip in the peas, parmesan and the remaining stock. Give everything a good stir. Once the cheese has melted, season with black pepper, then divide between bowls, topping each portion with the remaining crisp chorizo and extra grated parmesan."
             ],
-            "categories":[
+            "recipeId": 8,
+            "title": "Chorizo & pea risotto",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-        {
-            "recipeId":9,
-            "userId":0,
-            "title":"Red pepper linguine",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"red pepper",
-                    "amount":"1"
+                    "amount": "1",
+                    "name": "red pepper"
                 },
                 {
-                    "name":"garlic cloves",
-                    "amount":"1"
+                    "amount": "1",
+                    "name": "garlic cloves"
                 },
                 {
-                    "name":"olive oil",
-                    "amount":"30ml"
+                    "amount": "30ml",
+                    "name": "olive oil"
                 },
                 {
-                    "name":"walnuts",
-                    "amount":"50g"
+                    "amount": "50g",
+                    "name": "walnuts"
                 },
                 {
-                    "name":"linguine",
-                    "amount":"100g"
+                    "amount": "100g",
+                    "name": "linguine"
                 },
                 {
-                    "name":"parmesan",
-                    "amount":"10g"
+                    "amount": "10g",
+                    "name": "parmesan"
                 }
             ],
-            "method":[
+            "method": [
                 "Blitz the roasted red pepper with the olive oil, walnuts and garlic in a food processor, season well and set aside.",
                 "Bring a pan of salted water to the boil, add the pasta and cook for 1 min less than the pack instructions and drain, reserving a ladleful of cooking water. Tip the pasta back into the pan, along with the reserved cooking water and red pepper sauce, and return to the heat to warm through. Tip the pasta into a bowl and top with the parmesan and some chopped toasted walnuts. Season and serve."
             ],
-            "categories":[
+            "recipeId": 9,
+            "title": "Red pepper linguine",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-        {
-            "recipeId":10,
-            "userId":0,
-            "title":"Beetroot, hummus & crispy chickpea sub sandwich",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"ciabatta rolls",
-                    "amount":"2"
+                    "amount": "2",
+                    "name": "ciabatta rolls"
                 },
                 {
-                    "name":"olive oil",
-                    "amount":"5ml"
+                    "amount": "5ml",
+                    "name": "olive oil"
                 },
                 {
-                    "name":"chickpeas",
-                    "amount":"400g"
+                    "amount": "400g",
+                    "name": "chickpeas"
                 },
                 {
-                    "name":"cooked beetroot",
-                    "amount":"300g"
+                    "amount": "300g",
+                    "name": "cooked beetroot"
                 },
                 {
-                    "name":"vinegar",
-                    "amount":"5ml"
+                    "amount": "5ml",
+                    "name": "vinegar"
                 },
                 {
-                    "name":"salad",
-                    "amount":"115g"
+                    "amount": "115g",
+                    "name": "salad"
                 }
             ],
-            "method":[
-                "Blitz the whole beetroot, ¾ of the chickpeas, 2 tbsp pesto and 1 tbsp oil in a food processor with some seasoning until you have a thick, smooth hummus. Heat the ciabatta following the pack instructions.",
+            "method": [
+                "Blitz the whole beetroot, \u00c2\u00be of the chickpeas, 2 tbsp pesto and 1 tbsp oil in a food processor with some seasoning until you have a thick, smooth hummus. Heat the ciabatta following the pack instructions.",
                 "Fry the remaining chickpeas in a little oil until crisp, then set aside. Toss the salad leaves with the remaining pesto and a splash of vinegar. Slice the rolls, then assemble the sandwiches with the hummus, beetroot slices, salad leaves and fried chickpeas."
             ],
-            "categories":[
+            "recipeId": 10,
+            "title": "Beetroot, hummus & crispy chickpea sub sandwich",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-        {
-            "recipeId":11,
-            "userId":0,
-            "title":"Saucy bean baked eggs",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"cherry tomatoes",
-                    "amount":"800g"
+                    "amount": "800g",
+                    "name": "cherry tomatoes"
                 },
                 {
-                    "name":"mixed bean salad",
-                    "amount":"400g"
+                    "amount": "400g",
+                    "name": "mixed bean salad"
                 },
                 {
-                    "name":"baby spinach",
-                    "amount":"200g"
+                    "amount": "200g",
+                    "name": "baby spinach"
                 },
                 {
-                    "name":"egg",
-                    "amount":"4"
+                    "amount": "4",
+                    "name": "egg"
                 },
                 {
-                    "name":"smoked ham",
-                    "amount":"50g"
+                    "amount": "50g",
+                    "name": "smoked ham"
                 }
             ],
-            "method":[
+            "method": [
                 "Tip the tomatoes and bean salad into an ovenproof frying pan or shallow flameproof casserole dish. Simmer for 10 mins, or until reduced. Stir in the spinach and cook for 5 mins more until wilted.",
                 "Heat the grill to medium. Make four indentations in the mixture using the back of a spoon, then crack one egg in each. Nestle the ham in the mixture, then grill for 4-5 mins, or until the whites are set and the yolks runny. Serve with rye bread, if you like."
             ],
-            "categories":[
-                "1",
-                "2"
-            ]
-	    },
-        {
-            "recipeId":12,
-            "userId":0,
-            "title":"Kedgeree",
-            "ingredients":[
-                {
-                    "name":"basmati rice",
-                    "amount":"300g"
-                },
-                {
-                    "name":"curry powder",
-                    "amount":"2tbs"
-                },
-                {
-                    "name":"chicken stock",
-                    "amount":"600ml"
-                },
-                {
-                    "name":"smoked haddock",
-                    "amount":"400g"
-                },
-                {
-                    "name":"peas",
-                    "amount":"100g"
-                }
-            ],
-            "method":[
-                "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
-                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
-            ],
-            "categories":[
-                "1",
-                "2"
-            ]
-	    },
-        {
-            "recipeId":13,
-            "userId":0,
-            "title":"Miso mushroom & tofu noodle soup",
-            "ingredients":[
-                {
-                    "name":"mixed mushrooms",
-                    "amount":"70g"
-                },
-                {
-                    "name":"rapeseed oil",
-                    "amount":"1tbs"
-                },
-                {
-                    "name":"smoked tofu",
-                    "amount":"50g"
-                },
-                {
-                    "name":"brown rice miso paste",
-                    "amount":"0.5tbs"
-                },
-                {
-                    "name":"egg noodles",
-                    "amount":"50g"
-                },
-                {
-                    "name":"spring onions",
-                    "amount":"2"
-                }
-    ],
-        "method":[
-            "Heat half the oil in a frying pan over a medium heat. Add the mushrooms and fry for 5-6 mins, or until golden. Transfer to a bowl using a slotted spoon and set aside. Add the remaining oil to the pan and fry the tofu for 3-4 mins, or until evenly golden.",
-            "Mix the miso paste with 325ml boiling water in a jug. Cook the noodles following pack instructions, then drain and transfer to a bowl. Top with the mushrooms and tofu, then pour over the miso broth. Scatter over the spring onions just before serving."
-        ],
-            "categories":[
-                "1",
-                "2"
-            ]
+            "recipeId": 11,
+            "title": "Saucy bean baked eggs",
+            "userId": 0
         },
         {
-            "recipeId":14,
-            "userId":0,
-            "title":"Kedgeree",
-            "ingredients":[
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
                 {
-                    "name":"basmati rice",
-                    "amount":"300g"
+                    "amount": "300g",
+                    "name": "basmati rice"
                 },
                 {
-                    "name":"curry powder",
-                    "amount":"2tbs"
+                    "amount": "2tbs",
+                    "name": "curry powder"
                 },
                 {
-                    "name":"chicken stock",
-                    "amount":"600ml"
+                    "amount": "600ml",
+                    "name": "chicken stock"
                 },
                 {
-                    "name":"smoked haddock",
-                    "amount":"400g"
+                    "amount": "400g",
+                    "name": "smoked haddock"
                 },
                 {
-                    "name":"peas",
-                    "amount":"100g"
+                    "amount": "100g",
+                    "name": "peas"
                 }
             ],
-            "method":[
+            "method": [
                 "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
                 "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
             ],
-            "categories":[
-                "1",
-                "2"
-            ]
-	    },
+            "recipeId": 12,
+            "title": "Kedgeree",
+            "userId": 0
+        },
         {
-            "recipeId":15,
-            "userId":0,
-            "title":"Chorizo ciabatta",
-            "ingredients":[
-                {
-                    "name":"large ciabatta",
-                    "amount":"1"
-                },
-                {
-                    "name":"cooked chorizo ",
-                    "amount":"150g"
-                },
-                {
-                    "name":"pesto",
-                    "amount":"75g"
-                },
-                {
-                    "name":"roasted red peppers ",
-                    "amount":"200g"
-                },
-                {
-                    "name":"rocket",
-                    "amount":"115g"
-                }
-            ],
-            "method":[
-              "Heat oven to 180C/160C fan/gas 4 and put the ciabatta in to warm up. Put a griddle pan over a medium heat and cook the chorizo for 5 mins each side or until charred and cooked through.",
-              "Open up the warmed ciabatta and spread the pesto on the bottom. Layer with the red peppers , then the warm chorizo. Scatter over the rocket, sandwich the ciabatta together, cut in two and serve."
-            ],
-            "categories":[
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
+            ],
+            "ingredients": [
+                {
+                    "amount": "70g",
+                    "name": "mixed mushrooms"
+                },
+                {
+                    "amount": "1tbs",
+                    "name": "rapeseed oil"
+                },
+                {
+                    "amount": "50g",
+                    "name": "smoked tofu"
+                },
+                {
+                    "amount": "0.5tbs",
+                    "name": "brown rice miso paste"
+                },
+                {
+                    "amount": "50g",
+                    "name": "egg noodles"
+                },
+                {
+                    "amount": "2",
+                    "name": "spring onions"
+                }
+            ],
+            "method": [
+                "Heat half the oil in a frying pan over a medium heat. Add the mushrooms and fry for 5-6 mins, or until golden. Transfer to a bowl using a slotted spoon and set aside. Add the remaining oil to the pan and fry the tofu for 3-4 mins, or until evenly golden.",
+                "Mix the miso paste with 325ml boiling water in a jug. Cook the noodles following pack instructions, then drain and transfer to a bowl. Top with the mushrooms and tofu, then pour over the miso broth. Scatter over the spring onions just before serving."
+            ],
+            "recipeId": 13,
+            "title": "Miso mushroom & tofu noodle soup",
+            "userId": 0
+        },
         {
-            "recipeId":16,
-            "userId":0,
-            "title":"Jerk prawn & coconut rice bowls",
-            "ingredients":[
-                {
-                    "name":"raw peeled king prawns",
-                    "amount":"150g"
-                },
-                {
-                    "name":"jerk seasoning",
-                    "amount":"1.5tbs"
-                },
-                {
-                    "name":"kidney beans in chilli sauce",
-                    "amount":"400g"
-                },
-                {
-                    "name":"coconut rice",
-                    "amount":"250g"
-                }
-            ],
-            "method":[
-              "Heat 1 tbsp flavourless oil in a large frying pan. Add the prawns and the jerk seasoning, and cook for 1-2 mins. Drain the beans, reserving 3 tbsp of the chilli sauce.",
-              "Add the beans to the pan along with the reserved sauce and the coconut rice. Fry for 3-4 mins, then season with salt to taste and spoon into two bowls to serve."
-            ],
-            "categories":[
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
+            ],
+            "ingredients": [
+                {
+                    "amount": "300g",
+                    "name": "basmati rice"
+                },
+                {
+                    "amount": "2tbs",
+                    "name": "curry powder"
+                },
+                {
+                    "amount": "600ml",
+                    "name": "chicken stock"
+                },
+                {
+                    "amount": "400g",
+                    "name": "smoked haddock"
+                },
+                {
+                    "amount": "100g",
+                    "name": "peas"
+                }
+            ],
+            "method": [
+                "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
+                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
+            ],
+            "recipeId": 14,
+            "title": "Kedgeree",
+            "userId": 0
+        },
         {
-            "recipeId":17,
-            "userId":0,
-            "title":"Mustard-stuffed chicken",
-            "ingredients":[
-                {
-                    "name":"mozzarella ball",
-                    "amount":"125g"
-                },
-                {
-                    "name":"cheddar",
-                    "amount":"50g"
-                },
-                {
-                    "name":"wholegrain mustard",
-                    "amount":"1tbs"
-                },
-                {
-                    "name":"skinless boneless chicken breast fillets",
-                    "amount":"4"
-                },
-                {
-                    "name":"smoked streaky bacon rashers",
-                    "amount":"8"
-                }
-            ],
-            "method":[
-              "Heat oven to 200C/fan 180C/gas 6. Mix the cheeses and mustard together. Cut a slit into the side of each chicken breast, then stuff with the mustard mixture. Wrap each stuffed chicken breast with 2 bacon rashers – not too tightly, but enough to hold the chicken together. Season, place on a baking sheet and roast for 20-25 mins."
-            ],
-            "categories":[
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
+            ],
+            "ingredients": [
+                {
+                    "amount": "1",
+                    "name": "large ciabatta"
+                },
+                {
+                    "amount": "150g",
+                    "name": "cooked chorizo "
+                },
+                {
+                    "amount": "75g",
+                    "name": "pesto"
+                },
+                {
+                    "amount": "200g",
+                    "name": "roasted red peppers "
+                },
+                {
+                    "amount": "115g",
+                    "name": "rocket"
+                }
+            ],
+            "method": [
+                "Heat oven to 180C/160C fan/gas 4 and put the ciabatta in to warm up. Put a griddle pan over a medium heat and cook the chorizo for 5 mins each side or until charred and cooked through.",
+                "Open up the warmed ciabatta and spread the pesto on the bottom. Layer with the red peppers , then the warm chorizo. Scatter over the rocket, sandwich the ciabatta together, cut in two and serve."
+            ],
+            "recipeId": 15,
+            "title": "Chorizo ciabatta",
+            "userId": 0
+        },
         {
-            "recipeId":18,
-            "userId":0,
-            "title":"Crispy Greek-style pie",
-            "ingredients":[
-                {
-                    "name":"spinach leaves",
-                    "amount":"200g"
-                },
-                {
-                    "name":"feta cheese",
-                    "amount":"100g"
-                },
-                {
-                    "name":"egg",
-                    "amount":"2"
-                },
-                {
-                    "name":"jar sundried tomato in oil",
-                    "amount":"175g"
-                },
-                {
-                    "name":"filo pastry",
-                    "amount":"125g"
-                }
-            ],
-            "method":[
-              "Put the spinach into a large pan. Pour over a couple tbsp water, then cook until just wilted. Tip into a sieve, leave to cool a little, then squeeze out any excess water and roughly chop. Roughly chop the tomatoes and put into a bowl along with the spinach, feta and eggs. Mix well.",
-              "Carefully unroll the filo pastry. Cover with some damp sheets of kitchen paper to stop it drying out. Take a sheet of pastry and brush liberally with some of the sundried tomato oil. Drape oil-side down in a 22cm loosebottomed cake tin so that some of the pastry hangs over the side. Brush oil on another piece of pastry and place in the tin, just a little further round. Keep placing the pastry pieces in the tin until you have roughly three layers, then spoon over the filling. Pull the sides into the middle, scrunch up and make sure the filling is covered. Brush with a little more oil.",
-              "Heat oven to 180C/fan 160C/gas 4. Cook the pie for 30 mins until the pastry is crisp and golden brown. Remove from the cake tin, slice into wedges and serve with salad."
-            ],
-            "categories":[
+            "categories": [
                 "1",
                 "2"
-            ]
-	    },
-      {
-            "recipeId":19,
-            "userId":0,
-            "title":"Steak & chips salad",
-            "ingredients":[
+            ],
+            "ingredients": [
                 {
-                    "name":"potato wedges",
-                    "amount":"750g"
+                    "amount": "150g",
+                    "name": "raw peeled king prawns"
                 },
                 {
-                    "name":"olive oil",
-                    "amount":"1tbs"
+                    "amount": "1.5tbs",
+                    "name": "jerk seasoning"
                 },
                 {
-                    "name":"sirloin steak",
-                    "amount":"2"
+                    "amount": "400g",
+                    "name": "kidney beans in chilli sauce"
                 },
                 {
-                    "name":"bag herb salad",
-                    "amount":"120g"
-                },
-                {
-                    "name":"honey and mustard salad dressing",
-                    "amount":"6tbs"
+                    "amount": "250g",
+                    "name": "coconut rice"
                 }
             ],
-            "method":[
-              "Cook the potatoes: Scatter the frozen wedges in a single layer on a large baking sheet and bake until golden and crunchy, according to packet instructions.",
-              "Cook the steaks: While the potatoes are in the oven, heat the oil in a frying pan until hot, and fry the steaks for 2-3 minutes on each side. Remove the steaks from the pan and leave to rest for a few minutes before slicing into thin strips.",
-              "Assemble the dish: When the potatoes are done, sprinkle them with a little salt and black pepper. Tip the salad leaves into a bowl and toss with 4 tablespoons of the dressing. Divide the salad between 4 plates, top with potatoes and then the steak. Drizzle over the remaining dressing and serve immediately."
+            "method": [
+                "Heat 1 tbsp flavourless oil in a large frying pan. Add the prawns and the jerk seasoning, and cook for 1-2 mins. Drain the beans, reserving 3 tbsp of the chilli sauce.",
+                "Add the beans to the pan along with the reserved sauce and the coconut rice. Fry for 3-4 mins, then season with salt to taste and spoon into two bowls to serve."
             ],
-            "categories":[
+            "recipeId": 16,
+            "title": "Jerk prawn & coconut rice bowls",
+            "userId": 0
+        },
+        {
+            "categories": [
                 "1",
                 "2"
-            ]
-	    }
+            ],
+            "ingredients": [
+                {
+                    "amount": "125g",
+                    "name": "mozzarella ball"
+                },
+                {
+                    "amount": "50g",
+                    "name": "cheddar"
+                },
+                {
+                    "amount": "1tbs",
+                    "name": "wholegrain mustard"
+                },
+                {
+                    "amount": "4",
+                    "name": "skinless boneless chicken breast fillets"
+                },
+                {
+                    "amount": "8",
+                    "name": "smoked streaky bacon rashers"
+                }
+            ],
+            "method": [
+                "Heat oven to 200C/fan 180C/gas 6. Mix the cheeses and mustard together. Cut a slit into the side of each chicken breast, then stuff with the mustard mixture. Wrap each stuffed chicken breast with 2 bacon rashers \u00e2\u20ac\u201c not too tightly, but enough to hold the chicken together. Season, place on a baking sheet and roast for 20-25 mins."
+            ],
+            "recipeId": 17,
+            "title": "Mustard-stuffed chicken",
+            "userId": 0
+        },
+        {
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
+                {
+                    "amount": "200g",
+                    "name": "spinach leaves"
+                },
+                {
+                    "amount": "100g",
+                    "name": "feta cheese"
+                },
+                {
+                    "amount": "2",
+                    "name": "egg"
+                },
+                {
+                    "amount": "175g",
+                    "name": "jar sundried tomato in oil"
+                },
+                {
+                    "amount": "125g",
+                    "name": "filo pastry"
+                }
+            ],
+            "method": [
+                "Put the spinach into a large pan. Pour over a couple tbsp water, then cook until just wilted. Tip into a sieve, leave to cool a little, then squeeze out any excess water and roughly chop. Roughly chop the tomatoes and put into a bowl along with the spinach, feta and eggs. Mix well.",
+                "Carefully unroll the filo pastry. Cover with some damp sheets of kitchen paper to stop it drying out. Take a sheet of pastry and brush liberally with some of the sundried tomato oil. Drape oil-side down in a 22cm loosebottomed cake tin so that some of the pastry hangs over the side. Brush oil on another piece of pastry and place in the tin, just a little further round. Keep placing the pastry pieces in the tin until you have roughly three layers, then spoon over the filling. Pull the sides into the middle, scrunch up and make sure the filling is covered. Brush with a little more oil.",
+                "Heat oven to 180C/fan 160C/gas 4. Cook the pie for 30 mins until the pastry is crisp and golden brown. Remove from the cake tin, slice into wedges and serve with salad."
+            ],
+            "recipeId": 18,
+            "title": "Crispy Greek-style pie",
+            "userId": 0
+        },
+        {
+            "categories": [
+                "1",
+                "2"
+            ],
+            "ingredients": [
+                {
+                    "amount": "750g",
+                    "name": "potato wedges"
+                },
+                {
+                    "amount": "1tbs",
+                    "name": "olive oil"
+                },
+                {
+                    "amount": "2",
+                    "name": "sirloin steak"
+                },
+                {
+                    "amount": "120g",
+                    "name": "bag herb salad"
+                },
+                {
+                    "amount": "6tbs",
+                    "name": "honey and mustard salad dressing"
+                }
+            ],
+            "method": [
+                "Cook the potatoes: Scatter the frozen wedges in a single layer on a large baking sheet and bake until golden and crunchy, according to packet instructions.",
+                "Cook the steaks: While the potatoes are in the oven, heat the oil in a frying pan until hot, and fry the steaks for 2-3 minutes on each side. Remove the steaks from the pan and leave to rest for a few minutes before slicing into thin strips.",
+                "Assemble the dish: When the potatoes are done, sprinkle them with a little salt and black pepper. Tip the salad leaves into a bowl and toss with 4 tablespoons of the dressing. Divide the salad between 4 plates, top with potatoes and then the steak. Drizzle over the remaining dressing and serve immediately."
+            ],
+            "recipeId": 19,
+            "title": "Steak & chips salad",
+            "userId": 0
+        }
     ]
 }

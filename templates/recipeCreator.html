@@ -19,8 +19,8 @@
             <li class="link"><a href="{{ url_for('recipe') }}">My Recipes</a> </li>
             <li class="link"><a href="#">My Bookmark</a> </li>
             <li class="link"><a href="{{ url_for('discover') }}">Discover Recipes</a> </li>
-            <li class="link button"><a href="{{ url_for('login') }}">Login</a> </li>
-            <li class="link button secondary"><a href="{{ url_for('register') }}">Sign Up</a> </li>
+            <li class="link button" id="loginButton"><a href="{{ url_for('login') }}">Login</a> </li>
+            <li class="link button secondary" id="registerButton"><a href="{{ url_for('register') }}">Sign Up</a> </li>
             <li class="nav-hidden"><span class="mini-menu"></span></li>
         </ul>
     </nav>
@@ -33,15 +33,13 @@
 
         <!-- Inputs for the ingredients table. -->
         <label for="ingredientInput">Ingredients:</label>
-        <table id="ingredientInput">
+        <table id="ingredientInput" name="ingredientInput">
             <thead>
                 <tr>
                     <th>Ingredient</th>
                     <th>Amount</th>
                     <th>
-                        <span>
-                            <button type="button" id="addIngredient">Add Row</button>
-                        </span>
+                        <button type="button" onclick="AddIngredientRow()">Add Ingredient</button>
                     </th>
                 </tr>
             </thead>
@@ -50,9 +48,7 @@
                     <td contenteditable="true">A</td>
                     <td contenteditable="true">B</td>
                     <td>
-                        <span>
-                            <button type="button" id="deleteIngredient">Delete</button>
-                        </span>
+                        <button type="button" onclick="DeleteTableRow(this)">Delete</button>
                     </td>
                 </tr>
             </tbody>
@@ -60,14 +56,12 @@
 
         <!-- Inputs for the methods list. -->
         <label for="methodInput">Method:</label>
-        <table id="methodInput">
+        <table id="methodInput" name="methodInput">
             <thead>
                 <tr>
                     <th>Step</th>
                     <th>
-                        <span>
-                            <button type="button" id="addStep">Add Step</button>
-                        </span>
+                        <button type="button" onclick="AddMethodRow()">Add Step</button>
                     </th>
                 </tr>
             </thead>
@@ -75,9 +69,7 @@
                 <tr>
                     <td contenteditable="true">A</td>
                     <td>
-                        <span>
-                            <button type="button" id="deleteStep">Delete</button>
-                        </span>
+                        <button type="button" onclick="DeleteTableRow(this)">Delete</button>
                     </td>
                 </tr>
             </tbody>
@@ -85,14 +77,12 @@
 
         <!-- Inputs for the categories list -->
         <label for="categoryInput">Categories:</label>
-        <table id="categoryInput">
+        <table id="categoryInput" name="categoryInput">
             <thead>
                 <tr>
-                    <th>Tag:</th>
+                    <th>Tag</th>
                     <th>
-                        <span>
-                            <button type="button" id="addStep">Add Tag</button>
-                        </span>
+                        <button type="button" onclick="AddCategoryRow()">Add Tag</button>
                     </th>
                 </tr>
             </thead>
@@ -100,15 +90,13 @@
                 <tr>
                     <td contenteditable="true">A</td>
                     <td>
-                        <span>
-                            <button type="button" id="deleteStep">Delete</button>
-                        </span>
+                        <button type="button" onclick="DeleteTableRow(this)">Delete</button>
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <button type="button" id="saveButton">Save Recipe</button>
+        <button type="button" id="saveButton" onclick="SaveRecipe()">Save Recipe</button>
         <button type="button" id="discardButton">Discard</button>
     </div>
 

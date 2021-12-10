@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src = "/static/scripts/login_functions.js" defer></script>
 </head>
 <body id="loginBody" >
     <section id="selection">
@@ -22,15 +23,15 @@
                 </div>
             </div>
         <div class="login-form" id="formLogin">
-            <form action="{{ url_for('login') }}" method="post">
+            <form action="{{ url_for('login') }}" method="post" onsubmit="return false">
                 <div class="form-controls">
                     <h2>Hello Visitor!</h2>
                     <p>You must log in to access your recipes</p>
 
-            <input class="form-control" type="text" placeholder="Enter your email/username" id="email", required>
-            <input class="form-control" type="password" placeholder="Enter your password" id="password" required>
+            <input class="form-control" type="text" placeholder="Enter your email/username" id="email" autocomplete="off" required>
+            <input class="form-control" type="password" placeholder="Enter your password" id="password" autocomplete="off" required>
                     <div class="login-btns">
-                        <input type="Submit" id="login_submit" value="Login" />
+                        <input type="Submit" id="login_submit" value="Login" onclick="Login()"/>
                         <button class="register-btn" name="register" > <a href="{{ url_for('register') }}" target="_self"> Register<a/></button>
                     </div>
                     <a href="{{ url_for('index') }}">Continue without login in</a>
