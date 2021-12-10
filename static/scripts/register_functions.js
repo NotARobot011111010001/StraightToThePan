@@ -1,7 +1,7 @@
 /** button listeners**/
 document.getElementById("submit").addEventListener("click", register);
 
-
+//this function takes the users inputs to be saved in the "users.json" file
 function register(){
     let url = "/register";
     let xhttp = new XMLHttpRequest();
@@ -18,10 +18,9 @@ function register(){
 
         }
     }
-    console.log(newUser)
     xhttp.open("POST", url, true);
     xhttp.send(newUser);
-    alert("Successfully Register!")
+    alert("Successfully Registered!")
     return(newUser)
 
 }
