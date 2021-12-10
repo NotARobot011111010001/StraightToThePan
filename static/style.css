@@ -17,6 +17,7 @@ body{
     font-family: Lato;
 }
 
+/**log in styling (situated in the nav bar)**/
 .login, .register {
   	width: 400px;
   	background-color: #fff4e6;
@@ -92,10 +93,12 @@ nav a:hover{
     font-weight: 900;
 }
 
+/**WHAT IS THIS?**/
 .button.secondary{
     border-bottom: 1px #444 solid;
 
 }
+/**CAN ".HEADER" AND "#HEADER" BE MERGED? IS IT THE SAME THING?**/
 .header{
     position: relative;
     display: inline-block;
@@ -197,6 +200,7 @@ nav a:hover{
     border-radius: .5rem;
     cursor: pointer;
 }
+/** WHAT IS "ROTW". CHANGE NAME?**/
 .rotw{
     position: relative;
     margin-top: 5vh;
@@ -303,6 +307,7 @@ nav a:hover{
     height: 20rem;
     overflow: hidden;
 }
+/** ARE WE KEEPING NUTRITION STUFF?**/
 .NutritionBanner{
     position: relative;
     background: rgb(30,56,89);
@@ -355,7 +360,7 @@ nav a:hover{
     padding: 2rem 0 2rem 3vw;
     font-size: 1.5rem;
 }
-/* RecipeTemplate */
+/* RecipeTemplate- DO WE NEED THIS COMMENT? */
 
 
 /* Mobile Navigation */
@@ -408,7 +413,6 @@ nav a:hover{
 .mini-menu::after{
     top: -5px;
 }
-/* Mobile Navigation */
 
 
 /* Tablet view */
@@ -430,7 +434,7 @@ nav a:hover{
     .nav-hidden {
         order: 2;
     }
-
+    /**WHAT IS THIS?**/
     .button.secondary {
         border: 0;
     }
@@ -442,7 +446,7 @@ nav a:hover{
         border-radius: 20px;
 
     }
-
+    /**WHAT IS THIS?**/
     .button.secondary a {
         background: transparent;
         border: transparent;
@@ -503,6 +507,7 @@ nav a:hover{
 
     }
 }
+/**WHAT VIEW ARE THESE ALL FOR?**/
 @media  (min-width: 1408px){
     main{
         padding: 0 10%;
