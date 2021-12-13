@@ -26,7 +26,7 @@ function PopulateRecipe(recipeId)
     var recipesData;
     var recipes;
     var recipe;
-  
+  /** SHOULD WE NAME THIS FUNCTION?**/
     xhttp.onreadystatechange = function() 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200)
