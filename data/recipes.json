@@ -7,12 +7,12 @@
             ],
             "ingredients": [
                 {
-                    "name": "butter",
-                    "amount": "125g"
+                    "amount": "125g",
+                    "name": "butter"
                 },
                 {
-                    "name": "lotus biscuits",
-                    "amount": "300g"
+                    "amount": "300g",
+                    "name": "lotus biscuits"
                 }
             ],
             "method": [

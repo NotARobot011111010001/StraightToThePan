@@ -9,12 +9,14 @@ function LoadContent()
     {
         document.getElementById("recipeCard").style.display = 'block';
         document.getElementById("allRecipes").style.display = 'none';
+        document.getElementById("newRecipe").style.display = 'none';
         PopulateRecipe(parseInt(urlParams.get('id')));
     }
     else
     {
         document.getElementById("recipeCard").style.display = 'none';
         document.getElementById("allRecipes").style.display = 'block';
+        document.getElementById("newRecipe").style.display = 'block';
         GetRecipes();
     }
 }
@@ -73,6 +75,10 @@ function PopulateRecipe(recipeId)
                         categories += "<li>" + String(recipes[i].categories[j]) + "</li>";
                     }
                     document.getElementById("recipeCategories").innerHTML = categories;
+
+                    // Add recipeId to button functionality.
+                    document.getElementById("editButton").href = "/recipeCreator?id=" + String(recipes[i].recipeId);
+                    document.getElementById("deleteButton").setAttribute('onclick', "DeleteRecipe(" + String(recipes[i].recipeId) + ")");
 
                     break;
                 }
@@ -238,6 +244,20 @@ function ToggleRecipeContent(recipeContent)
     {
         recipeContent.style.display = "block";
     }
+}
+
+
+function DeleteRecipe(recipeId)
+{
+    let recipeUrl = "/recipes?recipeId=" + recipeId; // Create the url with recipeID in the parameters.
+
+    // Send the recipeID to delete.
+    let xhttp = new XMLHttpRequest();
+    xhttp.open("DELETE", recipeUrl, true);
+    xhttp.send();
+    alert("Recipe " + recipeId + " successfully deleted!");
+    
+    location.reload(); // Refresh the page.
 }
 
 
