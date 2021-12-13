@@ -1,3 +1,4 @@
+#IS "IMPORT RE" NEEDED?
 import re
 from flask import Flask, render_template, jsonify, request, make_response
 import sys, json
@@ -7,7 +8,7 @@ from werkzeug.wrappers import response
 app = Flask(__name__)
 
 """
-HTML page loading things.
+Loading HTML pages.
 """
 
 
@@ -69,6 +70,7 @@ def recipes():
     return response
 
 
+#this function gets recipes from JSON to be sent to javascript file
 def get_recipes():
     with open("data/recipes.json", "r") as file:
         data = json.load(file)["recipes"]
@@ -78,6 +80,7 @@ def get_recipes():
     return response
 
 
+#this function replaces recipes in JSON file with the updated recipes from the JavaScript file
 def add_recipe(recipes):
     with open("data/recipes.json", "w") as file:
         json.dump(recipes, file, indent=4)
@@ -104,7 +107,7 @@ def add_recipe(recipes):
     return response
 
 
-
+#CONFUSED
 def delete_recipe(recipeId):
     with open("data/recipes.json", "r") as file:
         objs = []
