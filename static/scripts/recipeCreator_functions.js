@@ -19,6 +19,7 @@ function LoadContent()
  */
 function PopulateRecipe(recipeId)
 {
+    /**CANT GET THIS TO RUN**/
     let url = "/recipes";
     let response = "Error while retrieving.";
     let xhttp = new XMLHttpRequest();
@@ -40,6 +41,7 @@ function PopulateRecipe(recipeId)
                 {
                     document.getElementById("titleInput").value = String(recipes[i].title);
     
+                     /**populating ingredients**/
                     var ingredientsTable = "";
                     for (let j = 0; j < recipes[i].ingredients.length; j++)
                     {
@@ -53,7 +55,8 @@ function PopulateRecipe(recipeId)
                         '</tr>';
                     }
                     document.getElementById("ingredientInput").innerHTML = '<tr><th>Ingredient</th><th>Amount</th><th><button type="button" onclick="AddIngredientRow()">Add Ingredient</button><th></tr>' + ingredientsTable;
-
+                   
+                    /**populating method**/
                     var methodTable = "";
                     for (let j = 0; j < recipes[i].method.length; j++)
                     {
@@ -66,7 +69,8 @@ function PopulateRecipe(recipeId)
                         '</tr>';
                     }
                     document.getElementById("methodInput").innerHTML = '<tr><th>Step</th><th><button type="button" onclick="AddMethodRow()">Add Step</button><th></tr>' + methodTable;
-
+                    
+                    /**populating catagories**/
                     var categoryTable = "";
                     for (let j = 0; j < recipes[i].categories.length; j++)
                     {
@@ -93,6 +97,7 @@ function PopulateRecipe(recipeId)
 //-----------------------------------------
 
 
+/**this function lets the user delete an ingredient**/
 function DeleteTableRow(btn)
 {
     let row = btn.parentNode.parentNode;
@@ -100,6 +105,7 @@ function DeleteTableRow(btn)
 }
 
 
+/**this function lets the user add an ingredient**/
 function AddIngredientRow()
 {
     document.getElementById("ingredientInput").innerHTML +=
@@ -113,6 +119,7 @@ function AddIngredientRow()
 }
 
 
+/**this function lets the user add a method**/
 function AddMethodRow()
 {
     document.getElementById("methodInput").innerHTML +=
@@ -124,7 +131,7 @@ function AddMethodRow()
     '</tr>';
 }
 
-
+/**this function lets the user add a catagory**/
 function AddCategoryRow()
 {
     document.getElementById("categoryInput").innerHTML +=
@@ -137,6 +144,10 @@ function AddCategoryRow()
 }
 
 
+/**this function converts the ingredients data to a dictionary object for json
+* to be used in "SaveRecipe()" function
+* @returns {dictionary} ingredients
+**/ 
 function IngredientsTableToJSON()
 {
     var ingredients = [];
@@ -155,6 +166,10 @@ function IngredientsTableToJSON()
 }
 
 
+/**this function converts the method data to a dictionary object for json
+* to be used in "SaveRecipe()" function
+* @returns {dictionary} methods
+**/ 
 function MethodTableToJSON()
 {
     var method = [];
@@ -168,7 +183,10 @@ function MethodTableToJSON()
     return method;
 }
 
-
+/**this function converts the catagory data to a dictionary object for json
+* to be used in "SaveRecipe()" function
+* @returns {dictionary} categorys
+**/ 
 function CategoryTableToJSON()
 {
     var categories = [];
@@ -182,12 +200,15 @@ function CategoryTableToJSON()
     return categories;
 }
 
-
+/**this function enables the user to save a recipe
+* I THINK THIS METHOD SHOULD BE BROKEN UP- VERY LONG
+**/
 function SaveRecipe()
 {
+    //WHY IS RECIPE ID= "-1" can we delete this??
     let recipeId = -1;
-    //let userId = GetUserIdFromCookie();
-    let userId = 0; // Ignore login system for now. Assume the userId is 0.
+    //let userId = GetUserIdFromCookie(); --- CAN WE DELETE THIS?
+    let userId = 0; // Ignore login system for now. Assume the userId is 0.-- CAN WE DELETE THIS?
     let title = document.getElementById("titleInput").value;
     let ingredients = IngredientsTableToJSON();
     let method = MethodTableToJSON();
@@ -209,13 +230,14 @@ function SaveRecipe()
 
             let recipeFound = false;
             var urlParams = new URLSearchParams(window.location.search);
+            
+            // if the recipe is on an individual tab
             if (urlParams.has('id'))
             {
                 for (let i = 0; i < recipes.length; i++)
                 {
                     if (recipes[i].recipeId == parseInt(urlParams.get('id')))
                     {
-                        console.log("editing recipe");
                         recipes[i].title = title;
                         recipes[i].ingredients = ingredients;
                         recipes[i].method = method;
@@ -225,7 +247,8 @@ function SaveRecipe()
                     }
                 }
             }
-
+            
+            //if recipe is on a page with multiple recipes
             if (!(urlParams.has('id')) || !recipeFound)
             {
                 for (let i = 0; i < recipes.length; i++)
@@ -262,7 +285,7 @@ function SaveRecipe()
 
 
 //-----------------------------------------
-
+// ARE WE DOING THIS? DO WE DELETE?
 /**
  * CheckCookies()
  * Checks the cookies to see if a user is logged in.
