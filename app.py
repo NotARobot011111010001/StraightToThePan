@@ -107,11 +107,13 @@ def add_recipe(recipes):
     return response
 
 
-#CONFUSED
+
 def delete_recipe(recipeId):
     with open("data/recipes.json", "r") as file:
         objs = []
         recipes = json.load(file).get("recipes")
+        
+        #CONFUSED it takes the original file, checks the id's match. if not it appends an obj and then overwrites...im just confused
         for obj in recipes:
             if not (obj['recipeId'] == recipeId):
                 objs.append(obj)
