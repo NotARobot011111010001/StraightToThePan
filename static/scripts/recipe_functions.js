@@ -131,8 +131,8 @@ function PopulateRecipe(recipeId)
 
     for (let i = 0; i < recipesData.length; i++) 
     {
-        //if (recipesData[i].userId == parseInt(GetUserIdFromCookie()))
-        //{
+        if (recipesData[i].userId == parseInt(GetUserIdFromCookie()))
+        {
             //extracting ingredients
             ingredientsData = recipesData[i].ingredients;
             let ingredients = ExtractIngredients(ingredientsData)
