@@ -12,14 +12,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src = "/static/scripts/discover_functions.js"></script>
+    <!-- Navbar -->
+    <script>
+        $(function() {
+            $(".nav-hidden").on("click", function() {
+                if ($(".link").hasClass("active")) {
+                    $(".link").removeClass("active");
+                } else {
+                    $(".link").addClass("active");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <nav>
         <ul class="navbar">
             <li class="logo"><a href="{{ url_for('index') }}">Straight To The Pan</a> </li>
             <li class="link"><a href="{{ url_for('recipe') }}">My Recipes</a> </li>
-            <li class="link"><a href="#">My Bookmark</a> </li>
-            <li class="link"><a href="{{ url_for('discover') }}">Discover Recipes</a> </li>
+            <!-- <li class="link"><a href="#">My Bookmark</a> </li> -->
+           <!-- <li class="link"><a href="{{ url_for('discover') }}">Discover Recipes</a> </li> -->
             <li class="link button"><a href="{{ url_for('login') }}">Login</a> </li>
             <li class="link button secondary"><a href="{{ url_for('register') }}">Sign Up</a> </li>
             <li class="nav-hidden"><span class="mini-menu"></span></li>
@@ -39,7 +51,7 @@
     </div>
     <div class="discover-flex">
     <div class="discover">
-        <div class="discoverHeader" style="background: url(/static/Images/Header1.jpg) bottom 10% left / cover no-repeat; border-radius:20px ">
+        <div class="discoverHeader" style="background: url(/static/Images/Header1.jpg) bottom 10% left / cover no-repeat; border-radius:.5rem ">
             <div class="mask">
         <h1>Suggestions</h1>
         <p>Can't decide?<br>Here are a few picks just for you.</p>
@@ -50,7 +62,7 @@
     </div>
 
     <div class="discoverResults" id="resultsDisplay">
-        <div class="discoverHeader" style="background: url(/static/Images/Header2.jpg) bottom 40% left / cover no-repeat; border-radius:20px ">
+        <div class="discoverHeader" style="background: url(/static/Images/Header2.jpg) bottom 40% left / cover no-repeat; border-radius: .5rem ">
         <div class="mask"> <h1>Results</h1><p>Search results are displayed below</p> </div>
             </div>
         <ul class="resultsList" id="results">

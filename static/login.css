@@ -88,7 +88,7 @@ section form {
 
 .form-controls:first-child input {
     width: 100%;
-    border-radius: 20px;
+    border-radius: .5rem;
     border: 1px solid #ddd;
     padding: 10px 0;
     margin-bottom: 15px;
@@ -122,7 +122,7 @@ section form {
     margin-bottom: 15px;
     width: 100%;
     border: none;
-    border-radius: 20px;
+    border-radius: .5rem;
     outline: none;
     cursor: pointer;
     background-color: var(--yellow--);

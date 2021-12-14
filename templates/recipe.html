@@ -6,19 +6,32 @@
     <meta http-equiv="X-UA-Compatimble" content="ie=edge">
     <title>Straight To The Pan</title>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/recipes.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src = "/static/scripts/recipe_functions.js" defer></script>
+    <!-- Navbar -->
+    <script>
+        $(function() {
+            $(".nav-hidden").on("click", function() {
+                if ($(".link").hasClass("active")) {
+                    $(".link").removeClass("active");
+                } else {
+                    $(".link").addClass("active");
+                }
+            });
+        });
+    </script>
 </head>
-<body>
+<body id="recipeBg">
     <nav>
         <ul class="navbar">
             <li class="logo"><a href="{{ url_for('index') }}">Straight To The Pan</a> </li>
             <li class="link"><a href="{{ url_for('recipe') }}">My Recipes</a> </li>
-            <li class="link"><a href="#">My Bookmark</a> </li>
-            <li class="link"><a href="{{ url_for('discover') }}">Discover Recipes</a> </li>
+            <!-- <li class="link"><a href="#">My Bookmark</a> </li> -->
+           <!-- <li class="link"><a href="{{ url_for('discover') }}">Discover Recipes</a> </li> -->
             <li class="link button"><a href="{{ url_for('login') }}">Login</a> </li>
             <li class="link button secondary"><a href="{{ url_for('register') }}">Sign Up</a> </li>
             <li class="nav-hidden"><span class="mini-menu"></span></li>
@@ -26,20 +39,25 @@
     </nav>
 
     <!-- Used to display a single recipe. -->
-    <div class="container" id="recipeCard"> 
-        <h2 id="recipeTitle">Recipe Title</h2>
+    <div class="recipeContainer">
+    <div class="recipeDisplay" id="recipeCard">
+        <div class="recipeTitle" style="background: url(/static/Images/HomeHeader.jpg) bottom 50% left / cover no-repeat">
+            <div class="mask">
+        <h1 id="recipeTitle">Recipe Title</h1>
+            </div>
+            </div>
 
         <p id="recipeCreator">by Username</p>
 
-        <h3>Ingredients</h3>
+        <h2>Ingredients</h2>
         <table id="recipeIngredients">
         </table>
 
-        <h3>Method</h3>
+        <h2>Method</h2>
         <ol id="recipeMethod" type="1">
         </ol>
 
-        <h3>Categories</h3>
+        <h2>Categories</h2>
         <ul id="recipeCategories">
         </ul>
     </div>
@@ -61,6 +79,7 @@
             <button type="button" id="deleteRecipe" onclick="DeleteRecipe()">Delete</button>
         </div>
     </div>
+        </div>
 
 </body>
 </html>

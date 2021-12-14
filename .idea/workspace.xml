@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="Discover page css improvements" />
+    <list default="true" id="43e02ec1-6af9-412a-8d4f-78247821198d" name="Changes" comment="Discover page css improvements">
+      <change afterPath="$PROJECT_DIR$/static/recipeCreator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/recipes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recipes.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/recipes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/discover.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/discover.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scripts/website_functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RecipeTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RecipeTemplate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/discover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/discover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/recipeCreator.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/recipeCreator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/website.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,9 +161,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.app" />
-      <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Flask server.StraightToThePan" />
+      <item itemvalue="Flask server.Flask (app.py)" />
+      <item itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list>
@@ -179,6 +195,8 @@
       <workItem from="1638810942006" duration="274000" />
       <workItem from="1638811336107" duration="1228000" />
       <workItem from="1638812895953" duration="21626000" />
+      <workItem from="1639148596488" duration="851000" />
+      <workItem from="1639404905777" duration="18704000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned app.py">
       <created>1637586891987</created>
@@ -259,6 +277,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cleaned app.py" />
@@ -272,8 +291,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="Discover page css improvements" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638810213404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/StraightToThePan$app.coverage" NAME="app Coverage Results" MODIFIED="1636679673872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1639061777340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$StraightToThePan.coverage" NAME="StraightToThePan Coverage Results" MODIFIED="1639445200890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/StraightToThePan$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1638810213404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -13,7 +13,7 @@ HTML page loading things.
 
 @app.route('/')
 def index():  # put application's code here
-    return render_template('index.html')
+    return render_template('discover.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])

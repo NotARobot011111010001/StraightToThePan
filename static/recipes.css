@@ -1,0 +1,105 @@
+#recipeBg{
+    background: var(--purple--);
+}
+.recipeContainer{
+    width: 50%;
+    max-width:980px ;
+    margin: 0 auto;
+
+}
+.recipeDisplay{
+    background-color: var(--blue--);
+    width: 100%;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.recipeTitle{
+    min-height: 110px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+.mask{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(20, 19, 22, 0.7);
+    border-radius: .5rem;
+    align-items: center;
+    padding: 30px;
+}
+.mask h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+}
+.recipeDisplay h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 10px 0 10px 5%;
+    color: var(--purple--);
+}
+.recipeDisplay p{
+    padding-left: 3.5%;
+}
+.recipeDisplay table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgb(127,118,165);
+    background: linear-gradient(45deg, rgba(127,118,165,.4) 0%, rgba(30,56,89,1) 100%);
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.recipeDisplay table th{
+    background-color: var(--yellow--);
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.recipeDisplay table td{
+    padding: 1rem 2rem;
+}
+
+.recipeDisplay ol, .recipeDisplay ul{
+    width: 90%;
+    margin: 0 auto;
+    list-style-position: inside;
+    padding-left: 1.75rem;
+}
+.recipeDisplay ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.recipeDisplay li{
+    padding: 0.75rem 2rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .recipeContainer{
+        width: 90%;
+    }
+    .mask h1 {
+        font-size: 2.5rem;
+    }
+    .recipeDisplay ol, .recipeDisplay ul{
+    padding-left: 0;
+
+}
+    .recipeDisplay li{
+    font-size: 1rem;
+}
+}
+@media (min-width: 1024px) {
+        .recipeContainer{
+        width: 60%;
+    }
+}
