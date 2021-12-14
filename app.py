@@ -1,3 +1,4 @@
+#IS "IMPORT RE" NEEDED?
 import re
 from flask import Flask, render_template, jsonify, request, make_response
 import sys, json
@@ -6,8 +7,9 @@ from werkzeug.wrappers import response
 
 app = Flask(__name__)
 
+
 """
-HTML page loading things.
+Loading HTML pages.
 """
 
 
@@ -45,30 +47,29 @@ def recipe():
 def recipeCreator():
     return render_template('recipeCreator.html')
 
-@app.route('/RecipeTemplate.html')
-def recipeTemplate():
-    return render_template('RecipeTemplate.html')
-
 
 """
 Individual functions.
 """
 
 
+"""
+    Functions for the recipes.json file.
+"""
 @app.route('/recipes', methods=['GET', 'PUT', 'DELETE'])
 def recipes():
-    """
-    Functions for the recipes.json file.
-    """
     if request.method == 'GET':  # GET - loads entire recipes.json file to list
         response = get_recipes()
     elif request.method == 'PUT':  # PUT - append item to recipes.json
         response = add_recipe(request.get_json(force=True))
     elif request.method == 'DELETE':  # DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
-        response = delete_recipe(request.args.get('recipeId'))
+        response = delete_recipe(int(request.args.get('recipeId')))
     return response
 
 
+"""
+this function gets recipes from JSON to be sent to javascript file
+"""
 def get_recipes():
     with open("data/recipes.json", "r") as file:
         data = json.load(file)["recipes"]
@@ -78,6 +79,9 @@ def get_recipes():
     return response
 
 
+"""
+this function replaces recipes in JSON file with the updated recipes from the JavaScript file
+"""
 def add_recipe(recipes):
     with open("data/recipes.json", "w") as file:
         json.dump(recipes, file, indent=4)
@@ -86,34 +90,21 @@ def add_recipe(recipes):
     return response
 
 
-#def add_recipe(new_recipe):
-    with open("data/recipes.json", "r+") as file:
-        current_recipes = file.read()
-    with open("data/recipes.json", "w") as file:
-        """formatting new recipe to have correct quote"""
-        new_recipe = str(new_recipe).replace("'", '"')
-        """formatting old recipes to trim the last ']}' for correct syntax"""
-        str_to_remove = len(current_recipes)-2
-        current_recipes = current_recipes[0:str_to_remove]
-        """joining new recipe to the end of old recipes with additional syntax added"""
-        recipes_data = current_recipes + ", " + str(new_recipe) + "]}"
-        recipes_data = json.loads(recipes_data)
-        json.dump(recipes_data, file)
-    response = make_response(jsonify({"result": "Saved"}), 200, )
-    response.headers["Content-Type"] = "application/json"
-    return response
-
-
-
+"""
+Find recipe in JSON using recipeId, create new list with all but specified recipe, overwrite file.
+"""
 def delete_recipe(recipeId):
     with open("data/recipes.json", "r") as file:
-        objs = []
+        objs = [] # New list.
         recipes = json.load(file).get("recipes")
+        # Check for recipe by recipeId.
         for obj in recipes:
+            # Add all recipes but the one specified by recipeId to the new list.
             if not (obj['recipeId'] == recipeId):
                 objs.append(obj)
         file.close()
         data = {"recipes": objs}
+    # Overwrite recipes.json with new list (includes all but the deleted recipe.)
     with open("data/recipes.json", "w") as file:
         json.dump(data, file, indent=4)
         file.close()

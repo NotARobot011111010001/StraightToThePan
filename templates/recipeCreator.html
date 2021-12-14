@@ -1,3 +1,10 @@
+<!-- recipeCreator.html -->
+<!-- 
+    This file can be linked to from the recipe.html page.
+    Clicking the "Add new recipe" button will load a blank recipe form which can be edited and saved.
+    Clicking the "Edit recipe" button on an existing recipe will load it's data into the recipe form.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,7 +121,7 @@
         </table>
 
         <button type="button" id="saveButton" onclick="SaveRecipe()">Save Recipe</button>
-        <button type="button" id="discardButton">Discard</button>
+        <button type="button" id="discardButton" onclick="window.location.replace('/recipe');">Discard</button>
     </div>
 
 </body>

@@ -2,23 +2,29 @@
     "recipes": [
         {
             "categories": [
-                "1",
-                "2"
+                "Includes Dairy",
+                "High Calories",
+                "High Sugar"
             ],
             "ingredients": [
                 {
-                    "name": "butter",
-                    "amount": "125g"
+                    "amount": "125g",
+                    "name": "butter"
                 },
                 {
-                    "name": "lotus biscuits",
-                    "amount": "300g"
+                    "amount": "300g",
+                    "name": "lotus biscuits"
+                },
+                {
+                    "name": "Double Cream",
+                    "amount": "150g"
                 }
             ],
             "method": [
                 "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
                 "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
-                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race). Alternatively, you can whip the cream separately to stiff peaks and fold through!",
+                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race).",
+                "Alternatively, you can whip the cream separately to stiff peaks and fold through!",
                 "Spread the mixture evenly over the biscuit base and chill in the fridge for at least 5-6 hours, but preferably overnight.",
                 "Remove from the tin and decorate how you like.",
                 "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
@@ -29,8 +35,10 @@
         },
         {
             "categories": [
-                "7",
-                "2"
+                "Eggs",
+                "High in Sugar",
+                "Includes Dairy",
+                "High Calorie"
             ],
             "ingredients": [
                 {
@@ -71,30 +79,53 @@
         },
         {
             "categories": [
-                "2",
-                "4"
+                "High Calorie",
+                "Healthy",
+                "Meat",
+                "Spicy"
             ],
             "ingredients": [
                 {
+                    "amount": "200g",
+                    "name": "Pasta (Any type)"
+                },
+                {
+                    "amount": "150g",
+                    "name": "Broccoli"
+                },
+                {
+                    "amount": "2 tbsp",
+                    "name": "Extra Virgin Olive Oil"
+                },
+                {
                     "amount": "2",
-                    "name": "large eggs"
+                    "name": "Garlic cloves"
+                },
+                {
+                    "amount": "200g",
+                    "name": "Sausages"
+                },
+                {
+                    "amount": "1/2 tbsp",
+                    "name": "Crushed Chillies"
                 }
             ],
             "method": [
-                "Whisk the egg whites in a clean bowl with 1 tbsp sugar using an electric whisk or a stand mixer to form stiff peaks.",
-                "Beat the egg yolks, 1 tbsp sugar and vanilla together in a separate bowl until pale and foamy, and a ribbon trail is left on the surface when the beaters are removed. Gently fold in the milk and flour until just incorporated.",
-                "Fold the egg whites into the egg yolk mixture and gently turn the batter over to mix, using the side of a metal spoon or spatula to keep all the air in the mixture.",
-                "Working fairly quickly, heat a large non-stick frying pan with a lid over a very low heat. Drizzle a little oil into the pan, then wipe it with a piece of kitchen paper \u00e2\u20ac\u201c you only want a small film on the base of the pan. Make three tall pancakes by piling three spoonfuls of the batter into the pan, using about two thirds of the mixture. Keep them piled quite high, don\u00e2\u20ac\u2122t tip the pan or spread them out like you would normal pancakes. Cover with a lid and cook for 2-4 mins, the steam will help them set. Remove the lid and add another dollop of batter to each pancake, this will create the classic height and thickness. Return the lid and cook for another 4-6 mins until the top feels slightly set.",
-                "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
+                "Bring a large pan of water to the boil and cook the pasta until nearly al dente.",
+                "Throw in the broccoli and cook for 2 mins more. Drain, saving 1-2 tbsp of the water.",
+                "Heat the oil in a large frying pan and add the garlic, fennel seeds, if using, and chillies.",
+                "When they start to colour a bit, add the sausage and cook until golden and cooked through.",
+                "Tip in the pasta and broccoli with the reserved water and toss. Serve hot with the Parmesan shavings."
             ],
             "recipeId": 2,
-            "title": "broccoli and sausage pasta bake ",
+            "title": "Broccoli and Sausage Pasta",
             "userId": 0
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Healthy",
+                "High Calorie",
+                "Under 20 mins"
             ],
             "ingredients": [
                 {
@@ -131,8 +162,10 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Eggs",
+                "High Calorie",
+                "High in Sugar",
+                "Over 20 mins"
             ],
             "ingredients": [
                 {
@@ -173,8 +206,9 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "High Calorie",
+                "Vegetarian",
+                "Includes Alcohol"
             ],
             "ingredients": [
                 {
@@ -207,7 +241,7 @@
                 },
                 {
                     "amount": "2tbs",
-                    "name": "tomato pur\u00c3\u00a9e"
+                    "name": "tomato puree"
                 },
                 {
                     "amount": "2tbs",
@@ -219,8 +253,11 @@
                 }
             ],
             "method": [
-                "Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well. Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften.",
-                "Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it. Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce. Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
+                "Boil the kettle. Put all the ingredients except the pecorino and basil in a wide saucepan or deep frying pan and season well.",
+                "Pour over 800ml kettle-hot water and bring to a simmer, using your tongs to ease the spaghetti under the liquid as it starts to soften.",
+                "Simmer, uncovered, for 10-12 mins, tossing the spaghetti through the liquid every so often until it is cooked and the sauce is reduced and clinging to it.",
+                "Add a splash more hot water if the sauce is too thick or does not cover the pasta while it cooks. Turn up the heat for the final few mins to drive off the excess liquid, leaving you with a rich sauce.",
+                "Stir through the pecorino and basil, and serve with an extra drizzle of oil and pecorino on the side."
             ],
             "recipeId": 5,
             "title": "Spaghetti with nduja, fennel & olives",
@@ -228,8 +265,9 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Vegan Friendly",
+                "Vegetarian",
+                "Low Calories"
             ],
             "ingredients": [
                 {
@@ -255,8 +293,11 @@
             ],
             "method": [
                 "Heat the oven to 180C/160C fan/gas 4. Butter and line the base and sides of a 20cm square cake tin with baking parchment.",
-                "Put 3 tbsp each of the peanut butter and jam in separate small bowls and set aside. Tip the remaining peanut butter, the rest of the jam and the butter and sugar into a pan set over a medium heat and stir until everything has melted together. Quickly stir in the oats, then leave to cool for 5 mins.",
-                "Spoon the mixture into the prepared cake tin and gently press down with your hands. Dot over the reserved peanut butter and jam, then bake for 20-25 mins or until golden brown. Leave to cool completely in the tin, then turn out onto a board and cut into squares."
+                "Put 3 tbsp each of the peanut butter and jam in separate small bowls and set aside.",
+                "Tip the remaining peanut butter, the rest of the jam and the butter and sugar into a pan set over a medium heat and stir until everything has melted together.",
+                "Quickly stir in the oats, then leave to cool for 5 mins.",
+                "Spoon the mixture into the prepared cake tin and gently press down with your hands.",
+                "Dot over the reserved peanut butter and jam, then bake for 20-25 mins or until golden brown. Leave to cool completely in the tin, then turn out onto a board and cut into squares."
             ],
             "recipeId": 6,
             "title": "Peanut butter & jam flapjack",
@@ -264,8 +305,8 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Fish",
+                "Low Calorie"
             ],
             "ingredients": [
                 {
@@ -286,8 +327,12 @@
                 }
             ],
             "method": [
-                "Put the spinach in a really big saucepan (or two saucepans) and add a few tablespoons of water. Cover, set over a medium heat and cook for about 5-8 mins, turning the spinach over every so often, until wilted. Tip it into a colander to drain and allow it to cool (spread it out on a plate to cool it quicker). Take big handfuls of it in your fists and squeeze out the excess water. It\u00e2\u20ac\u2122s really important that you do this, otherwise the water will leach out and make the cream watery and green.",
-                "Chop the spinach. Melt the butter in a saucepan and gently toss the spinach in it. Season with pepper and a tiny bit of salt (there\u00e2\u20ac\u2122s so much salt in the salmon). Heat the oven to 160C/140C fan/gas 3. Lay the spinach in the bottom of a gratin dish (about 30cm x 20cm), then arrange the salmon fillets on top.",
+                "Put the spinach in a really big saucepan (or two saucepans) and add a few tablespoons of water.",
+                "Cover, set over a medium heat and cook for about 5-8 mins, turning the spinach over every so often, until wilted.",
+                "Tip it into a colander to drain and allow it to cool (spread it out on a plate to cool it quicker). Take big handfuls of it in your fists and squeeze out the excess water.",
+                "It's really important that you do this, otherwise the water will leach out and make the cream watery and green.",
+                "Chop the spinach. Melt the butter in a saucepan and gently toss the spinach in it. Season with pepper and a tiny bit of salt (there's so much salt in the salmon).",
+                "Heat the oven to 160C/140C fan/gas 3. Lay the spinach in the bottom of a gratin dish (about 30cm x 20cm), then arrange the salmon fillets on top.",
                 "Heat the double cream in a small pan, then pour it all over the salmon and spinach. Bake for 35 mins, or until the top is golden and the cream is bubbling."
             ],
             "recipeId": 7,
@@ -296,8 +341,8 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Low Calorie",
+                "Under 20 mins"
             ],
             "ingredients": [
                 {
@@ -330,8 +375,10 @@
                 }
             ],
             "method": [
-                "Heat the oil in a large frying pan, tip in the chorizo and fry until it is crisp and all the oil has been released. Remove a quarter of the chorizo with a slotted spoon and set aside.",
-                "Tip the rice into the pan, stir to coat it in the oil and toast for a min or so, then pour in the vinegar. Once the vinegar has evaporated, add a ladleful of the stock, stir then, once absorbed, add a bit more. Continue doing this for about 20 mins until most of the stock has been absorbed and the rice has swollen but still has a slight bite.",
+                "Heat the oil in a large frying pan, tip in the chorizo and fry until it is crisp and all the oil has been released.",
+                "Remove a quarter of the chorizo with a slotted spoon and set aside.",
+                "Tip the rice into the pan, stir to coat it in the oil and toast for a min or so, then pour in the vinegar. Once the vinegar has evaporated, add a loadful of the stock, stir then, once absorbed, add a bit more.",
+                "Continue doing this for about 20 mins until most of the stock has been absorbed and the rice has swollen but still has a slight bite.",
                 "Tip in the peas, parmesan and the remaining stock. Give everything a good stir. Once the cheese has melted, season with black pepper, then divide between bowls, topping each portion with the remaining crisp chorizo and extra grated parmesan."
             ],
             "recipeId": 8,
@@ -340,8 +387,9 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Low Calorie",
+                "Under 20 mins",
+                "Spicy"
             ],
             "ingredients": [
                 {
@@ -371,7 +419,8 @@
             ],
             "method": [
                 "Blitz the roasted red pepper with the olive oil, walnuts and garlic in a food processor, season well and set aside.",
-                "Bring a pan of salted water to the boil, add the pasta and cook for 1 min less than the pack instructions and drain, reserving a ladleful of cooking water. Tip the pasta back into the pan, along with the reserved cooking water and red pepper sauce, and return to the heat to warm through. Tip the pasta into a bowl and top with the parmesan and some chopped toasted walnuts. Season and serve."
+                "Bring a pan of salted water to the boil, add the pasta and cook for 1 min less than the pack instructions and drain, reserving a ladleful of cooking water.",
+                "Tip the pasta back into the pan, along with the reserved cooking water and red pepper sauce, and return to the heat to warm through. Tip the pasta into a bowl and top with the parmesan and some chopped toasted walnuts. Season and serve."
             ],
             "recipeId": 9,
             "title": "Red pepper linguine",
@@ -735,45 +784,30 @@
         {
             "categories": [
                 "1",
-                "2"
+                "2",
+                "High Calorie"
             ],
             "ingredients": [
                 {
-                    "amount": "1tbs",
-                    "name": "oil"
-                },
-                {
-                    "amount": "200g",
-                    "name": "chorizo"
+                    "amount": "125g",
+                    "name": "butter"
                 },
                 {
                     "amount": "300g",
-                    "name": "risotto rice"
-                },
-                {
-                    "amount": "2tbs",
-                    "name": "vinegar"
-                },
-                {
-                    "amount": "1200ml",
-                    "name": "chicken stock"
-                },
-                {
-                    "amount": "200g",
-                    "name": "pea"
-                },
-                {
-                    "amount": "60g",
-                    "name": "parmesan"
+                    "name": "lotus biscuits"
                 }
             ],
             "method": [
-                "Heat the oil in a large frying pan, tip in the chorizo and fry until it is crisp and all the oil has been released. Remove a quarter of the chorizo with a slotted spoon and set aside.",
-                "Tip the rice into the pan, stir to coat it in the oil and toast for a min or so, then pour in the vinegar. Once the vinegar has evaporated, add a ladleful of the stock, stir then, once absorbed, add a bit more. Continue doing this for about 20 mins until most of the stock has been absorbed and the rice has swollen but still has a slight bite.",
-                "Tip in the peas, parmesan and the remaining stock. Give everything a good stir. Once the cheese has melted, season with black pepper, then divide between bowls, topping each portion with the remaining crisp chorizo and extra grated parmesan."
+                "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
+                "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
+                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race).",
+                "Alternatively, you can whip the cream separately to stiff peaks and fold through!",
+                "Spread the mixture evenly over the biscuit base and chill in the fridge for at least 5-6 hours, but preferably overnight.",
+                "Remove from the tin and decorate how you like.",
+                "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
             ],
             "recipeId": 20,
-            "title": "Chorizo & pea risotto",
+            "title": "Lotus cheesecake",
             "userId": 0
         },
         {
@@ -788,19 +822,25 @@
                 {
                     "name": "lotus biscuits",
                     "amount": "300g"
+                },
+                {
+                    "name": "Double Cream",
+                    "amount": "150g"
                 }
             ],
             "method": [
                 "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
                 "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
-                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race). Alternatively, you can whip the cream separately to stiff peaks and fold through!",
+                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race).",
+                "Alternatively, you can whip the cream separately to stiff peaks and fold through!",
                 "Spread the mixture evenly over the biscuit base and chill in the fridge for at least 5-6 hours, but preferably overnight.",
                 "Remove from the tin and decorate how you like.",
                 "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
             ],
             "categories": [
-                "1",
-                "2"
+                "Includes Dairy",
+                "High Calories",
+                "High Sugar"
             ]
         }
     ]

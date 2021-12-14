@@ -29,12 +29,9 @@ function PopulateDiscover()
         //rng creates a random id number- MAYBE CHANGE VAR NAME TO "RANDOMID"
         let rng = Math.floor(Math.random() * (recipes.length + 1));
         
-        //IF STATEMENT IS UNESSESARY- CHECKS NOTHING
-        if (recipes[rng])
-        {
-          discoverList += '<li><a href="/recipe?id=' + String(recipes[rng].recipeId) + '">' + String(recipes[rng].title) + '</a></li>';
-          recipes.splice(rng, 1);
-        }
+        // Add random recipe html content to discoverList
+        discoverList += '<li><a href="/recipe?id=' + String(recipes[rng].recipeId) + '">' + String(recipes[rng].title) + '</a></li>';
+        recipes.splice(rng, 1);
       }
       document.getElementById("discoverUl").innerHTML = discoverList;
     }

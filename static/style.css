@@ -530,3 +530,55 @@ nav a:hover{
         display: none;
     }
     }
+
+/* Footer */
+
+.page-footer {
+    position: relative;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    width: 100%;
+    background-color: #1E3859;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+.footer-nav {
+    width: 75%;
+    padding-top: 15px;
+
+}
+
+.members h3 {
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+    padding-bottom: 5px;
+    font-weight: 900;
+}
+.members li {
+    padding: 2px 0px 0px 25px;
+    text-align: left;
+    list-style-type: none;
+    color: ghostwhite;
+    font-weight: 600;
+}
+
+.region-footer-links {
+    width: 30%;
+    padding: 10px;
+}
+
+.social-links {
+    width: 20%;
+}
+
+.icon-github {
+    background-image: url("/static/Images/github-icon.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100px 100px;
+    background-color: white;
+}
+
