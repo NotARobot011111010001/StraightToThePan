@@ -1,5 +1,71 @@
 .recipeFlex{
-    width: 80%;
-    height: 90%;
+    width: 60%;
+    margin: 0 auto;
     background-color: var(--blue--);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+input{
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: var(--blue--);
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.labels{
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgb(127,118,165);
+    background: linear-gradient(45deg, rgba(127,118,165,.4) 0%, rgba(30,56,89,1) 100%);
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+table th{
+    background-color: var(--yellow--);
+    padding: 0.75rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+table td{
+    padding: 1rem 2rem;
+}
+button{
+    border: none;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--purple--);
+}
+button:hover{
+    background-color: var(--blue--);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px){
+    .recipeFlex{
+        width: 90%;
+    }
+table th{
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+}
+table td{
+    padding: .5rem 1rem;
+}
+button{
+    width: 100px;
+    height: 40px;
+}
+
 }

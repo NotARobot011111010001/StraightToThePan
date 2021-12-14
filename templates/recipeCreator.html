@@ -6,7 +6,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
@@ -14,6 +14,7 @@
     <title>Straight To The Pan</title>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
     <link rel="stylesheet" type="text/css" href="/static/recipeCreator.css">
+    <link rel="stylesheet" type="text/css" href="/static/recipes.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,60 +48,64 @@
 
     <!-- Container for all input fields. -->
     <div class="recipeFlex">
-    <div class="container" id="recipeCard"> 
-        <!-- Input for the title. -->
-        <label for="titleInput">Title:</label>
-        <input type="text" id="titleInput" name="titleInput">
+        <div class="recipeEdit" id="recipeCard">
+            <!-- Input for the title. -->
+                <div class="recipeForm labels">
+            <label for="titleInput">Title:</label>
+                    <input type="text" id="titleInput" name="titleInput">
+                    </div>
 
-        <!-- Inputs for the ingredients table. -->
-        <label for="ingredientInput">Ingredients:</label>
-        <table id="ingredientInput" name="ingredientInput">
-            <thead>
-                <tr>
-                    <th>Ingredient</th>
-                    <th>Amount</th>
-                    <th>
-                        <button type="button" onclick="AddIngredientRow()">Add Ingredient</button>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td contenteditable="true">A</td>
-                    <td contenteditable="true">B</td>
-                    <td>
-                        <button type="button" onclick="DeleteTableRow(this)">Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-</div>
-    </div>
-        <!-- Inputs for the methods list. -->
-            <div class="recipeFlex">
-        <label for="methodInput">Method:</label>
-        <table id="methodInput" name="methodInput">
-            <thead>
-                <tr>
-                    <th>Step</th>
-                    <th>
-                        <button type="button" onclick="AddMethodRow()">Add Step</button>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td contenteditable="true">A</td>
-                    <td>
-                        <button type="button" onclick="DeleteTableRow(this)">Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+            <!-- Inputs for the ingredients table. -->
+                <div class="recipeForm labels">
+            <label for="ingredientInput">Ingredients:</label>
+                    </div>
+            <table class="" id="ingredientInput" name="ingredientInput">
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Amount</th>
+                        <th>
+                            <button type="button" onclick="AddIngredientRow()">Add Ingredient</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true">A</td>
+                        <td contenteditable="true">B</td>
+                        <td>
+                            <button type="button" onclick="DeleteTableRow(this)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Inputs for the methods list. -->
+            <div class="recipeForm labels">
+            <label for="methodInput">Method:</label>
             </div>
+            <table id="methodInput" name="methodInput">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>
+                            <button type="button" onclick="AddMethodRow()">Add Step</button>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td contenteditable="true">A</td>
+                        <td>
+                            <button type="button" onclick="DeleteTableRow(this)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <!-- Inputs for the categories list -->
-        <div class="recipeFlex">
+        <div class="recipeForm labels">
         <label for="categoryInput">Categories:</label>
+            </div>
         <table id="categoryInput" name="categoryInput">
             <thead>
                 <tr>
@@ -120,9 +125,10 @@
             </tbody>
         </table>
 
+            <div class="recipeBtns">
         <button type="button" id="saveButton" onclick="SaveRecipe()">Save Recipe</button>
         <button type="button" id="discardButton" onclick="window.location.replace('/recipe');">Discard</button>
+            </div>
     </div>
-
 </body>
 </html>

@@ -472,41 +472,6 @@
             ],
             "ingredients": [
                 {
-                    "amount": "800g",
-                    "name": "cherry tomatoes"
-                },
-                {
-                    "amount": "400g",
-                    "name": "mixed bean salad"
-                },
-                {
-                    "amount": "200g",
-                    "name": "baby spinach"
-                },
-                {
-                    "amount": "4",
-                    "name": "egg"
-                },
-                {
-                    "amount": "50g",
-                    "name": "smoked ham"
-                }
-            ],
-            "method": [
-                "Tip the tomatoes and bean salad into an ovenproof frying pan or shallow flameproof casserole dish. Simmer for 10 mins, or until reduced. Stir in the spinach and cook for 5 mins more until wilted.",
-                "Heat the grill to medium. Make four indentations in the mixture using the back of a spoon, then crack one egg in each. Nestle the ham in the mixture, then grill for 4-5 mins, or until the whites are set and the yolks runny. Serve with rye bread, if you like."
-            ],
-            "recipeId": 11,
-            "title": "Saucy bean baked eggs",
-            "userId": 0
-        },
-        {
-            "categories": [
-                "1",
-                "2"
-            ],
-            "ingredients": [
-                {
                     "amount": "300g",
                     "name": "basmati rice"
                 },
