@@ -82,6 +82,14 @@
     text-align: justify;
     font-size: 1.2rem;
 }
+.recipeBtns{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: var(--pink--);
+}
 
 @media (max-width: 768px){
     .recipeContainer{
