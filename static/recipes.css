@@ -10,8 +10,11 @@
 .recipeDisplay{
     background-color: var(--blue--);
     width: 100%;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    border-radius: 0.5rem;
+    /* border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem; */
+    padding: 0.5rem;
+    margin: .5rem 0 1rem 0;
 }
 .recipeTitle{
     min-height: 110px;
@@ -60,7 +63,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 .recipeDisplay table td{
     padding: 1rem 2rem;
@@ -85,7 +88,7 @@
 .recipeDisplay li{
     padding: 0.75rem 2rem;
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .recipeBtns{
     display: flex;
@@ -132,10 +135,13 @@
 /*    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);*/
 /*    background: var(--yellow--);*/
 /*}*/
+
+/* Add new Recipe button */
 .myRecipesB p{
-    font-weight: 800;
-    font-size: 1.2rem;
+    font-weight: 900;
+    font-size: 1.3rem;
     color: white;
+    width: 30%;
 }
 .myRecipesB p:hover{
     color: var(--pink--);
@@ -147,23 +153,27 @@
     padding: 10px;
     margin: 10px 0 10px 10px;
     background: var(--yellow--);
-    font-size: 1.3rem;
-    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
     cursor: pointer;
+    border-radius: 0.5rem;
 }
 .collapsible:hover, .deleteButton:hover, .editButton:hover{
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
     background-color: var(--pink--);
 }
-/*.deleteButton, .editButton{*/
-/*    border: none;*/
-/*    padding: 10px;*/
-/*    margin: 10px 0 10px 10%;*/
-/*    background: var(--yellow--);*/
-/*    font-size: 1rem;*/
-/*    color: white;*/
-/*    cursor: pointer;*/
-/*}*/
+.deleteButton, .editButton{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 5px;
+    margin: 10px 0 10px 20%;
+    background: var(--yellow--);
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
 
 @media (max-width: 768px){
     .recipeContainer{
