@@ -79,50 +79,6 @@
         },
         {
             "categories": [
-                "High Calorie",
-                "Healthy",
-                "Meat",
-                "Spicy"
-            ],
-            "ingredients": [
-                {
-                    "amount": "200g",
-                    "name": "Pasta (Any type)"
-                },
-                {
-                    "amount": "150g",
-                    "name": "Broccoli"
-                },
-                {
-                    "amount": "2 tbsp",
-                    "name": "Extra Virgin Olive Oil"
-                },
-                {
-                    "amount": "2",
-                    "name": "Garlic cloves"
-                },
-                {
-                    "amount": "200g",
-                    "name": "Sausages"
-                },
-                {
-                    "amount": "1/2 tbsp",
-                    "name": "Crushed Chillies"
-                }
-            ],
-            "method": [
-                "Bring a large pan of water to the boil and cook the pasta until nearly al dente.",
-                "Throw in the broccoli and cook for 2 mins more. Drain, saving 1-2 tbsp of the water.",
-                "Heat the oil in a large frying pan and add the garlic, fennel seeds, if using, and chillies.",
-                "When they start to colour a bit, add the sausage and cook until golden and cooked through.",
-                "Tip in the pasta and broccoli with the reserved water and toss. Serve hot with the Parmesan shavings."
-            ],
-            "recipeId": 2,
-            "title": "Broccoli and Sausage Pasta",
-            "userId": 0
-        },
-        {
-            "categories": [
                 "Healthy",
                 "High Calorie",
                 "Under 20 mins"

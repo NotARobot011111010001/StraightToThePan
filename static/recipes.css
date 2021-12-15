@@ -43,6 +43,7 @@
 }
 .recipeDisplay p{
     padding-left: 3.5%;
+    color: white;
 }
 .recipeDisplay table{
     width: 80%;
@@ -58,11 +59,14 @@
     padding: 0.75rem 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 .recipeDisplay table td{
     padding: 1rem 2rem;
+    color: white;
+    font-size: 1.2rem;
+
 }
 
 .recipeDisplay ol, .recipeDisplay ul{
@@ -70,6 +74,7 @@
     margin: 0 auto;
     list-style-position: inside;
     padding-left: 1.75rem;
+    color: white;
 }
 .recipeDisplay ul{
     display: flex;
@@ -80,7 +85,7 @@
 .recipeDisplay li{
     padding: 0.75rem 2rem;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .recipeBtns{
     display: flex;
@@ -115,6 +120,50 @@
     background-color: var(--yellow--);
 
 }
+
+/*.myRecipesB{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 240px;*/
+/*    height: 35px;*/
+/*    border-radius: .5rem;*/
+/*    margin: 0 0 10px 0;*/
+/*    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);*/
+/*    background: var(--yellow--);*/
+/*}*/
+.myRecipesB p{
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+}
+.myRecipesB p:hover{
+    color: var(--pink--);
+}
+.collapsible{
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+    background: var(--yellow--);
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+.collapsible:hover, .deleteButton:hover, .editButton:hover{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+    background-color: var(--pink--);
+}
+/*.deleteButton, .editButton{*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    margin: 10px 0 10px 10%;*/
+/*    background: var(--yellow--);*/
+/*    font-size: 1rem;*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*}*/
 
 @media (max-width: 768px){
     .recipeContainer{

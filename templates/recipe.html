@@ -75,10 +75,12 @@
     </div>
 
     <!-- Button for the recipe creator page. -->
-    <a href="{{ url_for('recipeCreator') }}" id="newRecipe">Add New Recipe</a>
+    <div class="myRecipesB">
+            <a href="{{ url_for('recipeCreator') }}" id="newRecipe"><p>Add New Recipe<p></a>
+    </div>
 
     <!-- Used to display all recipes. -->
-    <div class="container" id="allRecipes">
+    <div class="recipeDisplay" id="allRecipes">
         <button type="button" class="collapsible">Recipe</button>
         <div class="recipeContent">
             <table id="recipeIngredients">
@@ -89,11 +91,8 @@
 
             <ul id="recipeCategories">
             </ul>
-
-            <div class="recipeBtns">
-            <button type="button" id="difcolor"> <a href="/recipeCreator?id=" class="editButton"><p>Edit Recipe<p></a> </button>
+            <button type="button" > <a href="/recipeCreator?id=" class="editButton"><p>Edit Recipe<p></a> </button>
             <button type="button" class="deleteButton" id="deleteRecipe" onclick="DeleteRecipe()"><p>Delete<p></button>
-                </div>
         </div>
     </div>
         </div>
