@@ -20,6 +20,7 @@ input{
     font-weight: 800;
     font-size: 1.4rem;
     padding: 10px;
+    color: var(--purple--);
 }
 table{
     width: 80%;
@@ -40,6 +41,7 @@ table th{
 }
 table td{
     padding: 1rem 2rem;
+    color: white;
 }
 button{
     border: none;
@@ -47,6 +49,7 @@ button{
     height: 50px;
     cursor: pointer;
     background-color: var(--purple--);
+    color: white;
 }
 button:hover{
     background-color: var(--blue--);
@@ -55,6 +58,9 @@ button:hover{
 @media (max-width: 768px){
     .recipeFlex{
         width: 90%;
+    }
+    table{
+        width: 70%;
     }
 table th{
     padding: 0.5rem 1rem;
