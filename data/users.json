@@ -6,10 +6,6 @@
             "email": "j.the.cooker@yahoo.com",
             "password": "password1234",
             "username": "John Cooker",
-            "uploadedRecipes":[
-                0,
-                1
-            ],
             "recipeLists":[
                 {
                     "listName":"favesieees",
@@ -24,20 +20,46 @@
             "userId": 1,
             "email": "janedough93@aol.com",
             "password": "Petsname1993",
-            "username": "Jane Dough",
-            "uploadedRecipes":[
-                0,
-                1
-            ],
+            "username": "jane dough",
             "recipeLists":[
                 {
-                    "listName": "",
+                    "listName": "the worst recipes on this site",
                     "savedRecipes":[
                         0,
-                        1
+                        5,
+                        7,
+                        13,
+                        15
                     ]
                 }
             ]
+        },
+        {
+            "userId": 2,
+            "email": "crumble@gmail.com",
+            "password": "OdjoaJJDasdn30023fjah1",
+            "username": "Mr Crumble",
+            "recipeLists":[
+                {
+                    "listName": "Mr Crumble's Cromulent Chrimbo Crumbles",
+                    "savedRecipes":[
+                    ]
+                }
+            ]
+        },
+        {
+            "userId": 3,
+            "email": "sam.stratonsberg@gmail.com",
+            "password": "qwert",
+            "username": "Sam stratonsberg",
+            "recipeLists":[]
+        },
+        {
+            "userId": 4,
+            "email": "operator@straighttothepan.co.uk",
+            "password": "hackme",
+            "username": "MASTeR",
+            "recipeLists":[]
         }
     ]
 }

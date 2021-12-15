@@ -2,18 +2,20 @@
     "recipes": [
         {
             "categories": [
-                "Includes Dairy",
-                "High Calories",
-                "High Sugar"
+                "Dairy",
+                "High Calorie",
+                "High Sugar",
+                "Dessert",
+                "Sweet"
             ],
             "ingredients": [
                 {
                     "amount": "125g",
-                    "name": "butter"
+                    "name": "Butter"
                 },
                 {
                     "amount": "300g",
-                    "name": "lotus biscuits"
+                    "name": "Lotus biscuits"
                 },
                 {
                     "name": "Double Cream",
@@ -30,40 +32,42 @@
                 "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
             ],
             "recipeId": 0,
-            "title": "Lotus cheesecake",
+            "title": "Lotus Cheesecake",
             "userId": 0
         },
         {
             "categories": [
                 "Eggs",
                 "High in Sugar",
-                "Includes Dairy",
-                "High Calorie"
+                "Dairy",
+                "High Calorie",
+                "Dessert",
+                "Sweet"
             ],
             "ingredients": [
                 {
                     "amount": "2",
-                    "name": "large eggs"
+                    "name": "Large eggs"
                 },
                 {
                     "amount": "2tbs",
-                    "name": "golden caster sugar"
+                    "name": "Golden caster sugar"
                 },
                 {
                     "amount": "1tsp",
-                    "name": "vanilla extract"
+                    "name": "Vanilla extract"
                 },
                 {
                     "amount": "2tbs",
-                    "name": "milk"
+                    "name": "Milk"
                 },
                 {
                     "amount": "2tbs",
-                    "name": "self-raising flour"
+                    "name": "Self-raising flour"
                 },
                 {
                     "amount": "1tsp",
-                    "name": "vegetable oil"
+                    "name": "Vegetable oil"
                 }
             ],
             "method": [
@@ -74,35 +78,39 @@
                 "Very gently, and carefully, turn the pancakes over in the pan with a fish slice or spatula. The bases should be a light golden brown. Add the lid back on and cook for another 4-6 mins until both sides are golden brown and they have a slight wobble, but are not collapsing or sticky. Serve with a pat of butter, a dusting of icing sugar and a little maple syrup."
             ],
             "recipeId": 1,
-            "title": "Souffle pancakes",
-            "userId": 0
+            "title": "Souffle Pancakes",
+            "userId": 1
         },
         {
             "categories": [
                 "Healthy",
                 "High Calorie",
-                "Under 20 mins"
+                "Under 20 mins",
+                "Chocolate",
+                "Dairy",
+                "Dessert",
+                "Sweet"
             ],
             "ingredients": [
                 {
                     "amount": "200g",
-                    "name": "digestive biscuits"
+                    "name": "Digestive biscuits"
                 },
                 {
                     "amount": "135g",
-                    "name": "butter"
+                    "name": "Butter"
                 },
                 {
                     "amount": "200g",
-                    "name": "dark chocolate"
+                    "name": "Dark chocolate"
                 },
                 {
                     "amount": "2.5tbs",
-                    "name": "syrup"
+                    "name": "Syrup"
                 },
                 {
                     "amount": "100g",
-                    "name": "mini marshmallows"
+                    "name": "Mini marshmallows"
                 }
             ],
             "method": [
@@ -114,39 +122,42 @@
             ],
             "recipeId": 3,
             "title": "Rocky road",
-            "userId": 0
+            "userId": 1
         },
         {
             "categories": [
-                "Eggs",
                 "High Calorie",
                 "High in Sugar",
-                "Over 20 mins"
+                "Over 20 mins",
+                "Chocolate",
+                "Dairy",
+                "Dessert",
+                "Sweet"
             ],
             "ingredients": [
                 {
                     "amount": "3",
-                    "name": "large eggs"
+                    "name": "Large eggs"
                 },
                 {
                     "amount": "100g",
-                    "name": "butter"
+                    "name": "Butter"
                 },
                 {
                     "amount": "100g",
-                    "name": "dark chocolate"
+                    "name": "Dark chocolate"
                 },
                 {
                     "amount": "150g",
-                    "name": "light brown soft sugar"
+                    "name": "Light brown soft sugar"
                 },
                 {
                     "amount": "1.5tsp",
-                    "name": "vanilla extract"
+                    "name": "Vanilla extract"
                 },
                 {
                     "amount": "50g",
-                    "name": "plain flour"
+                    "name": "Plain flour"
                 }
             ],
             "method": [
@@ -158,13 +169,15 @@
             ],
             "recipeId": 4,
             "title": "Chocolate molten cakes",
-            "userId": 0
+            "userId": 1
         },
         {
             "categories": [
                 "High Calorie",
                 "Vegetarian",
-                "Includes Alcohol"
+                "Alcohol",
+                "Savoury",
+                "Pasta"
             ],
             "ingredients": [
                 {
@@ -221,9 +234,11 @@
         },
         {
             "categories": [
-                "Vegan Friendly",
                 "Vegetarian",
-                "Low Calories"
+                "Low Calories",
+                "Nuts",
+                "Desserts",
+                "Sweet"
             ],
             "ingredients": [
                 {
@@ -257,12 +272,14 @@
             ],
             "recipeId": 6,
             "title": "Peanut butter & jam flapjack",
-            "userId": 0
+            "userId": 1
         },
         {
             "categories": [
                 "Fish",
-                "Low Calorie"
+                "Low Calorie",
+                "Dairy",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -298,7 +315,9 @@
         {
             "categories": [
                 "Low Calorie",
-                "Under 20 mins"
+                "Under 20 mins",
+                "Meat",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -339,13 +358,16 @@
             ],
             "recipeId": 8,
             "title": "Chorizo & pea risotto",
-            "userId": 0
+            "userId": 1
         },
         {
             "categories": [
                 "Low Calorie",
                 "Under 20 mins",
-                "Spicy"
+                "Spicy",
+                "Nuts",
+                "Pasta",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -380,12 +402,16 @@
             ],
             "recipeId": 9,
             "title": "Red pepper linguine",
-            "userId": 0
+            "userId": 2
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Low Calorie",
+                "Under 20 mins",
+                "Bread",
+                "Gluten",
+                "Sandwich",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -414,17 +440,21 @@
                 }
             ],
             "method": [
-                "Blitz the whole beetroot, \u00c2\u00be of the chickpeas, 2 tbsp pesto and 1 tbsp oil in a food processor with some seasoning until you have a thick, smooth hummus. Heat the ciabatta following the pack instructions.",
-                "Fry the remaining chickpeas in a little oil until crisp, then set aside. Toss the salad leaves with the remaining pesto and a splash of vinegar. Slice the rolls, then assemble the sandwiches with the hummus, beetroot slices, salad leaves and fried chickpeas."
+                "Blitz the whole beetroot, half of the chickpeas, 2 tbsp pesto and 1 tbsp oil in a food processor with some seasoning until you have a thick, smooth hummus.",
+                "Heat the ciabatta following the pack instructions.",
+                "Fry the remaining chickpeas in a little oil until crisp, then set aside.",
+                "Toss the salad leaves with the remaining pesto and a splash of vinegar.",
+                "Slice the rolls, then assemble the sandwiches with the hummus, beetroot slices, salad leaves and fried chickpeas."
             ],
             "recipeId": 10,
             "title": "Beetroot, hummus & crispy chickpea sub sandwich",
-            "userId": 0
+            "userId": 3
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Fish",
+                "Meat",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -449,17 +479,21 @@
                 }
             ],
             "method": [
-                "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
-                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
+                "Heat the oven to 180C/160C fan/gas 4.",
+                "Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min.",
+                "Stir in the rice to coat it in the curry powder, then pour over the stock.",
+                "Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
+                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice.",
+                "Season to taste, then serve."
             ],
             "recipeId": 12,
             "title": "Kedgeree",
-            "userId": 0
+            "userId": 1
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Egg",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -488,8 +522,14 @@
                 }
             ],
             "method": [
-                "Heat half the oil in a frying pan over a medium heat. Add the mushrooms and fry for 5-6 mins, or until golden. Transfer to a bowl using a slotted spoon and set aside. Add the remaining oil to the pan and fry the tofu for 3-4 mins, or until evenly golden.",
-                "Mix the miso paste with 325ml boiling water in a jug. Cook the noodles following pack instructions, then drain and transfer to a bowl. Top with the mushrooms and tofu, then pour over the miso broth. Scatter over the spring onions just before serving."
+                "Heat half the oil in a frying pan over a medium heat.",
+                "Add the mushrooms and fry for 5-6 mins, or until golden.",
+                "Transfer to a bowl using a slotted spoon and set aside.",
+                "Add the remaining oil to the pan and fry the tofu for 3-4 mins, or until evenly golden.",
+                "Mix the miso paste with 325ml boiling water in a jug.",
+                "Cook the noodles following pack instructions, then drain and transfer to a bowl.",
+                "Top with the mushrooms and tofu, then pour over the miso broth.",
+                "Scatter over the spring onions just before serving."
             ],
             "recipeId": 13,
             "title": "Miso mushroom & tofu noodle soup",
@@ -497,43 +537,34 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Bread",
+                "Gluten",
+                "Savoury"
             ],
             "ingredients": [
                 {
-                    "amount": "300g",
-                    "name": "basmati rice"
-                },
-                {
-                    "amount": "2tbs",
-                    "name": "curry powder"
-                },
-                {
-                    "amount": "600ml",
-                    "name": "chicken stock"
-                },
-                {
-                    "amount": "400g",
-                    "name": "smoked haddock"
-                },
-                {
-                    "amount": "100g",
-                    "name": "peas"
+                    "amount": "1 Slice",
+                    "name": "Bread"
                 }
             ],
             "method": [
-                "Heat the oven to 180C/160C fan/gas 4. Heat an ovenproof saucepan or flameproof casserole over a medium heat and toast the curry powder for 1 min. Stir in the rice to coat it in the curry powder, then pour over the stock. Bring to the boil, then lay the haddock on top. Cover. Cook in the oven for 30 mins.",
-                "Carefully remove from the oven. Leave to rest for a minute, then stir through the peas while breaking up the haddock and fluffing the rice. Season to taste, then serve."
+                "Place the slice of bread into the toaster.",
+                "Set the toaster dial to your preferred setting. I normally keep mine set to 2 (4 is reserved for more... intimate occasions.)",
+                "Pull down the lever on your toaster.",
+                "Wait.",
+                "When the toast pops up, carefully remove it from the toaster (it might be hot!)",
+                "Enjoy."
             ],
             "recipeId": 14,
-            "title": "Kedgeree",
-            "userId": 0
+            "title": "Toast",
+            "userId": 4
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Meat",
+                "Bread",
+                "Gluten",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -558,8 +589,11 @@
                 }
             ],
             "method": [
-                "Heat oven to 180C/160C fan/gas 4 and put the ciabatta in to warm up. Put a griddle pan over a medium heat and cook the chorizo for 5 mins each side or until charred and cooked through.",
-                "Open up the warmed ciabatta and spread the pesto on the bottom. Layer with the red peppers , then the warm chorizo. Scatter over the rocket, sandwich the ciabatta together, cut in two and serve."
+                "Heat oven to 180C/160C fan/gas 4 and put the ciabatta in to warm up.",
+                "Put a griddle pan over a medium heat and cook the chorizo for 5 mins each side or until charred and cooked through.",
+                "Open up the warmed ciabatta and spread the pesto on the bottom.",
+                "Layer with the red peppers , then the warm chorizo.",
+                "Scatter over the rocket, sandwich the ciabatta together, cut in two and serve."
             ],
             "recipeId": 15,
             "title": "Chorizo ciabatta",
@@ -567,8 +601,9 @@
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Fish",
+                "Spicy",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -589,17 +624,21 @@
                 }
             ],
             "method": [
-                "Heat 1 tbsp flavourless oil in a large frying pan. Add the prawns and the jerk seasoning, and cook for 1-2 mins. Drain the beans, reserving 3 tbsp of the chilli sauce.",
-                "Add the beans to the pan along with the reserved sauce and the coconut rice. Fry for 3-4 mins, then season with salt to taste and spoon into two bowls to serve."
+                "Heat 1 tbsp flavourless oil in a large frying pan.",
+                "Add the prawns and the jerk seasoning, and cook for 1-2 mins. Drain the beans, reserving 3 tbsp of the chilli sauce.",
+                "Add the beans to the pan along with the reserved sauce and the coconut rice.",
+                "Fry for 3-4 mins, then season with salt to taste and spoon into two bowls to serve."
             ],
             "recipeId": 16,
             "title": "Jerk prawn & coconut rice bowls",
-            "userId": 0
+            "userId": 3
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Dairy",
+                "Meat",
+                "Savoury",
+                "High Calorie"
             ],
             "ingredients": [
                 {
@@ -624,16 +663,22 @@
                 }
             ],
             "method": [
-                "Heat oven to 200C/fan 180C/gas 6. Mix the cheeses and mustard together. Cut a slit into the side of each chicken breast, then stuff with the mustard mixture. Wrap each stuffed chicken breast with 2 bacon rashers \u00e2\u20ac\u201c not too tightly, but enough to hold the chicken together. Season, place on a baking sheet and roast for 20-25 mins."
+                "Heat oven to 200C/fan 180C/gas 6.",
+                "Mix the cheese and mustard together.",
+                "Cut a slit into the side of each chicken breast, then stuff with the mustard mixture.",
+                "Wrap each stuffed chicken breast with 2 bacon rashers. Not too tightly, but enough to hold the chicken together.",
+                "Season, place on a baking sheet and roast for 20-25 mins."
             ],
             "recipeId": 17,
             "title": "Mustard-stuffed chicken",
-            "userId": 0
+            "userId": 2
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Dairy",
+                "Egg",
+                "Savoury",
+                "Low Calorie"
             ],
             "ingredients": [
                 {
@@ -658,18 +703,30 @@
                 }
             ],
             "method": [
-                "Put the spinach into a large pan. Pour over a couple tbsp water, then cook until just wilted. Tip into a sieve, leave to cool a little, then squeeze out any excess water and roughly chop. Roughly chop the tomatoes and put into a bowl along with the spinach, feta and eggs. Mix well.",
-                "Carefully unroll the filo pastry. Cover with some damp sheets of kitchen paper to stop it drying out. Take a sheet of pastry and brush liberally with some of the sundried tomato oil. Drape oil-side down in a 22cm loosebottomed cake tin so that some of the pastry hangs over the side. Brush oil on another piece of pastry and place in the tin, just a little further round. Keep placing the pastry pieces in the tin until you have roughly three layers, then spoon over the filling. Pull the sides into the middle, scrunch up and make sure the filling is covered. Brush with a little more oil.",
-                "Heat oven to 180C/fan 160C/gas 4. Cook the pie for 30 mins until the pastry is crisp and golden brown. Remove from the cake tin, slice into wedges and serve with salad."
+                "Put the spinach into a large pan.",
+                "Pour over a couple tbsp water, then cook until just wilted. Tip into a sieve, leave to cool a little, then squeeze out any excess water and roughly chop.",
+                "Roughly chop the tomatoes and put into a bowl along with the spinach, feta and eggs.",
+                "Mix well.",
+                "Carefully unroll the filo pastry.",
+                "Cover with some damp sheets of kitchen paper to stop it drying out.",
+                "Take a sheet of pastry and brush liberally with some of the sundried tomato oil.",
+                "Drape oil-side down in a 22cm loosebottomed cake tin so that some of the pastry hangs over the side.",
+                "Brush oil on another piece of pastry and place in the tin, just a little further round.",
+                "Keep placing the pastry pieces in the tin until you have roughly three layers, then spoon over the filling.",
+                "Pull the sides into the middle, scrunch up and make sure the filling is covered. Brush with a little more oil.",
+                "Heat oven to 180C/fan 160C/gas 4.",
+                "Cook the pie for 30 mins until the pastry is crisp and golden brown.",
+                "Remove from the cake tin, slice into wedges and serve with salad."
             ],
             "recipeId": 18,
             "title": "Crispy Greek-style pie",
-            "userId": 0
+            "userId": 1
         },
         {
             "categories": [
-                "1",
-                "2"
+                "Meat",
+                "High Calorie",
+                "Savoury"
             ],
             "ingredients": [
                 {
@@ -695,74 +752,16 @@
             ],
             "method": [
                 "Cook the potatoes: Scatter the frozen wedges in a single layer on a large baking sheet and bake until golden and crunchy, according to packet instructions.",
-                "Cook the steaks: While the potatoes are in the oven, heat the oil in a frying pan until hot, and fry the steaks for 2-3 minutes on each side. Remove the steaks from the pan and leave to rest for a few minutes before slicing into thin strips.",
-                "Assemble the dish: When the potatoes are done, sprinkle them with a little salt and black pepper. Tip the salad leaves into a bowl and toss with 4 tablespoons of the dressing. Divide the salad between 4 plates, top with potatoes and then the steak. Drizzle over the remaining dressing and serve immediately."
+                "Cook the steaks: While the potatoes are in the oven, heat the oil in a frying pan until hot, and fry the steaks for 2-3 minutes on each side.",
+                "Remove the steaks from the pan and leave to rest for a few minutes before slicing into thin strips.",
+                "Assemble the dish: When the potatoes are done, sprinkle them with a little salt and black pepper.",
+                "Tip the salad leaves into a bowl and toss with 4 tablespoons of the dressing.",
+                "Divide the salad between 4 plates, top with potatoes and then the steak.",
+                "Drizzle over the remaining dressing and serve immediately."
             ],
             "recipeId": 19,
             "title": "Steak & chips salad",
-            "userId": 0
-        },
-        {
-            "categories": [
-                "1",
-                "2",
-                "High Calorie"
-            ],
-            "ingredients": [
-                {
-                    "amount": "125g",
-                    "name": "butter"
-                },
-                {
-                    "amount": "300g",
-                    "name": "lotus biscuits"
-                }
-            ],
-            "method": [
-                "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
-                "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
-                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race).",
-                "Alternatively, you can whip the cream separately to stiff peaks and fold through!",
-                "Spread the mixture evenly over the biscuit base and chill in the fridge for at least 5-6 hours, but preferably overnight.",
-                "Remove from the tin and decorate how you like.",
-                "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
-            ],
-            "recipeId": 20,
-            "title": "Lotus cheesecake",
-            "userId": 0
-        },
-        {
-            "recipeId": 21,
-            "userId": 0,
-            "title": "Lotus cheesecake",
-            "ingredients": [
-                {
-                    "name": "butter",
-                    "amount": "125g"
-                },
-                {
-                    "name": "lotus biscuits",
-                    "amount": "300g"
-                },
-                {
-                    "name": "Double Cream",
-                    "amount": "150g"
-                }
-            ],
-            "method": [
-                "Blitz the biscuits for the base in a food processor until they're a fine crumb. Mix with the melted butter and press down firmly into an 8inch/20cm Deep Springform Tin.",
-                "With an electric mixer (I use my KitchenAid) Mix the cream cheese, vanilla, icing sugar and Biscoff Spread until smooth.",
-                "Mix in the double cream and whisk until its thick and holds itself completely! (Don't whip it too fast, slow and steady wins the race).",
-                "Alternatively, you can whip the cream separately to stiff peaks and fold through!",
-                "Spread the mixture evenly over the biscuit base and chill in the fridge for at least 5-6 hours, but preferably overnight.",
-                "Remove from the tin and decorate how you like.",
-                "I whipped together the double cream and icing sugar and piped it on, adding a biscoff biscuit per slice and drizzled over some melted biscoff!"
-            ],
-            "categories": [
-                "Includes Dairy",
-                "High Calories",
-                "High Sugar"
-            ]
+            "userId": 2
         }
     ]
 }

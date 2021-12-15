@@ -5,21 +5,29 @@
 function LoadContent()
 {
     var urlParams = new URLSearchParams(window.location.search);
+    // Check if a recipe id had been passed through the URL parameters.
     if (urlParams.has('id'))
     {
+        // Sets up the page to only display a single recipe card.
         document.getElementById("recipeCard").style.display = 'block';
-        document.getElementById("allRecipes").style.display = 'none';
-        document.getElementById("newRecipe").style.display = 'none';
+        document.getElementById("allRecipes").remove();
+        document.getElementById("newRecipe").remove();
         PopulateRecipe(parseInt(urlParams.get('id')));
     }
     else
     {
-        document.getElementById("recipeCard").style.display = 'none';
+        // Sets up the page to display all user recipes + the add recipe button.
+        document.getElementById("recipeCard").remove();
         document.getElementById("allRecipes").style.display = 'block';
         document.getElementById("newRecipe").style.display = 'block';
         GetRecipes();
     }
 }
+
+
+//-----------------------------------------
+// SINGLE RECIPE FUNCTIONS
+//-----------------------------------------
 
 
 /**
@@ -33,9 +41,7 @@ function PopulateRecipe(recipeId)
     let response = "Error while retrieving.";
     let xhttp = new XMLHttpRequest();
 
-    var recipesData;
     var recipes;
-    var recipe;
     
   /**SHOULD WE NAME THIS FUNCTION?**/
     xhttp.onreadystatechange = function() 
@@ -91,11 +97,13 @@ function PopulateRecipe(recipeId)
 
 
 //-----------------------------------------
+// ALL USER RECIPES FUNCTIONS
+//-----------------------------------------
 
 
 /**
  * GetRecipes()
- * This function retrives all recipes from json file and places it in the recipes section
+ * This function retrives all recipes from json file and places it in the allRecipes section on the recipe page.
  */
  function GetRecipes() 
  {
@@ -106,14 +114,14 @@ function PopulateRecipe(recipeId)
     let xhttp = new XMLHttpRequest();
      
      /**SHOULD WE NAME THIS FUNCTION?**/
-    xhttp.onreadystatechange = function () 
+    xhttp.onreadystatechange = function() 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200) 
         {
             //extracting json data object
             response = JSON.parse(xhttp.responseText);
             recipesData = response.result;
-            allRecipes = FormatJson(recipesData);
+            allRecipes = FormatJsonToHtml(recipesData);
             document.getElementById("allRecipes").innerHTML = allRecipes;
         }
     }
@@ -123,13 +131,13 @@ function PopulateRecipe(recipeId)
 
 
 /**
- * FormatJSON()
+ * FormatJsonToHtml()
  * this function re-formats the json object
  * @param recipesData- the data from all recipes in the json file
  * @returns {reformatted data to suit html layout}
  * to be used in getRecipes method
  */
- function FormatJson(recipesData) 
+ function FormatJsonToHtml(recipesData) 
  {
     let methodData = "";
     let ingredientsData = "";
@@ -137,40 +145,37 @@ function PopulateRecipe(recipeId)
 
     for (let i = 0; i < recipesData.length; i++) 
     {
-       // if (recipesData[i].userId == parseInt(GetUserIdFromCookie()))
-        //{
-            //extracting ingredients
-            ingredientsData = recipesData[i].ingredients;
-            let ingredients = ExtractIngredients(ingredientsData)
-            //extracting method
-            methodData = recipesData[i].method;
-            let method = ExtractMethod(methodData)
-            //extracting categories
-            categoryData = recipesData[i].categories;
-            let categories = ExtractCategories(categoryData);
-            // situating recipe the rest of the data in a div for each recipe
-            allRecipes += 
-                '<button type="button" class="collapsible" onclick="ToggleRecipeContent(recipe' + String(recipesData[i].recipeId) + ')">' + String(recipesData[i].title) + '</button>' +
-                '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '" style="display:none">' +
-                    '<table id="recipeIngredients">' +
-                        '<tr>' +
-                            '<th>Ingredient</th>' +
-                            '<th>Amount</th>' +
-                        '</tr>' +
-                        ingredients +
-                    '</table>' +
-                    '<ol id="recipeMethod" type="1">' + 
-                        method +
-                    '</ol>' +
-                    '<ul id="recipeCategories">' +
-                        categories +
-                    '</ul>' +
-                    '<a href="/recipeCreator?id=' + String(recipesData[i].recipeId) + '" class="editButton">Edit Recipe</a>' +
-                    '<button type="button" class="deleteButton" onclick="DeleteRecipe(' + String(recipesData[i].recipeId) + ')">Delete Recipe</button>' +
-                '</div>';
-            ingredients = [];
-            method = [];
-        //}
+        //extracting ingredients
+        ingredientsData = recipesData[i].ingredients;
+        let ingredients = ExtractIngredients(ingredientsData)
+        //extracting method
+        methodData = recipesData[i].method;
+        let method = ExtractMethod(methodData)
+        //extracting categories
+        categoryData = recipesData[i].categories;
+        let categories = ExtractCategories(categoryData);
+        // situating recipe the rest of the data in a div for each recipe
+        allRecipes += 
+            '<button type="button" class="collapsible" onclick="ToggleRecipeContent(recipe' + String(recipesData[i].recipeId) + ')">' + String(recipesData[i].title) + '</button>' +
+            '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '" style="display:none">' +
+                '<table id="recipeIngredients">' +
+                    '<tr>' +
+                        '<th>Ingredient</th>' +
+                        '<th>Amount</th>' +
+                    '</tr>' +
+                    ingredients +
+                '</table>' +
+                '<ol id="recipeMethod" type="1">' + 
+                    method +
+                '</ol>' +
+                '<ul id="recipeCategories">' +
+                    categories +
+                '</ul>' +
+                '<a href="/recipeCreator?id=' + String(recipesData[i].recipeId) + '" class="editButton">Edit Recipe</a>' +
+                '<button type="button" class="deleteButton" onclick="DeleteRecipe(' + String(recipesData[i].recipeId) + ')">Delete Recipe</button>' +
+            '</div>';
+        ingredients = [];
+        method = [];
     }
     return (allRecipes)
 }
@@ -205,7 +210,7 @@ function ExtractIngredients(ingredientsData)
  * this function formats the method
  * @param methodData
  * @returns {each step of a method in its own pararaph element}
- * to be used in formatJson method
+ * to be used in formatJsonToHtml method
  */
 function ExtractMethod(methodData) 
 {
@@ -262,76 +267,8 @@ function DeleteRecipe(recipeId)
 
 
 //-----------------------------------------
-
-/**
- * CheckCookies()
- * Checks the cookies to see if a user is logged in.
- */
-/*function CheckCookies()
-{
-    let userId = GetUserIdFromCookie();
-    if (userId != "")
-    {
-        let loginButton = document.getElementById("loginButton");
-        let registerButton = document.getElementById("registerButton");
-        if (loginButton)
-        {
-            loginButton.innerHTML = "Log out";
-            loginButton.removeAttribute("href");
-            loginButton.setAttribute("onclick", "DeleteCookies()");
-        }
-
-        if (registerButton)
-        {
-            registerButton.style.display = "none";
-        }
-    }
-    else
-    {
-        alert("You must be logged in to view this page!");
-    }
-}*/
-
-
-/**
- * GetUserIdFromCookie()
- * Gets the currently logged in user's userId.
- * @returns userId stored in cookie OR empty string if not found.
- */
-/*function GetUserIdFromCookie()
-{
-    let name = "userId=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let cookieParams = decodedCookie.split(';')
-    for (let i = 0; i < cookieParams.length; i++)
-    {
-        let c = cookieParams[i];
-        while (c.charAt(0) == ' ')
-        {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0)
-        {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}*/
-
-/**
- * DeleteCookies()
- * Deletes the cookies.
- */
-/*function DeleteCookies()
-{
-    document.cookie = "userId=;";
-    CheckCookies();
-}*/
-
-
+// LISTENERS / FUNCTION CALLS
 //-----------------------------------------
 
 
-
-//CheckCookies();
 LoadContent();

@@ -1,6 +1,14 @@
 /**
+ * login_function.js
+ * This file contains the functions for the login system.
+ * 
+ */
+
+
+
+/**
  * Login()
- * Allows the user to log in to the website.
+ * Allows the user to log in to the website with an email and password.
  */
 function Login()
 {
