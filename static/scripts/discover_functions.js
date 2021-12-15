@@ -12,9 +12,9 @@ function PopulateDiscover()
   let url = "/recipes";
   let response = "Error while retriving.";
   let xhttp = new XMLHttpRequest();
-  var recipesData;
+
   var recipes;
-  /**SHOULD WE NAME THIS FUNCTION? OR LEAVE IT IN TO SHOW DIVERSITY?**/
+
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -26,11 +26,11 @@ function PopulateDiscover()
       
       for (let i = 0; i < 4; i++)
       {
-        //rng creates a random id number- MAYBE CHANGE VAR NAME TO "RANDOMID"
-        let rng = Math.floor(Math.random() * (recipes.length + 1));
+        // creates a random id number
+        let randomId = Math.floor(Math.random() * (recipes.length + 1));
         
         // Add random recipe html content to discoverList
-        discoverList += '<li><a href="/recipe?id=' + String(recipes[rng].recipeId) + '">' + String(recipes[rng].title) + '</a></li>';
+        discoverList += '<li><a href="/recipe?id=' + String(recipes[randomId].recipeId) + '">' + String(recipes[randomId].title) + '</a></li>';
         recipes.splice(rng, 1);
       }
       document.getElementById("discoverUl").innerHTML = discoverList;
@@ -50,10 +50,9 @@ function Search()
   let url = "/recipes";
   let response = "Error while retrieving.";
   let xhttp = new XMLHttpRequest();
-  var recipesData;
+  
   var recipes;
   
-  /**SHOULD WE NAME THIS FUNCTION? OR LEAVE IT IN TO SHOW DIVERSITY?**/
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -61,12 +60,14 @@ function Search()
       response = JSON.parse(xhttp.responseText);
       recipes = response.result;
 
+      // Get the value from the search box.
       let searchRequest = document.getElementById("searchBar").value;
       let resultsList = "";
 
+      // Make sure the search box is not blank.
       if (searchRequest != "")
       {
-        search_outer: for (let i = 0; i < recipes.length; i++)
+        search_outer: for (let i = 0; i < recipes.length; i++) // Uses labels for breaking/continuing from nested loops / selection statements.
         {
           // Check the title.
           if (recipes[i].title.includes(searchRequest))
@@ -86,7 +87,7 @@ function Search()
           }
 
           // Check the tags.
-          for (let j = 0; j < recipes[i].categories.length; j++) // this is done with iterator loops instead of for-each style loops because js doesn't like assigning object properties to temporary variables i guess.
+          for (let j = 0; j < recipes[i].categories.length; j++)
           {
             if (recipes[i].categories[j].includes(searchRequest))
             {

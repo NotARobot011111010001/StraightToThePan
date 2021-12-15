@@ -43,7 +43,6 @@ function PopulateRecipe(recipeId)
 
     var recipes;
     
-  /**SHOULD WE NAME THIS FUNCTION?**/
     xhttp.onreadystatechange = function() 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -56,30 +55,17 @@ function PopulateRecipe(recipeId)
                 if (parseInt(recipes[i].recipeId) == recipeId)
                 {
                     document.getElementById("recipeTitle").innerHTML = String(recipes[i].title);
-                    document.getElementById("recipeCreator").innerHTML = "by " + String(recipes[i].userId);
                     
                     //this formats the ingredients into a table
-                    var tableData = "";
-                    for (let j = 0; j < recipes[i].ingredients.length; j++)
-                    {
-                        tableData += "<tr><td>" + String(recipes[i].ingredients[j].name) + "</td><td>" + String(recipes[i].ingredients[j].amount) + "</td></tr>";
-                    }
-                    document.getElementById("recipeIngredients").innerHTML = "<tr><th>Ingredient</th><th>Amount</th></tr>" + tableData;
+                    let ingredientsTable = ExtractIngredients(recipes[i].ingredients);
+                    document.getElementById("recipeIngredients").innerHTML = "<tr><th>Ingredient</th><th>Amount</th></tr>" + ingredientsTable;
                     
-                    //this formats the method steps into a a list
-                    var methodList = "";
-                    for (let j = 0; j < recipes[i].method.length; j++)
-                    {
-                        methodList += "<li>" + String(recipes[i].method[j]) + "</li>";
-                    }
+                    //this formats the method steps into a list
+                    let methodList = ExtractMethod(recipes[i].method);
                     document.getElementById("recipeMethod").innerHTML = methodList;
                     
-                    //this formats the catagories into a list 
-                    var categories = "";
-                    for (let j = 0; j < recipes[i].categories.length; j++)
-                    {
-                        categories += "<li>" + String(recipes[i].categories[j]) + "</li>";
-                    }
+                    //this formats the categories into a list
+                    let categories = ExtractCategories(recipes[i].categories);
                     document.getElementById("recipeCategories").innerHTML = categories;
 
                     // Add recipeId to button functionality.
@@ -104,6 +90,7 @@ function PopulateRecipe(recipeId)
 /**
  * GetRecipes()
  * This function retrives all recipes from json file and places it in the allRecipes section on the recipe page.
+ * Only runs when no recipeId is provided in the URL parameters.
  */
  function GetRecipes() 
  {
@@ -111,9 +98,10 @@ function PopulateRecipe(recipeId)
     let response = "error while retriving";
     let recipesData = "";
     let allRecipes = "";
+
     let xhttp = new XMLHttpRequest();
-     
-     /**SHOULD WE NAME THIS FUNCTION?**/
+    
+
     xhttp.onreadystatechange = function() 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200) 
@@ -143,21 +131,25 @@ function PopulateRecipe(recipeId)
     let ingredientsData = "";
     let allRecipes = "";
 
+    let userId = 0;
+
     for (let i = 0; i < recipesData.length; i++) 
     {
-        //extracting ingredients
-        ingredientsData = recipesData[i].ingredients;
-        let ingredients = ExtractIngredients(ingredientsData)
-        //extracting method
-        methodData = recipesData[i].method;
-        let method = ExtractMethod(methodData)
-        //extracting categories
-        categoryData = recipesData[i].categories;
-        let categories = ExtractCategories(categoryData);
-        // situating recipe the rest of the data in a div for each recipe
-        allRecipes += 
+        if (recipesData[i].userId == userId)
+        {
+            //extracting ingredients
+            ingredientsData = recipesData[i].ingredients;
+            let ingredients = ExtractIngredients(ingredientsData)
+            //extracting method
+            methodData = recipesData[i].method;
+            let method = ExtractMethod(methodData)
+            //extracting categories
+            categoryData = recipesData[i].categories;
+            let categories = ExtractCategories(categoryData);
+            // situating recipe the rest of the data in a div for each recipe
+            allRecipes += 
             '<button type="button" class="collapsible" onclick="ToggleRecipeContent(recipe' + String(recipesData[i].recipeId) + ')">' + String(recipesData[i].title) + '</button>' +
-            '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '" style="display:none">' +
+            '<div class="recipeContent" id="recipe' + String(recipesData[i].recipeId) + '">' +
                 '<table id="recipeIngredients">' +
                     '<tr>' +
                         '<th>Ingredient</th>' +
@@ -171,11 +163,14 @@ function PopulateRecipe(recipeId)
                 '<ul id="recipeCategories">' +
                     categories +
                 '</ul>' +
-                '<a href="/recipeCreator?id=' + String(recipesData[i].recipeId) + '" class="editButton">Edit Recipe</a>' +
-                '<button type="button" class="deleteButton" onclick="DeleteRecipe(' + String(recipesData[i].recipeId) + ')">Delete Recipe</button>' +
+                '<div class="recipeBtns">' +
+                    '<a href="/recipeCreator?id=' + String(recipesData[i].recipeId) + '" class="editButton">Edit Recipe</a>' +
+                    '<button type="button" class="deleteButton" onclick="DeleteRecipe(' + String(recipesData[i].recipeId) + ')">Delete Recipe</button>' +
+                '</div>' +
             '</div>';
-        ingredients = [];
-        method = [];
+            ingredients = [];
+            method = [];
+        }
     }
     return (allRecipes)
 }
@@ -241,7 +236,7 @@ function ExtractCategories(categoryData)
  */
 function ToggleRecipeContent(recipeContent) 
 {
-    if (recipeContent.style.display == "block")
+    if (recipeContent.style.display != "none")
     {
         recipeContent.style.display = "none";
     }

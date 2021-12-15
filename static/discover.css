@@ -15,7 +15,7 @@
     background-color: rgba(20, 19, 22, 0.7);
     border-radius: .5rem;
 }
-/**main "discover recipes" title text. CHANGE CLASS NAME- MASK SEEMS TOO AMBIGUOUS?**/
+/**main "discover recipes" title text.**/
 .mask h1{
     color: white;
     font-size: 3rem;
@@ -23,7 +23,7 @@
     padding: 20px 0 0 20px;
 
 }
-/**main "discover recipes" paragraph text. CHANGE CLASS NAME?**/
+/**main "discover recipes" paragraph text.**/
 .mask p{
     color: white;
     font-size: 1.3rem;
@@ -32,7 +32,6 @@
 }
 
 /**search styling**/
-/**WHAT IS THIS?**/
 .search-flex{
     display: flex;
     width: 75%;
@@ -74,7 +73,6 @@
     color: var(--pink--);
 }
 
-/**WHAT IS THIS?**/
 .discover-flex{
     display: flex;
     justify-content: space-between;
@@ -118,7 +116,6 @@
 }
 
 /** responsive styling for various sized screens**/
-/**WHAT IS DISCOVERIES?**/
 @media (max-width: 642px) {
     .mask h1{
         font-size: 2rem;
