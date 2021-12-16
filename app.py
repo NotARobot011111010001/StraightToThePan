@@ -1,12 +1,8 @@
-#IS "IMPORT RE" NEEDED?
-import re
 from flask import Flask, render_template, jsonify, request, make_response
 import sys, json
-
 from werkzeug.wrappers import response
 
 app = Flask(__name__)
-
 
 """
 Loading HTML pages.
@@ -15,11 +11,19 @@ Loading HTML pages.
 
 @app.route('/')
 def index():  # put application's code here
+    """
+    loads the main page of the website
+    :return: main page of website
+    """
     return render_template('discover.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """
+    login method for login page - loads login page and input from login form
+    :return: login page
+    """
     if_error = "Error: 404 Not Found"  # if something goes wrong,this will show
 
     if request.method == 'POST' and 'email' in request.form and 'password' in request.form:
@@ -31,46 +35,68 @@ def login():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    """
+    loads the register page of the websire
+    :return: register page
+    """
     return render_template('register.html')
 
 
 @app.route('/discover', methods=['GET', 'POST'])
 def discover():
+    """
+    disover page/main page of website
+    :return: discover/main page
+    """
     return render_template('discover.html')
 
 
 @app.route('/recipe', methods=['GET', 'POST'])
 def recipe():
+    """
+    loads the recipe page of website
+    :return: recipe page
+    """
     return render_template('recipe.html')
+
 
 @app.route('/recipeCreator', methods=['GET', 'POST'])
 def recipeCreator():
+    """
+    loads the recipe creator page of website. Where a user can create recipes and 'POST' it to the JSON file.
+    :return: recipe creator page
+    """
     return render_template('recipeCreator.html')
 
 
 """
-Individual functions.
+Functions for the recipes.json file below. 
+
+See documentation for more info
 """
 
 
-"""
-    Functions for the recipes.json file.
-"""
 @app.route('/recipes', methods=['GET', 'PUT', 'DELETE'])
 def recipes():
-    if request.method == 'GET':  # GET - loads entire recipes.json file to list
+    """
+    Uses 'GET', 'PUT', 'DELETE' for loading, writing and deleting recipes from and to JSON file.
+    GET - loads entire recipes.json file to list
+    PUT - append item to recipes.json
+    DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
+    """
+    if request.method == 'GET':
         response = get_recipes()
-    elif request.method == 'PUT':  # PUT - append item to recipes.json
+    elif request.method == 'PUT':
         response = add_recipe(request.get_json(force=True))
-    elif request.method == 'DELETE':  # DELETE - load recipes.json to list, create new list with all but specified object, save new list to recipes.json
+    elif request.method == 'DELETE':
         response = delete_recipe(int(request.args.get('recipeId')))
     return response
 
 
-"""
-this function gets recipes from JSON to be sent to javascript file
-"""
 def get_recipes():
+    """
+    this function gets recipes from JSON to be sent to javascript file
+    """
     with open("data/recipes.json", "r") as file:
         data = json.load(file)["recipes"]
         file.close()
@@ -79,10 +105,10 @@ def get_recipes():
     return response
 
 
-"""
-this function replaces recipes in JSON file with the updated recipes from the JavaScript file
-"""
 def add_recipe(recipes):
+    """
+    this function replaces recipes in JSON file with the updated recipes from the JavaScript file
+    """
     with open("data/recipes.json", "w") as file:
         json.dump(recipes, file, indent=4)
     response = make_response(jsonify({"result": "Saved"}), 200, )
@@ -90,12 +116,13 @@ def add_recipe(recipes):
     return response
 
 
-"""
-Find recipe in JSON using recipeId, create new list with all but specified recipe, overwrite file.
-"""
 def delete_recipe(recipeId):
+    """
+    Find recipe in JSON using recipeId, create new list with all but specified recipe, overwrite file.
+    :return updated json object
+    """
     with open("data/recipes.json", "r") as file:
-        objs = [] # New list.
+        objs = []  # New list.
         recipes = json.load(file).get("recipes")
         # Check for recipe by recipeId.
         for obj in recipes:
@@ -115,6 +142,12 @@ def delete_recipe(recipeId):
 
 @app.route('/users', methods=['GET', 'PUT', 'DELETE'])
 def users():
+    """
+    gets users from the users.json file
+
+    THIS IS INCOMPLETE - not a priority at the moment
+    :return: json object
+    """
     if request.method == 'GET':
         with open("data/users.json", "r") as file:
             data = json.load(file)["users"]
@@ -122,8 +155,6 @@ def users():
         response = make_response(jsonify({"result": data}), 200, )
         response.headers["Content-Type"] = "application/json"
     return response
-
-
 
 
 if __name__ == '__main__':
