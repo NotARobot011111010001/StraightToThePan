@@ -18,8 +18,8 @@
                     "name": "Lotus biscuits"
                 },
                 {
-                    "name": "Double Cream",
-                    "amount": "150g"
+                    "amount": "150g",
+                    "name": "Double Cream"
                 }
             ],
             "method": [
@@ -242,24 +242,24 @@
             ],
             "ingredients": [
                 {
-                    "amount": "5tbs",
-                    "name": "salted butter"
+                    "name": "salted butter",
+                    "amount": "5tbs"
                 },
                 {
-                    "amount": "250g",
-                    "name": "peanut butter"
+                    "name": "peanut butter",
+                    "amount": "250g"
                 },
                 {
-                    "amount": "8tbs",
-                    "name": "jam"
+                    "name": "jam",
+                    "amount": "8tbs"
                 },
                 {
-                    "amount": "80g",
-                    "name": "light brown soft sugar"
+                    "name": "light brown soft sugar",
+                    "amount": "80g"
                 },
                 {
-                    "amount": "200g",
-                    "name": "rolled oats"
+                    "name": "rolled oats",
+                    "amount": "200g"
                 }
             ],
             "method": [
@@ -762,6 +762,48 @@
             "recipeId": 19,
             "title": "Steak & chips salad",
             "userId": 2
+        },
+        {
+            "recipeId": 20,
+            "userId": 0,
+            "title": "Peanut butter & jam flapjack",
+            "ingredients": [
+                {
+                    "name": "salted butter",
+                    "amount": "5tbs"
+                },
+                {
+                    "name": "peanut butter",
+                    "amount": "250g"
+                },
+                {
+                    "name": "jam",
+                    "amount": "8tbs"
+                },
+                {
+                    "name": "light brown soft sugar",
+                    "amount": "80g"
+                },
+                {
+                    "name": "rolled oats",
+                    "amount": "200g"
+                }
+            ],
+            "method": [
+                "Heat the oven to 180C/160C fan/gas 4. Butter and line the base and sides of a 20cm square cake tin with baking parchment.",
+                "Put 3 tbsp each of the peanut butter and jam in separate small bowls and set aside.",
+                "Tip the remaining peanut butter, the rest of the jam and the butter and sugar into a pan set over a medium heat and stir until everything has melted together.",
+                "Quickly stir in the oats, then leave to cool for 5 mins.",
+                "Spoon the mixture into the prepared cake tin and gently press down with your hands.",
+                "Dot over the reserved peanut butter and jam, then bake for 20-25 mins or until golden brown. Leave to cool completely in the tin, then turn out onto a board and cut into squares."
+            ],
+            "categories": [
+                "Vegetarian",
+                "Low Calories",
+                "Nuts",
+                "Desserts",
+                "Sweet"
+            ]
         }
     ]
 }
