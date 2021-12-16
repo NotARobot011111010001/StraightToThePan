@@ -1,4 +1,11 @@
 /**
+ * recipe_functions.js
+ * This file contains all functionality for the recipe page.
+ * This page essentially just displays recipes.
+ */
+
+
+/**
  * LoadContent()
  * Either loads a recipe specified in the URL parameters, or will load all user recipes if a parameter is not passed.
  */
@@ -68,9 +75,20 @@ function PopulateRecipe(recipeId)
                     let categories = ExtractCategories(recipes[i].categories);
                     document.getElementById("recipeCategories").innerHTML = categories;
 
-                    // Add recipeId to button functionality.
-                    document.getElementById("editButton").href = "/recipeCreator?id=" + String(recipes[i].recipeId);
-                    document.getElementById("deleteButton").setAttribute('onclick', "DeleteRecipe(" + String(recipes[i].recipeId) + ")");
+                    // Check if current user is creator
+                    if (recipes[i].userId == 0)
+                    {
+                        // Add recipeId to button functionality.
+                        document.getElementById("editButton").href = "/recipeCreator?id=" + String(recipes[i].recipeId);
+                        document.getElementById("deleteButton").setAttribute('onclick', "DeleteRecipe(" + String(recipes[i].recipeId) + ")");
+                    }
+                    else
+                    {
+                        // Remove edit / delete buttons if not creator.
+                        document.getElementById("editButton").remove();
+                        document.getElementById("deleteButton").remove();
+                    }
+                    
 
                     break;
                 }
@@ -83,7 +101,7 @@ function PopulateRecipe(recipeId)
 
 
 //-----------------------------------------
-// ALL USER RECIPES FUNCTIONS
+// ALL RECIPES FUNCTIONS
 //-----------------------------------------
 
 
@@ -183,7 +201,7 @@ function PopulateRecipe(recipeId)
  *
  * @param ingredientsData
  * @returns {a list of ingredients formatted for html}
- * to be used in formatJson method
+ * to be used in formatJsonToHtml method
  */
 function ExtractIngredients(ingredientsData) 
 {
@@ -217,7 +235,13 @@ function ExtractMethod(methodData)
     return (methodList)
 } 
 
-
+/**
+ * ExtractCategories()
+ * This function extracts the categories from the recipe object, and formats them into html elements.
+ * @param categoryData 
+ * @returns {a list of categories formatted for html}
+ * to be used in formatJsonToHtml method
+ */
 function ExtractCategories(categoryData)
 {
     let categoryList = "";
@@ -231,7 +255,8 @@ function ExtractCategories(categoryData)
 
 /**
  * ToggleRecipeContent()
- * this function displays the contents of a selected recipe
+ * this function displays the contents of a selected recipe.
+ * this is done using collapsible divs on the html page.
  * @param elementId
  */
 function ToggleRecipeContent(recipeContent) 
@@ -246,7 +271,11 @@ function ToggleRecipeContent(recipeContent)
     }
 }
 
-
+/**
+ * DeleteRecipe()
+ * This function will delete a recipe from the recipes.json file based on the passed recipeId.
+ * @param recipeId 
+ */
 function DeleteRecipe(recipeId)
 {
     let recipeUrl = "/recipes?recipeId=" + recipeId; // Create the url with recipeID in the parameters.

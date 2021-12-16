@@ -58,7 +58,6 @@
     height: 100%;
     background-color: var(--blue--);
 }
-/** WHAT IS THE DIFFERENCE BETWEEN LOG IN FORM AND SELCTION FORM? CHNAGE NAME TO SPECIFY?**/
 section form {
     position: absolute;
     display: flex;

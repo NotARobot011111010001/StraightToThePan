@@ -1,12 +1,21 @@
 /**
+ * recipeCreator_functions.js
+ * This file contains all functionality for the recipe creator.
+ * This allows the user to create or edit (based on URL parameters) recipes on the website.
+ */
+
+
+/**
  * LoadContent()
  * Either loads a recipe specified in the URL parameters, or will load all user recipes if a parameter is not passed.
  */
 function LoadContent()
 {
     var urlParams = new URLSearchParams(window.location.search);
+    // Check for id in url parameters
     if (urlParams.has('id'))
     {
+        // Loads recipe based on passed id.
         PopulateRecipe(parseInt(urlParams.get('id')));
     }
 }
@@ -19,15 +28,13 @@ function LoadContent()
  */
 function PopulateRecipe(recipeId)
 {
-    /**CANT GET THIS TO RUN**/
     let url = "/recipes";
     let response = "Error while retrieving.";
     let xhttp = new XMLHttpRequest();
 
-    var recipesData;
     var recipes;
-    var recipe;
-  /** SHOULD WE NAME THIS FUNCTION?**/
+
+    // Get recipes from server (recipes.json file)
     xhttp.onreadystatechange = function() 
     {
         if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -35,13 +42,15 @@ function PopulateRecipe(recipeId)
             response = JSON.parse(xhttp.responseText);
             recipes = response.result;
 
+            // Find recipe
             for (let i = 0; i < recipes.length; i++)
             {
                 if (parseInt(recipes[i].recipeId) == recipeId)
                 {
+                    // Populate title field from recipe object
                     document.getElementById("titleInput").value = String(recipes[i].title);
     
-                     /**populating ingredients**/
+                    // populate ingredients table from recipe object
                     var ingredientsTable = "";
                     for (let j = 0; j < recipes[i].ingredients.length; j++)
                     {
@@ -56,7 +65,7 @@ function PopulateRecipe(recipeId)
                     }
                     document.getElementById("ingredientInput").innerHTML = '<tr><th>Ingredient</th><th>Amount</th><th><button type="button" onclick="AddIngredientRow()">Add Ingredient</button><th></tr>' + ingredientsTable;
                    
-                    /**populating method**/
+                    // populate method from recipe object
                     var methodTable = "";
                     for (let j = 0; j < recipes[i].method.length; j++)
                     {
@@ -70,7 +79,7 @@ function PopulateRecipe(recipeId)
                     }
                     document.getElementById("methodInput").innerHTML = '<tr><th>Step</th><th><button type="button" onclick="AddMethodRow()">Add Step</button><th></tr>' + methodTable;
                     
-                    /**populating catagories**/
+                    // populate catagories from recipe object
                     var categoryTable = "";
                     for (let j = 0; j < recipes[i].categories.length; j++)
                     {
@@ -97,15 +106,23 @@ function PopulateRecipe(recipeId)
 //-----------------------------------------
 
 
-/**this function lets the user delete an ingredient**/
+/**
+ * DeleteTableRow()
+ * This function lets the user delete rows from any of the tables (based on the button that activates the function.)
+ * @param {the specific delete button that was clicked} btn 
+ */
 function DeleteTableRow(btn)
 {
+    // Get ingredient row from the button.
     let row = btn.parentNode.parentNode;
     row.parentNode.removeChild(row);
 }
 
 
-/**this function lets the user add an ingredient**/
+/**
+ * AddIngredientRow()
+ * Adds a row to the ingredients table
+ */
 function AddIngredientRow()
 {
     document.getElementById("ingredientInput").innerHTML +=
@@ -119,7 +136,10 @@ function AddIngredientRow()
 }
 
 
-/**this function lets the user add a method**/
+/**
+ * AddMethodRow()
+ * Adds a row to the method table.
+ */
 function AddMethodRow()
 {
     document.getElementById("methodInput").innerHTML +=
@@ -131,7 +151,10 @@ function AddMethodRow()
     '</tr>';
 }
 
-/**this function lets the user add a catagory**/
+/**
+ * AddCategoryRow()
+ * Adds a row to the categories table.
+ */
 function AddCategoryRow()
 {
     document.getElementById("categoryInput").innerHTML +=
@@ -144,10 +167,12 @@ function AddCategoryRow()
 }
 
 
-/**this function converts the ingredients data to a dictionary object for json
-* to be used in "SaveRecipe()" function
-* @returns {dictionary} ingredients
-**/ 
+/**
+ * IngredientsTableToJSON()
+ * This function gets all relevant data on the ingredients table and converts it to a json object.
+ * @returns {a dictionary of data from the table} 
+ * to be used in SaveRecipe()
+ */ 
 function IngredientsTableToJSON()
 {
     var ingredients = [];
@@ -166,10 +191,12 @@ function IngredientsTableToJSON()
 }
 
 
-/**this function converts the method data to a dictionary object for json
-* to be used in "SaveRecipe()" function
-* @returns {dictionary} methods
-**/ 
+/**
+ * MethodTableToJSON()
+ * This function gets all data from the method table and converts it to a list.
+ * @returns {a list of all steps from the table}
+ * to be used in SaveRecipe()
+ */ 
 function MethodTableToJSON()
 {
     var method = [];
@@ -183,10 +210,13 @@ function MethodTableToJSON()
     return method;
 }
 
-/**this function converts the catagory data to a dictionary object for json
-* to be used in "SaveRecipe()" function
-* @returns {dictionary} categorys
-**/ 
+
+/**
+ * CategoryTableToJSON()
+ * This function gets all data from the categories table and converts it to a list.
+ * @returns {a list of all categories from the table}
+ * to be used in SaveRecipe()
+ */ 
 function CategoryTableToJSON()
 {
     var categories = [];
@@ -200,15 +230,17 @@ function CategoryTableToJSON()
     return categories;
 }
 
-/**this function enables the user to save a recipe
-* I THINK THIS METHOD SHOULD BE BROKEN UP- VERY LONG
-**/
+
+/**
+ * SaveRecipe()
+ * This function will save the modified data from the HTML elements to the recipes.json file.
+ * This is done by either creating a new recipe object (if not editing a recipe), or overwriting an existing recipe object (if editing a recipe).
+ */
 function SaveRecipe()
 {
-    //WHY IS RECIPE ID= "-1" can we delete this??
-    let recipeId = -1;
-    //let userId = GetUserIdFromCookie(); --- CAN WE DELETE THIS?
-    let userId = 0; // Ignore login system for now. Assume the userId is 0.-- CAN WE DELETE THIS?
+    // Get recipe data from HTML elements.
+    let recipeId = -1; // Set to -1 to make sure it's lower than the lowest possible recipe value (0) by default.
+    let userId = 0; // Assume userId is 0 for testing purposes.
     let title = document.getElementById("titleInput").value;
     let ingredients = IngredientsTableToJSON();
     let method = MethodTableToJSON();
@@ -229,9 +261,10 @@ function SaveRecipe()
             recipes = response.result;
 
             let recipeFound = false;
+
             var urlParams = new URLSearchParams(window.location.search);
             
-            // if the recipe is on an individual tab
+            // Check for url parameters (used if editing a recipe.)
             if (urlParams.has('id'))
             {
                 for (let i = 0; i < recipes.length; i++)
@@ -248,9 +281,11 @@ function SaveRecipe()
                 }
             }
             
-            //if recipe is on a page with multiple recipes
+            // If there are no url parameters or the recipe specified by them has not been found.
             if (!(urlParams.has('id')) || !recipeFound)
             {
+                // Save as new recipe.
+                // Generate new recipeId (largest number in file + 1)
                 for (let i = 0; i < recipes.length; i++)
                 {
                     if (recipes[i].recipeId > recipeId)
@@ -260,6 +295,7 @@ function SaveRecipe()
                     recipeId++;
                 }
 
+                // Create new recipe object.
                 let newRecipe = {
                     "recipeId": recipeId,
                     "userId": userId,
@@ -268,11 +304,12 @@ function SaveRecipe()
                     "method": method,
                     "categories": categories
                 };
+                // Add new object to list.
                 recipes.push(newRecipe);
             }
 
 
-
+            // Create a nested XMLHttpRequest to send the updated data to the table.
             let xhttp2 = new XMLHttpRequest();
             xhttp2.open("PUT", url, true);
             xhttp2.send(JSON.stringify({ "recipes": recipes }));
@@ -285,76 +322,8 @@ function SaveRecipe()
 
 
 //-----------------------------------------
-// ARE WE DOING THIS? DO WE DELETE?
-/**
- * CheckCookies()
- * Checks the cookies to see if a user is logged in.
- */
-/*function CheckCookies()
-{
-    let userId = GetUserIdFromCookie();
-    if (userId != "")
-    {
-        let loginButton = document.getElementById("loginButton");
-        let registerButton = document.getElementById("registerButton");
-        if (loginButton)
-        {
-            loginButton.innerHTML = "Log out";
-            loginButton.removeAttribute("href");
-            loginButton.setAttribute("onclick", "DeleteCookies()");
-        }
-
-        if (registerButton)
-        {
-            registerButton.style.display = "none";
-        }
-    }
-    else
-    {
-        alert("You must be logged in to view this page!");
-    }
-}*/
-
-
-/**
- * GetUserIdFromCookie()
- * Gets the currently logged in user's userId.
- * @returns userId stored in cookie OR empty string if not found.
- */
-/*function GetUserIdFromCookie()
-{
-    let name = "userId=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let cookieParams = decodedCookie.split(';')
-    for (let i = 0; i < cookieParams.length; i++)
-    {
-        let c = cookieParams[i];
-        while (c.charAt(0) == ' ')
-        {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0)
-        {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}*/
-
-/**
- * DeleteCookies()
- * Deletes the cookies.
- */
-/*function DeleteCookies()
-{
-    document.cookie = "userId=;";
-    CheckCookies();
-}*/
-
-
+// LISTENERS / FUNCTION CALLS
 //-----------------------------------------
 
 
-
-//CheckCookies();
 LoadContent();

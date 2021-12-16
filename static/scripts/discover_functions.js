@@ -1,11 +1,13 @@
 /**
+ * discover_functions.js
  * This file contains the functionality for the discover.html page.
+ * This includes the recipe searching and suggestion functions.
 */
 
 
 /**
 * PopulateDiscover()
-* Gets four random recipes and inserts them as links to the discover section on the discover page.
+* Gets three to five random recipes and inserts them as links to the discover section on the discover page.
 */
 function PopulateDiscover()
 {
@@ -15,23 +17,35 @@ function PopulateDiscover()
 
   var recipes;
 
+  // Connect to server to access data.
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
     {
+      // Gets recipe data from server.
       response = JSON.parse(xhttp.responseText);
       recipes = response.result;
 
       let discoverList = "";
+      let discoverCount = Math.floor(Math.random() * 3) + 3; // Get random number from 3 to 5.
       
-      for (let i = 0; i < 4; i++)
+      for (let i = 0; i < discoverCount; i++)
       {
         // creates a random id number
         let randomId = Math.floor(Math.random() * (recipes.length + 1));
         
-        // Add random recipe html content to discoverList
-        discoverList += '<li><a href="/recipe?id=' + String(recipes[randomId].recipeId) + '">' + String(recipes[randomId].title) + '</a></li>';
-        recipes.splice(randomId, 1);
+        // Check that recipe exists (not undefined).
+        if (recipes[randomId])
+        {
+          // Add random recipe html content to discoverList
+          discoverList += '<li><a href="/recipe?id=' + String(recipes[randomId].recipeId) + '">' + String(recipes[randomId].title) + '</a></li>';
+          recipes.splice(randomId, 1);
+        }
+        else
+        {
+          // Repeat iteration to ensure recipe is gotten.
+          i--;
+        }
       }
       document.getElementById("discoverUl").innerHTML = discoverList;
     }
@@ -43,7 +57,8 @@ function PopulateDiscover()
 
 /**
  * Search()
- * Takes the user input in the search bar on the discover page and searches the recipes.json file for any objects that contain it in either the title, the ingredients list, or the category tags list.
+ * Takes the user input in the search bar on the discover page and searches the recipes.json file for any objects that contain it in either the title, 
+ * the ingredients list, or the category tags list.
  */
 function Search()
 {
@@ -53,6 +68,7 @@ function Search()
   
   var recipes;
   
+  // Connect to server to access data.
   xhttp.onreadystatechange = function() 
   {
     if (xhttp.readyState == 4 && xhttp.status == 200)
@@ -95,7 +111,9 @@ function Search()
               continue search_outer;
             }
           }
+
         }
+        // Add search results to page.
         document.getElementById("results").innerHTML = resultsList;
       }
     }
@@ -105,5 +123,8 @@ function Search()
 }
 
 
+//-----------------------------------------
+// LISTENERS / FUNCTION CALLS
+//-----------------------------------------
 
 PopulateDiscover();

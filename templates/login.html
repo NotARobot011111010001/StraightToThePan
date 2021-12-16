@@ -13,32 +13,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script src = "/static/scripts/login_functions.js" defer></script>
 </head>
+
 <body id="loginBody" >
     <section id="selection">
         <div id="loginMain">
         <div class="login-container">
             <div class="login-img" style="background: url(/static/Images/potrait1.jpg) center / cover no-repeat;">
                 <div class="img-box">
-                    <h1> Welcome To</h1> <p>Straight To The Pan<p>
+                    <h1> Welcome To</h1> 
+                    <p>Straight To The Pan<p>
                 </div>
             </div>
-        <div class="login-form" id="formLogin">
-            <form action="{{ url_for('login') }}" method="post" onsubmit="return false">
-                <div class="form-controls">
-                    <h2>Hello Visitor!</h2>
-                    <p>You must log in to access your recipes</p>
 
-            <input class="form-control" type="text" placeholder="Enter your email/username" id="email" autocomplete="off" required>
-            <input class="form-control" type="password" placeholder="Enter your password" id="password" autocomplete="off" required>
-                    <div class="login-btns">
-                        <input type="Submit" id="login_submit" value="Login" onclick="Login()"/>
-                        <button class="register-btn" name="register" > <a href="{{ url_for('register') }}" target="_self"> Register<a/></button>
-                    </div>
-                    <a href="{{ url_for('index') }}">Continue without login in</a>
+            <!-- Login Form -->
+            <div class="login-form" id="formLogin">
+                <form action="{{ url_for('login') }}" method="post" onsubmit="return false">
+                    <div class="form-controls">
+                        <h2>Hello Visitor!</h2>
+                        <p>You must log in to access your recipes</p>
+
+                        <input class="form-control" type="text" placeholder="Enter your email/username" id="email" autocomplete="off" required>
+                        <input class="form-control" type="password" placeholder="Enter your password" id="password" autocomplete="off" required>
+                            <div class="login-btns">
+                                <input type="Submit" id="login_submit" value="Login" onclick="Login()"/>
+                                <button class="register-btn" name="register" > <a href="{{ url_for('register') }}" target="_self"> Register<a/></button>
+                            </div>
+                        <a href="{{ url_for('index') }}">Continue without login in</a>
                     </div>
             </form>
         </div>
-
     </div>
 </div>
 </section>
