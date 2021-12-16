@@ -31,7 +31,7 @@ function PopulateDiscover()
         
         // Add random recipe html content to discoverList
         discoverList += '<li><a href="/recipe?id=' + String(recipes[randomId].recipeId) + '">' + String(recipes[randomId].title) + '</a></li>';
-        recipes.splice(rng, 1);
+        recipes.splice(randomId, 1);
       }
       document.getElementById("discoverUl").innerHTML = discoverList;
     }
