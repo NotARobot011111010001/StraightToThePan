@@ -144,14 +144,14 @@ def delete_recipe(recipeId):
 def users():
     """
     gets users from the users.json file
-
-    THIS IS INCOMPLETE - not a priority at the moment
     :return: json object
     """
     if request.method == 'GET':
+        # read data from users file.
         with open("data/users.json", "r") as file:
             data = json.load(file)["users"]
             file.close()
+        # create response.
         response = make_response(jsonify({"result": data}), 200, )
         response.headers["Content-Type"] = "application/json"
     return response
